@@ -1,0 +1,74 @@
+#-##########################################################
+#-VARIABLES
+#-##################
+#
+#{golf::ball::charging_bar::state::%attacker's uuid%} Show the power bar when hitting the ball
+#{golf::ball::strokes::%attacker's uuid%} The amount of strokes (hits) that the player had made
+#
+#-System vars
+#{golf::ball::charging_bar::design} The actual action-bar (anim of hit power) string to display
+#{golf::ball::charging_bar::frame} The actual action-bar(anim of hit power) frame to display 
+#{golf::ball::charging_bar::power} The actual action-bar(the numeric power that will push the ball with) power number
+#-##########################################################
+
+command /golf [<string>] [<string>]:
+    trigger:
+        if arg-1 is "test":
+            spawn armor stand at event-player
+            set {_nbt} to nbt of last spawned entity
+            set string tag "custom;ball" of nbt of {_nbt} to event-player's uuid
+        if arg-1 is "tp":
+            teleport armor stands where [string tag "custom;ball" of nbt of input is event-player's uuid] to event-player
+        if arg-1 is "k":
+            kill all armor stands where [string tag "custom;ball" of nbt of input is set]
+
+on damage of armor stand by player:
+    if nbt compound of victim have tag "custom;ball":
+        set {_nbt} to nbt of victim
+        set {_ball_owner} to string tag "custom;ball" of {_nbt}
+        if attacker's uuid is {_ball_owner}:
+            cancel event
+            if {golf::ball::charging_bar::state::%attacker's uuid%} is true:
+                add 1 to {golf::ball::strokes::%attacker's uuid%}
+                push victim (vector from yaw attacker's yaw and pitch victim's pitch) with velocity {golf::ball::charging_bar::power}
+                set {golf::ball::charging_bar::state::%attacker's uuid%} to false
+            else:
+                set {golf::ball::charging_bar::state::%attacker's uuid%} to true
+
+every 0.5 seconds:
+    loop all players:
+        if {golf::ball::charging_bar::state::%loop-player's uuid%} is true:
+            ball_charging_animation()
+            send action bar "%{golf::ball::charging_bar::design}%" to loop-player
+
+function ball_charging_animation():
+    add 1 to {golf::ball::charging_bar::frame}
+    if {golf::ball::charging_bar::frame} is 0:
+        set {golf::ball::charging_bar::design} to "&f⬛⬛⬛⬛⬛⬛"
+        # broadcast "&6BallCounter 1: %{golf::ball::charging_bar::design}%"
+        set {golf::ball::charging_bar::power} to 0.05 #COUNTER SET FORCE VARIABLE
+    if {golf::ball::charging_bar::frame} is 1:
+        set {golf::ball::charging_bar::design} to "&2⬛&f⬛⬛⬛⬛⬛"
+        # broadcast "&6BallCounter 2: %{golf::ball::charging_bar::design}%"
+        set {golf::ball::charging_bar::power} to 0.25 #COUNTER SET FORCE VARIABLE
+    if {golf::ball::charging_bar::frame} is 2:
+        set {golf::ball::charging_bar::design} to "&2⬛⬛&f⬛⬛⬛⬛"
+        # broadcast "&6BallCounter 3: %{golf::ball::charging_bar::design}%"
+        set {golf::ball::charging_bar::power} to 0.35 #COUNTER SET FORCE VARIABLE
+    if {golf::ball::charging_bar::frame} is 3:
+        set {golf::ball::charging_bar::design} to "&2⬛⬛&6⬛&f⬛⬛⬛"
+        # broadcast "&6BallCounter 4: %{golf::ball::charging_bar::design}%"
+        set {golf::ball::charging_bar::power} to 0.45 #COUNTER SET FORCE VARIABLE
+    if {golf::ball::charging_bar::frame} is 4:
+        set {golf::ball::charging_bar::design} to "&2⬛⬛&6⬛⬛&f⬛⬛"
+        # broadcast "&6BallCounter 5: %{golf::ball::charging_bar::design}%"
+        set {golf::ball::charging_bar::power} to 0.55 #COUNTER SET FORCE VARIABLE
+    if {golf::ball::charging_bar::frame} is 5:
+        set {golf::ball::charging_bar::design} to "&2⬛⬛&6⬛⬛&c⬛&f⬛"
+        # broadcast "&6BallCounter 6: %{golf::ball::charging_bar::design}%"
+        set {golf::ball::charging_bar::power} to 0.65 #COUNTER SET FORCE VARIABLE
+    if {golf::ball::charging_bar::frame} is 6:
+        set {golf::ball::charging_bar::design} to "&2⬛⬛&6⬛⬛&c⬛⬛"
+        # broadcast "&6BallCounter 7: %{golf::ball::charging_bar::design}%"
+        set {golf::ball::charging_bar::frame} to -1
+        set {golf::ball::charging_bar::power} to 0.75 #COUNTER SET FORCE VARIABLE
