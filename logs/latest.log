@@ -1,143 +1,498 @@
-[06:44:14] [ServerMain/INFO]: [bootstrap] Running Java 21 (OpenJDK 64-Bit Server VM 21.0.6+7-LTS; Eclipse Adoptium Temurin-21.0.6+7) on Windows 11 10.0 (amd64)
-[06:44:14] [ServerMain/INFO]: [bootstrap] Loading Paper 1.21.4-138-main@5395ae3 (2025-02-02T21:42:11Z) for Minecraft 1.21.4
-[06:44:15] [ServerMain/INFO]: [PluginInitializerManager] Initializing plugins...
-[06:44:18] [ServerMain/INFO]: [PluginInitializerManager] Initialized 6 plugins
-[06:44:18] [ServerMain/INFO]: [PluginInitializerManager] Bukkit plugins (6):
+[06:54:23] [ServerMain/INFO]: [bootstrap] Running Java 21 (OpenJDK 64-Bit Server VM 21.0.6+7-LTS; Eclipse Adoptium Temurin-21.0.6+7) on Windows 11 10.0 (amd64)
+[06:54:23] [ServerMain/INFO]: [bootstrap] Loading Paper 1.21.4-138-main@5395ae3 (2025-02-02T21:42:11Z) for Minecraft 1.21.4
+[06:54:25] [ServerMain/INFO]: [PluginInitializerManager] Initializing plugins...
+[06:54:26] [ServerMain/INFO]: [PluginInitializerManager] Initialized 6 plugins
+[06:54:26] [ServerMain/INFO]: [PluginInitializerManager] Bukkit plugins (6):
  - FastAsyncWorldEdit (2.12.4-SNAPSHOT-1035;09473c5), Multiverse-Core (4.3.14), SkBee (3.8.2), Skript (2.10.1), VoidGen (2.2.1), skript-yaml (1.6.1)
-[06:44:34] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
-[06:44:39] [ServerMain/INFO]: Loaded 1370 recipes
-[06:44:39] [ServerMain/INFO]: Loaded 1481 advancements
-[06:44:39] [ServerMain/INFO]: [MCTypeRegistry] Initialising converters for DataConverter...
-[06:44:40] [ServerMain/INFO]: [MCTypeRegistry] Finished initialising converters for DataConverter in 507.2ms
-[06:44:40] [Server thread/INFO]: Starting minecraft server version 1.21.4
-[06:44:40] [Server thread/INFO]: Loading properties
-[06:44:40] [Server thread/INFO]: This server is running Paper version 1.21.4-138-main@5395ae3 (2025-02-02T21:42:11Z) (Implementing API version 1.21.4-R0.1-SNAPSHOT)
-[06:44:40] [Server thread/INFO]: [spark] This server bundles the spark profiler. For more information please visit https://docs.papermc.io/paper/profiling
-[06:44:40] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[06:44:40] [Server thread/INFO]: Using 4 threads for Netty based IO
-[06:44:41] [Server thread/INFO]: [MoonriseCommon] Paper is using 4 worker threads, 1 I/O threads
-[06:44:42] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
-[06:44:42] [Server thread/INFO]: Default game type: SURVIVAL
-[06:44:42] [Server thread/INFO]: Generating keypair
-[06:44:42] [Server thread/INFO]: Starting Minecraft server on *:25565
-[06:44:42] [Server thread/INFO]: Using default channel type
-[06:44:42] [Server thread/INFO]: Paper: Using Java compression from Velocity.
-[06:44:42] [Server thread/INFO]: Paper: Using Java cipher from Velocity.
-[06:44:43] [Server thread/INFO]: [Skript] Loading server plugin Skript v2.10.1
-[06:44:43] [Server thread/INFO]: [VoidGen] Loading server plugin VoidGen v2.2.1
-[06:44:43] [Server thread/INFO]: [skript-yaml] Loading server plugin skript-yaml v1.6.1
-[06:44:43] [Server thread/INFO]: [SkBee] Loading server plugin SkBee v3.8.2
-[06:44:43] [Server thread/INFO]: [Multiverse-Core] Loading server plugin Multiverse-Core v4.3.14
-[06:44:43] [Server thread/INFO]: [FastAsyncWorldEdit] Loading server plugin FastAsyncWorldEdit v2.12.4-SNAPSHOT-1035;09473c5
-[06:44:46] [Server thread/INFO]: Got request to register class com.sk89q.worldedit.bukkit.BukkitServerInterface with WorldEdit [com.sk89q.worldedit.extension.platform.PlatformManager@13960d9c]
-[06:44:46] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[06:44:46] [Server thread/INFO]: [VoidGen] Enabling VoidGen v2.2.1
-[06:44:46] [Server thread/INFO]: [VoidGen] Using VoidChunkGen: VERSION_UNKNOWN
-[06:44:46] [Server thread/INFO]: [FastAsyncWorldEdit] Enabling FastAsyncWorldEdit v2.12.4-SNAPSHOT-1035;09473c5
-[06:44:47] [Server thread/INFO]: [com.fastasyncworldedit.core.Fawe] LZ4 Compression Binding loaded successfully
-[06:44:47] [Server thread/INFO]: [com.fastasyncworldedit.core.Fawe] ZSTD Compression Binding loaded successfully
-[06:44:47] [Server thread/INFO]: Registering commands with com.sk89q.worldedit.bukkit.BukkitServerInterface
-[06:44:49] [Server thread/INFO]: WEPIF: Using the Bukkit Permissions API.
-[06:44:50] [Server thread/INFO]: Using com.sk89q.worldedit.bukkit.adapter.impl.fawe.v1_21_4.PaperweightFaweAdapter as the Bukkit adapter
-[06:44:51] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
-[06:44:51] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
-[06:44:51] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
-[06:44:51] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
-[06:44:51] [Server thread/INFO]: Preparing level "world"
-[06:44:51] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
-[06:44:52] [Server thread/INFO]: Preparing spawn area: 0%
-[06:44:52] [Server thread/INFO]: Time elapsed: 325 ms
-[06:44:52] [Server thread/INFO]: [Skript] Enabling Skript v2.10.1
-[06:44:52] [ForkJoinPool.commonPool-worker-1/WARN]: [com.fastasyncworldedit.core.util.UpdateNotification] An update for FastAsyncWorldEdit is available. You are 1 build(s) out of date.
+[06:54:33] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[06:54:35] [ServerMain/INFO]: Loaded 1370 recipes
+[06:54:35] [ServerMain/INFO]: Loaded 1481 advancements
+[06:54:35] [ServerMain/INFO]: [MCTypeRegistry] Initialising converters for DataConverter...
+[06:54:35] [ServerMain/INFO]: [MCTypeRegistry] Finished initialising converters for DataConverter in 179.6ms
+[06:54:35] [Server thread/INFO]: Starting minecraft server version 1.21.4
+[06:54:35] [Server thread/INFO]: Loading properties
+[06:54:35] [Server thread/INFO]: This server is running Paper version 1.21.4-138-main@5395ae3 (2025-02-02T21:42:11Z) (Implementing API version 1.21.4-R0.1-SNAPSHOT)
+[06:54:35] [Server thread/INFO]: [spark] This server bundles the spark profiler. For more information please visit https://docs.papermc.io/paper/profiling
+[06:54:35] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[06:54:35] [Server thread/INFO]: Using 4 threads for Netty based IO
+[06:54:36] [Server thread/INFO]: [MoonriseCommon] Paper is using 4 worker threads, 1 I/O threads
+[06:54:36] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
+[06:54:36] [Server thread/INFO]: Default game type: SURVIVAL
+[06:54:36] [Server thread/INFO]: Generating keypair
+[06:54:36] [Server thread/INFO]: Starting Minecraft server on *:25565
+[06:54:36] [Server thread/INFO]: Using default channel type
+[06:54:36] [Server thread/INFO]: Paper: Using Java compression from Velocity.
+[06:54:36] [Server thread/INFO]: Paper: Using Java cipher from Velocity.
+[06:54:37] [Server thread/INFO]: [Skript] Loading server plugin Skript v2.10.1
+[06:54:37] [Server thread/INFO]: [VoidGen] Loading server plugin VoidGen v2.2.1
+[06:54:37] [Server thread/INFO]: [skript-yaml] Loading server plugin skript-yaml v1.6.1
+[06:54:37] [Server thread/INFO]: [SkBee] Loading server plugin SkBee v3.8.2
+[06:54:37] [Server thread/INFO]: [Multiverse-Core] Loading server plugin Multiverse-Core v4.3.14
+[06:54:37] [Server thread/INFO]: [FastAsyncWorldEdit] Loading server plugin FastAsyncWorldEdit v2.12.4-SNAPSHOT-1035;09473c5
+[06:54:38] [Server thread/INFO]: Got request to register class com.sk89q.worldedit.bukkit.BukkitServerInterface with WorldEdit [com.sk89q.worldedit.extension.platform.PlatformManager@31f41acb]
+[06:54:38] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[06:54:38] [Server thread/INFO]: [VoidGen] Enabling VoidGen v2.2.1
+[06:54:38] [Server thread/INFO]: [VoidGen] Using VoidChunkGen: VERSION_UNKNOWN
+[06:54:38] [Server thread/INFO]: [FastAsyncWorldEdit] Enabling FastAsyncWorldEdit v2.12.4-SNAPSHOT-1035;09473c5
+[06:54:38] [Server thread/INFO]: [com.fastasyncworldedit.core.Fawe] LZ4 Compression Binding loaded successfully
+[06:54:38] [Server thread/INFO]: [com.fastasyncworldedit.core.Fawe] ZSTD Compression Binding loaded successfully
+[06:54:38] [Server thread/INFO]: Registering commands with com.sk89q.worldedit.bukkit.BukkitServerInterface
+[06:54:38] [Server thread/INFO]: WEPIF: Using the Bukkit Permissions API.
+[06:54:38] [Server thread/INFO]: Using com.sk89q.worldedit.bukkit.adapter.impl.fawe.v1_21_4.PaperweightFaweAdapter as the Bukkit adapter
+[06:54:39] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[06:54:39] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[06:54:39] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[06:54:39] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[06:54:39] [Server thread/INFO]: Preparing level "world"
+[06:54:39] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[06:54:40] [Server thread/INFO]: Preparing spawn area: 0%
+[06:54:40] [Server thread/INFO]: Time elapsed: 337 ms
+[06:54:40] [Server thread/INFO]: [Skript] Enabling Skript v2.10.1
+[06:54:40] [ForkJoinPool.commonPool-worker-1/WARN]: [com.fastasyncworldedit.core.util.UpdateNotification] An update for FastAsyncWorldEdit is available. You are 1 build(s) out of date.
 You are running build 1035, the latest version is build 1036.
 Update at https://www.spigotmc.org/resources/13932/
-[06:44:55] [ForkJoinPool.commonPool-worker-1/INFO]: [Skript] You're currently running the latest stable version of Skript.
-[06:44:56] [Server thread/INFO]: [Skript]  ~ created by & © Peter Güttinger aka Njol ~
-[06:44:56] [Server thread/INFO]: [skript-yaml] Enabling skript-yaml v1.6.1
-[06:44:56] [Server thread/INFO]: [SkBee] Enabling SkBee v3.8.2
-[06:44:56] [Server thread/INFO]: [SkBee] Registry Elements successfully loaded
-[06:44:56] [ForkJoinPool.commonPool-worker-2/INFO]: [Skript-Yaml] Skript-Yaml is up to date!
-[06:44:56] [Server thread/INFO]: [SkBee] Loading NBTApi...
-[06:44:56] [Server thread/INFO]: [SkBee] [NBTAPI] Found Minecraft: 1.21.4! Trying to find NMS support
-[06:44:56] [Server thread/INFO]: [SkBee] [NBTAPI] NMS support 'MC1_21_R3' loaded!
-[06:44:56] [Server thread/INFO]: [SkBee] Successfully loaded NBTApi!
-[06:44:57] [Server thread/INFO]: [SkBee] NBT Elements successfully loaded
-[06:44:57] [Server thread/INFO]: [SkBee] Text Component Elements successfully loaded
-[06:44:57] [Server thread/INFO]: [SkBee] Advancement Elements successfully loaded
-[06:44:57] [Server thread/INFO]: [SkBee] BossBar Elements successfully loaded
-[06:44:57] [Server thread/INFO]: [SkBee] Bound Elements successfully loaded
-[06:44:57] [Server thread/INFO]: [SkBee] Damage Source Elements successfully loaded
-[06:44:57] [Server thread/INFO]: [SkBee] Display Entity Elements successfully loaded
-[06:44:57] [Server thread/INFO]: [SkBee] Fishing Elements successfully loaded
-[06:44:57] [Server thread/INFO]: [SkBee] Game Event Elements successfully loaded
-[06:44:57] [Server thread/INFO]: [SkBee] Item Component Elements successfully loaded
-[06:44:57] [Server thread/INFO]: [SkBee] Particle Elements successfully loaded
-[06:44:57] [Server thread/INFO]: [SkBee] RayTrace Elements successfully loaded
-[06:44:57] [Server thread/INFO]: [SkBee] Recipe Elements successfully loaded
-[06:44:57] [Server thread/INFO]: [SkBee] Scoreboard[Adventure] Elements successfully loaded
-[06:44:58] [Server thread/INFO]: [SkBee] Scoreboard Objective Elements successfully loaded
-[06:44:58] [Server thread/INFO]: [SkBee] Statistic Elements successfully loaded
-[06:44:58] [ForkJoinPool.commonPool-worker-1/INFO]: [Skript] Loaded 5440 aliases in 1854ms
-[06:44:58] [Server thread/INFO]: [SkBee] Structure Elements successfully loaded
-[06:44:58] [Server thread/INFO]: [SkBee] SwitchCase Elements successfully loaded
-[06:44:58] [Server thread/INFO]: [SkBee] Minecraft Tag Elements disabled (now in Skript)
-[06:44:58] [Server thread/INFO]: [SkBee] Team Elements successfully loaded
-[06:44:58] [Server thread/INFO]: [SkBee] Tick Manager Elements successfully loaded
-[06:44:58] [Server thread/INFO]: [SkBee] Villager Elements successfully loaded
-[06:44:58] [Server thread/INFO]: [SkBee] Virtual Furnace Elements disabled via config
-[06:44:58] [Server thread/INFO]: [SkBee] World Border Elements successfully loaded
-[06:44:58] [Server thread/INFO]: [SkBee] World Creator Elements successfully loaded
-[06:44:58] [Server thread/INFO]: [SkBee] Chunk Generator Elements successfully loaded
-[06:44:58] [Server thread/INFO]: [SkBee] Loaded (443) elements:
-[06:44:58] [Server thread/INFO]: [SkBee]  - 51 events
-[06:44:58] [Server thread/INFO]: [SkBee]  - 71 effects
-[06:44:58] [Server thread/INFO]: [SkBee]  - 267 expressions
-[06:44:58] [Server thread/INFO]: [SkBee]  - 25 conditions
-[06:44:58] [Server thread/INFO]: [SkBee]  - 29 sections
-[06:44:58] [Server thread/INFO]: [SkBee] Checking for update...
-[06:44:58] [Server thread/INFO]: [SkBee] Plugin is up to date!
-[06:44:58] [Server thread/INFO]: [SkBee] Successfully enabled v3.8.2 in 2.09 seconds
-[06:44:58] [Server thread/INFO]: [Multiverse-Core] Enabling Multiverse-Core v4.3.14
-[06:44:58] [Server thread/WARN]: [Multiverse-Core] "Multiverse-Core v4.3.14" has registered a listener for org.bukkit.event.entity.EntityCreatePortalEvent on method "public void com.onarandombox.MultiverseCore.listeners.MVPortalListener.entityPortalCreate(org.bukkit.event.entity.EntityCreatePortalEvent)", but the event is Deprecated. "Server performance will be affected"; please notify the authors [dumptruckman, Rigby, fernferret, lithium3141, main--].
-[06:44:58] [Server thread/INFO]: [Multiverse-Core] §aWe are aware of the warning about the deprecated event. There is no alternative that allows us to do what we need to do and performance impact is negligible. It is safe to ignore.
-[06:44:58] [Server thread/INFO]: [VoidGen] Generator settings have not been set. Using default values:
-[06:44:58] [Server thread/INFO]: [VoidGen] {"caves":false,"decoration":false,"mobs":false,"structures":false,"noise":false,"surface":false,"bedrock":false}
-[06:44:58] [Server thread/INFO]: [Multiverse-Core] 1 - World(s) loaded.
-[06:44:58] [Server thread/WARN]: [Multiverse-Core] Buscript failed to load! The script command will be disabled! If you would like not to see this message, use `/mv conf enablebuscript false` to disable Buscript from loading.
-[06:44:58] [Server thread/INFO]: [Multiverse-Core] Version 4.3.14 (API v24) Enabled - By dumptruckman, Rigby, fernferret, lithium3141 and main--
-[06:44:59] [Server thread/INFO]: [spark] Starting background profiler...
-[06:44:59] [Server thread/INFO]: [spark] The async-profiler engine is not supported for your os/arch (windows11/amd64), so the built-in Java engine will be used instead.
-[06:44:59] [Server thread/INFO]: Done preparing level "world" (5.847s)
-[06:44:59] [Server thread/INFO]: Running delayed init tasks
-[06:44:59] [Server thread/INFO]: [Skript] Loading variables...
-[06:44:59] [Server thread/INFO]: [Skript] Loaded 11 variables in 0.0 seconds
-[06:45:05] [spark-java-sampler-0-4/WARN]: [spark] Timed out waiting for world statistics
-[06:45:07] [Server thread/INFO]: [Skript] All scripts loaded without errors.
-[06:45:07] [Server thread/INFO]: [Skript] Loaded 1 script with a total of 4 structures in 8.32 seconds
-[06:45:07] [Server thread/INFO]: [Skript] Finished loading.
-[06:45:07] [Server thread/INFO]: Done (54.459s)! For help, type "help"
-[06:45:07] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 8520ms or 170 ticks behind
-[06:47:20] [Server thread/INFO]: Stopping the server
-[06:47:20] [Server thread/INFO]: Stopping server
-[06:47:20] [Server thread/INFO]: [FastAsyncWorldEdit] Disabling FastAsyncWorldEdit v2.12.4-SNAPSHOT-1035;09473c5
-[06:47:20] [Server thread/INFO]: Unregistering com.sk89q.worldedit.bukkit.BukkitServerInterface from WorldEdit
-[06:47:20] [Server thread/INFO]: [Multiverse-Core] Disabling Multiverse-Core v4.3.14
-[06:47:20] [Server thread/INFO]: [SkBee] Disabling SkBee v3.8.2
-[06:47:20] [Server thread/INFO]: [skript-yaml] Disabling skript-yaml v1.6.1
-[06:47:20] [Server thread/INFO]: [VoidGen] Disabling VoidGen v2.2.1
-[06:47:20] [Server thread/INFO]: [Skript] Disabling Skript v2.10.1
-[06:47:20] [Server thread/INFO]: Saving players
-[06:47:20] [Server thread/INFO]: Saving worlds
-[06:47:20] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
-[06:47:20] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
-[06:47:20] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
-[06:47:20] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
-[06:47:20] [Server thread/INFO]: [ChunkHolderManager] Saved 49 block chunks, 49 entity chunks, 0 poi chunks in world 'world' in 0.09s
-[06:47:20] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'world'
-[06:47:20] [Server thread/INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'world'
-[06:47:20] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
-[06:47:20] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
-[06:47:20] [Server thread/INFO]: Waiting for I/O tasks to complete...
-[06:47:20] [Server thread/INFO]: All I/O tasks to complete
-[06:47:20] [Server thread/INFO]: [MoonriseCommon] Awaiting termination of worker pool for up to 60s...
-[06:47:20] [Server thread/INFO]: [MoonriseCommon] Awaiting termination of I/O pool for up to 60s...
+[06:54:41] [ForkJoinPool.commonPool-worker-1/INFO]: [Skript] You're currently running the latest stable version of Skript.
+[06:54:42] [Server thread/INFO]: [Skript]  ~ created by & © Peter Güttinger aka Njol ~
+[06:54:42] [Server thread/INFO]: [skript-yaml] Enabling skript-yaml v1.6.1
+[06:54:42] [Server thread/INFO]: [SkBee] Enabling SkBee v3.8.2
+[06:54:42] [Server thread/INFO]: [SkBee] Registry Elements successfully loaded
+[06:54:42] [ForkJoinPool.commonPool-worker-2/INFO]: [Skript-Yaml] Skript-Yaml is up to date!
+[06:54:42] [Server thread/INFO]: [SkBee] Loading NBTApi...
+[06:54:42] [Server thread/INFO]: [SkBee] [NBTAPI] Found Minecraft: 1.21.4! Trying to find NMS support
+[06:54:42] [Server thread/INFO]: [SkBee] [NBTAPI] NMS support 'MC1_21_R3' loaded!
+[06:54:42] [Server thread/INFO]: [SkBee] Successfully loaded NBTApi!
+[06:54:42] [Server thread/INFO]: [SkBee] NBT Elements successfully loaded
+[06:54:42] [Server thread/INFO]: [SkBee] Text Component Elements successfully loaded
+[06:54:42] [Server thread/INFO]: [SkBee] Advancement Elements successfully loaded
+[06:54:42] [Server thread/INFO]: [SkBee] BossBar Elements successfully loaded
+[06:54:42] [Server thread/INFO]: [SkBee] Bound Elements successfully loaded
+[06:54:42] [Server thread/INFO]: [SkBee] Damage Source Elements successfully loaded
+[06:54:42] [Server thread/INFO]: [SkBee] Display Entity Elements successfully loaded
+[06:54:42] [Server thread/INFO]: [SkBee] Fishing Elements successfully loaded
+[06:54:42] [Server thread/INFO]: [SkBee] Game Event Elements successfully loaded
+[06:54:43] [Server thread/INFO]: [SkBee] Item Component Elements successfully loaded
+[06:54:43] [ForkJoinPool.commonPool-worker-1/INFO]: [Skript] Loaded 5440 aliases in 957ms
+[06:54:43] [Server thread/INFO]: [SkBee] Particle Elements successfully loaded
+[06:54:43] [Server thread/INFO]: [SkBee] RayTrace Elements successfully loaded
+[06:54:43] [Server thread/INFO]: [SkBee] Recipe Elements successfully loaded
+[06:54:43] [Server thread/INFO]: [SkBee] Scoreboard[Adventure] Elements successfully loaded
+[06:54:43] [Server thread/INFO]: [SkBee] Scoreboard Objective Elements successfully loaded
+[06:54:43] [Server thread/INFO]: [SkBee] Statistic Elements successfully loaded
+[06:54:43] [Server thread/INFO]: [SkBee] Structure Elements successfully loaded
+[06:54:43] [Server thread/INFO]: [SkBee] SwitchCase Elements successfully loaded
+[06:54:43] [Server thread/INFO]: [SkBee] Minecraft Tag Elements disabled (now in Skript)
+[06:54:43] [Server thread/INFO]: [SkBee] Team Elements successfully loaded
+[06:54:43] [Server thread/INFO]: [SkBee] Tick Manager Elements successfully loaded
+[06:54:43] [Server thread/INFO]: [SkBee] Villager Elements successfully loaded
+[06:54:43] [Server thread/INFO]: [SkBee] Virtual Furnace Elements disabled via config
+[06:54:43] [Server thread/INFO]: [SkBee] World Border Elements successfully loaded
+[06:54:43] [Server thread/INFO]: [SkBee] World Creator Elements successfully loaded
+[06:54:43] [Server thread/INFO]: [SkBee] Chunk Generator Elements successfully loaded
+[06:54:43] [Server thread/INFO]: [SkBee] Loaded (443) elements:
+[06:54:43] [Server thread/INFO]: [SkBee]  - 51 events
+[06:54:43] [Server thread/INFO]: [SkBee]  - 71 effects
+[06:54:43] [Server thread/INFO]: [SkBee]  - 267 expressions
+[06:54:43] [Server thread/INFO]: [SkBee]  - 25 conditions
+[06:54:43] [Server thread/INFO]: [SkBee]  - 29 sections
+[06:54:43] [Server thread/INFO]: [SkBee] Checking for update...
+[06:54:43] [Server thread/INFO]: [SkBee] Plugin is up to date!
+[06:54:43] [Server thread/INFO]: [SkBee] Successfully enabled v3.8.2 in 1.22 seconds
+[06:54:43] [Server thread/INFO]: [Multiverse-Core] Enabling Multiverse-Core v4.3.14
+[06:54:43] [Server thread/WARN]: [Multiverse-Core] "Multiverse-Core v4.3.14" has registered a listener for org.bukkit.event.entity.EntityCreatePortalEvent on method "public void com.onarandombox.MultiverseCore.listeners.MVPortalListener.entityPortalCreate(org.bukkit.event.entity.EntityCreatePortalEvent)", but the event is Deprecated. "Server performance will be affected"; please notify the authors [dumptruckman, Rigby, fernferret, lithium3141, main--].
+[06:54:43] [Server thread/INFO]: [Multiverse-Core] §aWe are aware of the warning about the deprecated event. There is no alternative that allows us to do what we need to do and performance impact is negligible. It is safe to ignore.
+[06:54:43] [Server thread/INFO]: [VoidGen] Generator settings have not been set. Using default values:
+[06:54:43] [Server thread/INFO]: [VoidGen] {"caves":false,"decoration":false,"mobs":false,"structures":false,"noise":false,"surface":false,"bedrock":false}
+[06:54:43] [Server thread/INFO]: [Multiverse-Core] 1 - World(s) loaded.
+[06:54:43] [Server thread/WARN]: [Multiverse-Core] Buscript failed to load! The script command will be disabled! If you would like not to see this message, use `/mv conf enablebuscript false` to disable Buscript from loading.
+[06:54:43] [Server thread/INFO]: [Multiverse-Core] Version 4.3.14 (API v24) Enabled - By dumptruckman, Rigby, fernferret, lithium3141 and main--
+[06:54:43] [Server thread/INFO]: [spark] Starting background profiler...
+[06:54:43] [Server thread/INFO]: [spark] The async-profiler engine is not supported for your os/arch (windows11/amd64), so the built-in Java engine will be used instead.
+[06:54:43] [Server thread/INFO]: Done preparing level "world" (4.164s)
+[06:54:43] [Server thread/INFO]: Running delayed init tasks
+[06:54:43] [Server thread/INFO]: [Skript] Loading variables...
+[06:54:43] [Server thread/INFO]: [Skript] Loaded 11 variables in 0.0 seconds
+[06:54:48] [Server thread/INFO]: [Skript] Line 36: (golf.sk)
+[06:54:48] [Server thread/INFO]:     an entity cannot be saved, i.e. the contents of the variable {golf::ball::charging_bar::state::*} will be lost when the server stops.
+[06:54:48] [Server thread/INFO]:     Line: add attacker to {golf::ball::charging_bar::state::*}
+[06:54:48] [Server thread/INFO]:  
+[06:54:48] [Server thread/INFO]: [Skript] Line 39: (golf.sk)
+[06:54:48] [Server thread/INFO]:     Can't understand this condition: '{golf::ball::charging_bar::state::*} is greater than > 0'
+[06:54:48] [Server thread/INFO]:     Line: if {golf::ball::charging_bar::state::*} is greater than > 0:
+[06:54:48] [Server thread/INFO]:  
+[06:54:48] [Server thread/INFO]: [Skript] Loaded 1 script with a total of 4 structures in 4.63 seconds
+[06:54:48] [Server thread/INFO]: [Skript] Finished loading.
+[06:54:48] [Server thread/INFO]: Done (27.056s)! For help, type "help"
+[06:54:48] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 4731ms or 94 ticks behind
+[06:55:08] [Server thread/INFO]: [Skript] Reloading golf.sk...
+[06:55:11] [User Authenticator #0/INFO]: UUID of player JugandoMiguel is 5cff4c76-6daf-30b5-94fb-b12c54496740
+[06:55:12] [Server thread/INFO]: Line 36: (golf.sk)
+[06:55:12] [Server thread/INFO]:     an entity cannot be saved, i.e. the contents of the variable {golf::ball::charging_bar::state::*} will be lost when the server stops.
+[06:55:12] [Server thread/INFO]:     Line: add attacker to {golf::ball::charging_bar::state::*}
+[06:55:12] [Server thread/INFO]:  
+[06:55:12] [Server thread/INFO]: Successfully reloaded golf.sk. (3648ms)
+[06:55:12] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 3602ms or 72 ticks behind
+[06:55:13] [Server thread/INFO]: JugandoMiguel joined the game
+[06:55:13] [Server thread/INFO]: JugandoMiguel[/127.0.0.1:63832] logged in with entity id 1 at ([world]-13.735891042500052, 66.5, -1.8813233477017601)
+[06:55:35] [Server thread/INFO]: [Skript] Reloading golf.sk...
+[06:55:39] [Server thread/INFO]: Line 34: (golf.sk)
+[06:55:39] [Server thread/INFO]:     Use 'attacker' and/or 'victim' in damage/death events
+[06:55:39] [Server thread/INFO]:     Line: remove event-player from {golf::ball::charging_bar::state::*}
+[06:55:39] [Server thread/INFO]:  
+[06:55:39] [Server thread/INFO]: Line 36: (golf.sk)
+[06:55:39] [Server thread/INFO]:     Use 'attacker' and/or 'victim' in damage/death events
+[06:55:39] [Server thread/INFO]:     Line: add event-player to {golf::ball::charging_bar::state::*}
+[06:55:39] [Server thread/INFO]:  
+[06:55:39] [Server thread/INFO]:     Encountered 2 errors while reloading golf.sk! (3380ms)
+[06:55:39] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 3330ms or 66 ticks behind
+[06:55:50] [Server thread/INFO]: [Skript] Reloading golf.sk...
+[06:55:53] [Server thread/INFO]: Line 34: (golf.sk)
+[06:55:53] [Server thread/INFO]:     Can't understand this expression: 'attacker parsed as player'
+[06:55:53] [Server thread/INFO]:     Line: remove (attacker parsed as player) from {golf::ball::charging_bar::state::*}
+[06:55:53] [Server thread/INFO]:  
+[06:55:53] [Server thread/INFO]: Line 36: (golf.sk)
+[06:55:53] [Server thread/INFO]:     Can't understand this expression: 'attacker parsed as player'
+[06:55:53] [Server thread/INFO]:     Line: add (attacker parsed as player) to {golf::ball::charging_bar::state::*}
+[06:55:53] [Server thread/INFO]:  
+[06:55:53] [Server thread/INFO]:     Encountered 2 errors while reloading golf.sk! (3404ms)
+[06:57:16] [Server thread/INFO]: [Skript] Reloading golf.sk...
+[06:57:20] [Server thread/INFO]: Line 34: (golf.sk)
+[06:57:20] [Server thread/INFO]:     Can't understand this expression: 'attacker parse as player'
+[06:57:20] [Server thread/INFO]:     Line: remove attacker parse as player from {golf::ball::charging_bar::state::*}
+[06:57:20] [Server thread/INFO]:  
+[06:57:20] [Server thread/INFO]: Line 36: (golf.sk)
+[06:57:20] [Server thread/INFO]:     Can't understand this expression: 'attacker parse as player'
+[06:57:20] [Server thread/INFO]:     Line: add attacker parse as player to {golf::ball::charging_bar::state::*}
+[06:57:20] [Server thread/INFO]:  
+[06:57:20] [Server thread/INFO]:     Encountered 2 errors while reloading golf.sk! (3738ms)
+[06:57:20] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 3699ms or 73 ticks behind
+[06:57:59] [Server thread/INFO]: [Skript] Reloading golf.sk...
+[06:58:03] [Server thread/INFO]: Successfully reloaded golf.sk. (3821ms)
+[06:58:03] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 3791ms or 75 ticks behind
+[06:58:17] [Server thread/INFO]: JugandoMiguel issued server command: /golf test
+[06:59:07] [Server thread/INFO]: [Skript] Reloading golf.sk...
+[06:59:11] [Server thread/INFO]: Successfully reloaded golf.sk. (3932ms)
+[06:59:11] [Server thread/INFO]: 1
+[06:59:11] [Server thread/INFO]: 2
+[06:59:11] [Server thread/INFO]: 4
+[06:59:11] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 3892ms or 77 ticks behind
+[06:59:34] [Server thread/INFO]: [Skript] Reloading golf.sk...
+[06:59:38] [Server thread/INFO]: Line 45: (golf.sk)
+[06:59:38] [Server thread/INFO]:     There's no command sender in a periodical event
+[06:59:38] [Server thread/INFO]:     Line: send action bar "%{golf::ball::charging_bar::design}%" to {golf::ball::charging_bar::state::*} parsed as players
+[06:59:38] [Server thread/INFO]:  
+[06:59:38] [Server thread/INFO]:     Encountered 1 error while reloading golf.sk! (3792ms)
+[06:59:38] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 3743ms or 74 ticks behind
+[06:59:48] [Server thread/INFO]: [Skript] Reloading golf.sk...
+[06:59:51] [Server thread/INFO]: Line 45: (golf.sk)
+[06:59:51] [Server thread/INFO]:     There's no command sender in a periodical event
+[06:59:51] [Server thread/INFO]:     Line: send action bar "%{golf::ball::charging_bar::design}%" to ({golf::ball::charging_bar::state::*} parsed as player)
+[06:59:51] [Server thread/INFO]:  
+[06:59:51] [Server thread/INFO]:     Encountered 1 error while reloading golf.sk! (3659ms)
+[07:00:06] [Server thread/INFO]: [Skript] Reloading golf.sk...
+[07:00:10] [Server thread/INFO]: Line 40: (golf.sk)
+[07:00:10] [Server thread/INFO]:     an entity cannot be saved, i.e. the contents of the variable {golf::ball::charging_bar::state::*} will be lost when the server stops.
+[07:00:10] [Server thread/INFO]:     Line: add attacker to {golf::ball::charging_bar::state::*}
+[07:00:10] [Server thread/INFO]:  
+[07:00:10] [Server thread/INFO]: Successfully reloaded golf.sk. (3555ms)
+[07:00:10] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 3506ms or 70 ticks behind
+[07:00:17] [Server thread/INFO]: 1
+[07:00:17] [Server thread/INFO]: 2
+[07:00:17] [Server thread/INFO]: 4
+[07:01:05] [Server thread/INFO]: [Skript] Reloading golf.sk...
+[07:01:08] [Server thread/INFO]: Line 44: (golf.sk)
+[07:01:08] [Server thread/INFO]:     an entity cannot be saved, i.e. the contents of the variable {golf::ball::charging_bar::state::*} will be lost when the server stops.
+[07:01:08] [Server thread/INFO]:     Line: add attacker to {golf::ball::charging_bar::state::*}
+[07:01:08] [Server thread/INFO]:  
+[07:01:08] [Server thread/INFO]: Successfully reloaded golf.sk. (3372ms)
+[07:01:08] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 3323ms or 66 ticks behind
+[07:01:14] [Server thread/INFO]: JugandoMiguel issued server command: /golf h
+[07:01:14] [Server thread/INFO]: Lista: JugandoMiguel, JugandoMiguel, JugandoMiguel, JugandoMiguel, JugandoMiguel and JugandoMiguel
+[07:01:17] [Server thread/INFO]: 1
+[07:01:17] [Server thread/INFO]: 2
+[07:01:17] [Server thread/INFO]: 4
+[07:01:54] [Server thread/INFO]: [Skript] Reloading golf.sk...
+[07:01:58] [Server thread/INFO]: Line 44: (golf.sk)
+[07:01:58] [Server thread/INFO]:     an entity cannot be saved, i.e. the contents of the variable {golf::ball::charging_bar::state::*} will be lost when the server stops.
+[07:01:58] [Server thread/INFO]:     Line: add attacker to {golf::ball::charging_bar::state::*}
+[07:01:58] [Server thread/INFO]:  
+[07:01:58] [Server thread/INFO]: Line 50: (golf.sk)
+[07:01:58] [Server thread/INFO]:     There's no command sender in a periodical event
+[07:01:58] [Server thread/INFO]:     Line: send action bar "%{golf::ball::charging_bar::design}%" to ({_players::*} parsed as players)
+[07:01:58] [Server thread/INFO]:  
+[07:01:58] [Server thread/INFO]:     Encountered 1 error while reloading golf.sk! (3562ms)
+[07:01:58] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 3515ms or 70 ticks behind
+[07:02:05] [Server thread/INFO]: [Skript] Reloading golf.sk...
+[07:02:09] [Server thread/INFO]: Line 44: (golf.sk)
+[07:02:09] [Server thread/INFO]:     an entity cannot be saved, i.e. the contents of the variable {golf::ball::charging_bar::state::*} will be lost when the server stops.
+[07:02:09] [Server thread/INFO]:     Line: add attacker to {golf::ball::charging_bar::state::*}
+[07:02:09] [Server thread/INFO]:  
+[07:02:09] [Server thread/INFO]: Line 50: (golf.sk)
+[07:02:09] [Server thread/INFO]:     There's no command sender in a periodical event
+[07:02:09] [Server thread/INFO]:     Line: send action bar "%{golf::ball::charging_bar::design}%" to ({_players::*} parsed as player)
+[07:02:09] [Server thread/INFO]:  
+[07:02:09] [Server thread/INFO]:     Encountered 1 error while reloading golf.sk! (3494ms)
+[07:02:17] [Server thread/INFO]: [Skript] Reloading golf.sk...
+[07:02:20] [Server thread/INFO]: Line 44: (golf.sk)
+[07:02:20] [Server thread/INFO]:     an entity cannot be saved, i.e. the contents of the variable {golf::ball::charging_bar::state::*} will be lost when the server stops.
+[07:02:20] [Server thread/INFO]:     Line: add attacker to {golf::ball::charging_bar::state::*}
+[07:02:20] [Server thread/INFO]:  
+[07:02:20] [Server thread/INFO]: Successfully reloaded golf.sk. (3364ms)
+[07:02:20] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 3316ms or 66 ticks behind
+[07:02:23] [Server thread/INFO]: 1
+[07:02:23] [Server thread/INFO]: 2
+[07:02:23] [Server thread/INFO]: 4
+[07:02:26] [Server thread/INFO]: JugandoMiguel issued server command: /golf h1
+[07:02:28] [Server thread/INFO]: JugandoMiguel issued server command: /golf h
+[07:02:28] [Server thread/INFO]: Lista: <none>
+[07:02:30] [Server thread/INFO]: 1
+[07:02:30] [Server thread/INFO]: 2
+[07:02:30] [Server thread/INFO]: 4
+[07:02:55] [Server thread/INFO]: [Skript] Reloading golf.sk...
+[07:02:59] [Server thread/INFO]: Line 44: (golf.sk)
+[07:02:59] [Server thread/INFO]:     an entity cannot be saved, i.e. the contents of the variable {golf::ball::charging_bar::state::*} will be lost when the server stops.
+[07:02:59] [Server thread/INFO]:     Line: add attacker to {golf::ball::charging_bar::state::*}
+[07:02:59] [Server thread/INFO]:  
+[07:02:59] [Server thread/INFO]: Successfully reloaded golf.sk. (3672ms)
+[07:02:59] [Server thread/INFO]: JugandoMiguel issued server command: /golf h
+[07:02:59] [Server thread/INFO]: Lista: JugandoMiguel
+[07:02:59] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 3624ms or 72 ticks behind
+[07:03:41] [Server thread/INFO]: [Skript] Reloading golf.sk...
+[07:03:44] [Server thread/INFO]: Line 44: (golf.sk)
+[07:03:44] [Server thread/INFO]:     an entity cannot be saved, i.e. the contents of the variable {golf::ball::charging_bar::state::*} will be lost when the server stops.
+[07:03:44] [Server thread/INFO]:     Line: add attacker to {golf::ball::charging_bar::state::*}
+[07:03:44] [Server thread/INFO]:  
+[07:03:44] [Server thread/INFO]: Successfully reloaded golf.sk. (3662ms)
+[07:03:44] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 3614ms or 72 ticks behind
+[07:03:45] [Server thread/INFO]: 1
+[07:03:45] [Server thread/INFO]: 1
+[07:03:46] [Server thread/INFO]: 1
+[07:03:46] [Server thread/INFO]: 1
+[07:03:47] [Server thread/INFO]: 1
+[07:03:47] [Server thread/INFO]: 1
+[07:03:48] [Server thread/INFO]: 1
+[07:03:48] [Server thread/INFO]: 1
+[07:03:49] [Server thread/INFO]: 1
+[07:03:49] [Server thread/INFO]: 1
+[07:03:50] [Server thread/INFO]: 1
+[07:03:50] [Server thread/INFO]: 1
+[07:03:51] [Server thread/INFO]: 1
+[07:03:51] [Server thread/INFO]: 1
+[07:03:52] [Server thread/INFO]: 1
+[07:03:52] [Server thread/INFO]: 1
+[07:03:53] [Server thread/INFO]: 1
+[07:03:53] [Server thread/INFO]: 1
+[07:03:54] [Server thread/INFO]: 1
+[07:03:54] [Server thread/INFO]: 1
+[07:03:55] [Server thread/INFO]: 1
+[07:03:55] [Server thread/INFO]: 1
+[07:03:56] [Server thread/INFO]: 1
+[07:03:56] [Server thread/INFO]: 1
+[07:03:57] [Server thread/INFO]: 1
+[07:03:57] [Server thread/INFO]: 1
+[07:03:58] [Server thread/INFO]: 1
+[07:03:58] [Server thread/INFO]: 1
+[07:03:59] [Server thread/INFO]: 1
+[07:03:59] [Server thread/INFO]: 1
+[07:04:00] [Server thread/INFO]: 1
+[07:04:00] [Server thread/INFO]: 1
+[07:04:01] [Server thread/INFO]: 1
+[07:04:01] [Server thread/INFO]: 1
+[07:04:02] [Server thread/INFO]: 1
+[07:04:02] [Server thread/INFO]: 1
+[07:04:03] [Server thread/INFO]: 1
+[07:04:03] [Server thread/INFO]: 1
+[07:04:04] [Server thread/INFO]: 1
+[07:04:04] [Server thread/INFO]: 1
+[07:04:05] [Server thread/INFO]: 1
+[07:04:05] [Server thread/INFO]: 1
+[07:04:06] [Server thread/INFO]: 1
+[07:04:06] [Server thread/INFO]: 1
+[07:04:07] [Server thread/INFO]: 1
+[07:04:07] [Server thread/INFO]: 1
+[07:04:08] [Server thread/INFO]: 1
+[07:04:08] [Server thread/INFO]: 1
+[07:04:09] [Server thread/INFO]: 1
+[07:04:09] [Server thread/INFO]: 1
+[07:04:10] [Server thread/INFO]: 1
+[07:04:10] [Server thread/INFO]: 1
+[07:04:11] [Server thread/INFO]: 1
+[07:04:11] [Server thread/INFO]: 1
+[07:04:12] [Server thread/INFO]: 1
+[07:04:12] [Server thread/INFO]: 1
+[07:04:13] [Server thread/INFO]: 1
+[07:04:13] [Server thread/INFO]: 1
+[07:04:14] [Server thread/INFO]: 1
+[07:04:14] [Server thread/INFO]: 1
+[07:04:15] [Server thread/INFO]: 1
+[07:04:15] [Server thread/INFO]: 1
+[07:04:16] [Server thread/INFO]: 1
+[07:04:16] [Server thread/INFO]: 1
+[07:04:17] [Server thread/INFO]: 1
+[07:04:17] [Server thread/INFO]: 1
+[07:04:18] [Server thread/INFO]: 1
+[07:04:18] [Server thread/INFO]: 1
+[07:04:19] [Server thread/INFO]: 1
+[07:04:19] [Server thread/INFO]: 1
+[07:04:20] [Server thread/INFO]: 1
+[07:04:20] [Server thread/INFO]: 1
+[07:04:21] [Server thread/INFO]: 1
+[07:04:21] [Server thread/INFO]: 1
+[07:04:22] [Server thread/INFO]: 1
+[07:04:22] [Server thread/INFO]: 1
+[07:04:23] [Server thread/INFO]: 1
+[07:04:23] [Server thread/INFO]: 1
+[07:04:24] [Server thread/INFO]: 1
+[07:04:24] [Server thread/INFO]: 1
+[07:04:25] [Server thread/INFO]: 1
+[07:04:25] [Server thread/INFO]: 1
+[07:04:26] [Server thread/INFO]: 1
+[07:04:26] [Server thread/INFO]: 1
+[07:04:27] [Server thread/INFO]: 1
+[07:04:27] [Server thread/INFO]: 1
+[07:04:28] [Server thread/INFO]: 1
+[07:04:28] [Server thread/INFO]: 1
+[07:04:29] [Server thread/INFO]: 1
+[07:04:29] [Server thread/INFO]: 1
+[07:04:30] [Server thread/INFO]: 1
+[07:04:30] [Server thread/INFO]: 1
+[07:04:31] [Server thread/INFO]: 1
+[07:04:31] [Server thread/INFO]: 1
+[07:04:32] [Server thread/INFO]: 1
+[07:04:32] [Server thread/INFO]: 1
+[07:04:33] [Server thread/INFO]: 1
+[07:04:33] [Server thread/INFO]: 1
+[07:04:34] [Server thread/INFO]: 1
+[07:04:34] [Server thread/INFO]: 1
+[07:04:35] [Server thread/INFO]: 1
+[07:04:35] [Server thread/INFO]: 1
+[07:04:36] [Server thread/INFO]: 1
+[07:04:36] [Server thread/INFO]: 1
+[07:04:37] [Server thread/INFO]: 1
+[07:04:37] [Server thread/INFO]: 1
+[07:04:38] [Server thread/INFO]: 1
+[07:04:38] [Server thread/INFO]: 1
+[07:04:39] [Server thread/INFO]: 1
+[07:04:39] [Server thread/INFO]: 1
+[07:04:40] [Server thread/INFO]: 1
+[07:04:40] [Server thread/INFO]: 1
+[07:04:41] [Server thread/INFO]: 1
+[07:04:41] [Server thread/INFO]: 1
+[07:04:42] [Server thread/INFO]: 1
+[07:04:42] [Server thread/INFO]: 1
+[07:04:43] [Server thread/INFO]: 1
+[07:04:43] [Server thread/INFO]: 1
+[07:04:44] [Server thread/INFO]: 1
+[07:04:44] [Server thread/INFO]: 1
+[07:04:45] [Server thread/INFO]: 1
+[07:04:45] [Server thread/INFO]: 1
+[07:04:46] [Server thread/INFO]: 1
+[07:04:46] [Server thread/INFO]: 1
+[07:04:47] [Server thread/INFO]: 1
+[07:04:47] [Server thread/INFO]: 1
+[07:04:48] [Server thread/INFO]: 1
+[07:04:48] [Server thread/INFO]: 1
+[07:04:49] [Server thread/INFO]: 1
+[07:04:49] [Server thread/INFO]: 1
+[07:04:50] [Server thread/INFO]: 1
+[07:04:50] [Server thread/INFO]: 1
+[07:04:51] [Server thread/INFO]: 1
+[07:04:51] [Server thread/INFO]: 1
+[07:04:52] [Server thread/INFO]: 1
+[07:04:52] [Server thread/INFO]: 1
+[07:04:53] [Server thread/INFO]: 1
+[07:04:53] [Server thread/INFO]: 1
+[07:04:54] [Server thread/INFO]: 1
+[07:04:54] [Server thread/INFO]: 1
+[07:04:55] [Server thread/INFO]: 1
+[07:04:55] [Server thread/INFO]: 1
+[07:04:56] [Server thread/INFO]: 1
+[07:04:56] [Server thread/INFO]: 1
+[07:04:57] [Server thread/INFO]: 1
+[07:04:57] [Server thread/INFO]: 1
+[07:04:58] [Server thread/INFO]: 1
+[07:04:58] [Server thread/INFO]: [Skript] Reloading golf.sk...
+[07:05:02] [Server thread/INFO]: Line 44: (golf.sk)
+[07:05:02] [Server thread/INFO]:     an entity cannot be saved, i.e. the contents of the variable {golf::ball::charging_bar::state::*} will be lost when the server stops.
+[07:05:02] [Server thread/INFO]:     Line: add attacker to {golf::ball::charging_bar::state::*}
+[07:05:02] [Server thread/INFO]:  
+[07:05:02] [Server thread/INFO]: Successfully reloaded golf.sk. (3677ms)
+[07:05:02] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 3643ms or 72 ticks behind
+[07:05:24] [Server thread/INFO]: [Skript] Reloading golf.sk...
+[07:05:28] [Server thread/INFO]: Successfully reloaded golf.sk. (3642ms)
+[07:05:28] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 3595ms or 71 ticks behind
+[07:05:32] [Server thread/INFO]: 1
+[07:05:32] [Server thread/INFO]: 2
+[07:05:32] [Server thread/INFO]: 4
+[07:05:50] [Server thread/INFO]: [Skript] Reloading golf.sk...
+[07:05:53] [Server thread/INFO]: Line 37: (golf.sk)
+[07:05:53] [Server thread/INFO]:     Use 'attacker' and/or 'victim' in damage/death events
+[07:05:53] [Server thread/INFO]:     Line: if {golf::ball::charging_bar::state::*} contains event-player:
+[07:05:53] [Server thread/INFO]:  
+[07:05:53] [Server thread/INFO]: Line 42: (golf.sk)
+[07:05:53] [Server thread/INFO]:     'else' has to be placed just after another 'if' or 'else if' section
+[07:05:53] [Server thread/INFO]:     Line: else:
+[07:05:53] [Server thread/INFO]:  
+[07:05:53] [Server thread/INFO]:     Encountered 2 errors while reloading golf.sk! (3547ms)
+[07:05:53] [Server thread/INFO]: JugandoMiguel issued server command: /golf h
+[07:05:53] [Server thread/INFO]: Lista: JugandoMiguel and JugandoMiguel
+[07:05:53] [Server thread/INFO]: JugandoMiguel issued server command: /golf h1
+[07:05:53] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 3498ms or 69 ticks behind
+[07:05:56] [Server thread/INFO]: 1
+[07:05:56] [Server thread/INFO]: 2
+[07:06:13] [Server thread/INFO]: [Skript] Reloading golf.sk...
+[07:06:17] [Server thread/INFO]: Successfully reloaded golf.sk. (3560ms)
+[07:06:17] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 3512ms or 70 ticks behind
+[07:06:20] [Server thread/INFO]: 1
+[07:06:20] [Server thread/INFO]: 2
+[07:06:20] [Server thread/INFO]: 4
+[07:06:33] [Server thread/INFO]: 1
+[07:06:33] [Server thread/INFO]: 2
+[07:06:33] [Server thread/INFO]: 3
+[07:06:37] [Server thread/INFO]: JugandoMiguel issued server command: /golf h
+[07:06:37] [Server thread/INFO]: Lista: <none>
+[07:06:50] [Server thread/INFO]: [Skript] Reloading golf.sk...
+[07:06:53] [Server thread/INFO]: Line 44: (golf.sk)
+[07:06:53] [Server thread/INFO]:     an entity cannot be saved, i.e. the contents of the variable {golf::ball::charging_bar::state::*} will be lost when the server stops.
+[07:06:53] [Server thread/INFO]:     Line: add attacker to {golf::ball::charging_bar::state::*}
+[07:06:53] [Server thread/INFO]:  
+[07:06:53] [Server thread/INFO]: Successfully reloaded golf.sk. (3375ms)
+[07:06:53] [Server thread/INFO]: JugandoMiguel issued server command: /golf h1
+[07:06:53] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 3326ms or 66 ticks behind
+[07:06:54] [Server thread/INFO]: 1
+[07:06:54] [Server thread/INFO]: 2
+[07:06:54] [Server thread/INFO]: 4
+[07:06:57] [Server thread/INFO]: 1
+[07:06:57] [Server thread/INFO]: 2
+[07:06:57] [Server thread/INFO]: 3
+[07:07:02] [Server thread/INFO]: 1
+[07:07:02] [Server thread/INFO]: 2
+[07:07:02] [Server thread/INFO]: 4
+[07:07:05] [Server thread/INFO]: 1
+[07:07:05] [Server thread/INFO]: 2
+[07:07:05] [Server thread/INFO]: 3
+[07:07:17] [Server thread/INFO]: Stopping the server
+[07:07:17] [Server thread/INFO]: Stopping server
+[07:07:17] [Server thread/INFO]: [FastAsyncWorldEdit] Disabling FastAsyncWorldEdit v2.12.4-SNAPSHOT-1035;09473c5
+[07:07:17] [Server thread/INFO]: Unregistering com.sk89q.worldedit.bukkit.BukkitServerInterface from WorldEdit
+[07:07:17] [Server thread/INFO]: [Multiverse-Core] Disabling Multiverse-Core v4.3.14
+[07:07:17] [Server thread/INFO]: [SkBee] Disabling SkBee v3.8.2
+[07:07:17] [Server thread/INFO]: [skript-yaml] Disabling skript-yaml v1.6.1
+[07:07:17] [Server thread/INFO]: [VoidGen] Disabling VoidGen v2.2.1
+[07:07:17] [Server thread/INFO]: [Skript] Disabling Skript v2.10.1
+[07:07:17] [Server thread/INFO]: Saving players
+[07:07:17] [Server thread/INFO]: JugandoMiguel lost connection: Server closed
+[07:07:17] [Server thread/INFO]: JugandoMiguel left the game
+[07:07:17] [Server thread/INFO]: Saving worlds
+[07:07:17] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[07:07:17] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
+[07:07:17] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
+[07:07:17] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
+[07:07:17] [Server thread/INFO]: [ChunkHolderManager] Saved 1 block chunks, 3 entity chunks, 0 poi chunks in world 'world' in 0.02s
+[07:07:17] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'world'
+[07:07:17] [Server thread/INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'world'
+[07:07:17] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[07:07:17] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[07:07:17] [Server thread/INFO]: Waiting for I/O tasks to complete...
+[07:07:17] [Server thread/INFO]: All I/O tasks to complete
+[07:07:17] [Server thread/INFO]: [MoonriseCommon] Awaiting termination of worker pool for up to 60s...
+[07:07:17] [Server thread/INFO]: [MoonriseCommon] Awaiting termination of I/O pool for up to 60s...

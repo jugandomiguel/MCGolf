@@ -10,8 +10,9 @@ ball_charging_var, string, 801BC2A732E2AC9BE2AC9BC2A736E2AC9BC2A766E2AC9BE2AC9BE
 ball_charging_var::counter, double, 3FDCCCCCCCCCCCCD
 ball_charging_var::counter::state, long, 0000000000000003
 ball_charging_var::state_counter, long, 0000000000000000
-golf::ball::charging_bar::design, string, 8015C2A766E2AC9BE2AC9BE2AC9BE2AC9BE2AC9BE2AC9B
-golf::ball::charging_bar::frame, long, 0000000000000000
-golf::ball::charging_bar::power, double, 3FA999999999999A
+golf::ball::charging_bar::design, string, 801BC2A732E2AC9BE2AC9BC2A736E2AC9BE2AC9BC2A763E2AC9BE2AC9B
+golf::ball::charging_bar::frame, long, FFFFFFFFFFFFFFFF
+golf::ball::charging_bar::power, double, 3FE8000000000000
+golf::ball::strokes::5cff4c76-6daf-30b5-94fb-b12c54496740, long, 0000000000000003
 golf::players::current_turn, string, 800131
 

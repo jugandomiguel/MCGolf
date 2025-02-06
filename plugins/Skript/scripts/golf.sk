@@ -2,7 +2,7 @@
 #-VARIABLES
 #-##################
 #
-#{golf::ball::charging_bar::state::%attacker's uuid%} Show the power bar when hitting the ball
+#{golf::ball::charging_bar::state::*} Show the power bar when hitting the ball
 #{golf::ball::strokes::%attacker's uuid%} The amount of strokes (hits) that the player had made
 #
 #-System vars
@@ -13,6 +13,10 @@
 
 command /golf [<string>] [<string>]:
     trigger:
+        if arg-1 is "h":
+            broadcast "&3Lista: %{golf::ball::charging_bar::state::*}%"
+        if arg-1 is "h1":
+            delete {golf::ball::charging_bar::state::*}
         if arg-1 is "test":
             spawn armor stand at event-player
             set {_nbt} to nbt of last spawned entity
@@ -24,22 +28,25 @@ command /golf [<string>] [<string>]:
 
 on damage of armor stand by player:
     if nbt compound of victim have tag "custom;ball":
+        broadcast "1"
         set {_nbt} to nbt of victim
         set {_ball_owner} to string tag "custom;ball" of {_nbt}
         if attacker's uuid is {_ball_owner}:
+            broadcast "2"
             cancel event
-            if {golf::ball::charging_bar::state::%attacker's uuid%} is true:
+            if {golf::ball::charging_bar::state::*} contains attacker:
+                broadcast "3"
                 add 1 to {golf::ball::strokes::%attacker's uuid%}
                 push victim (vector from yaw attacker's yaw and pitch victim's pitch) with velocity {golf::ball::charging_bar::power}
-                set {golf::ball::charging_bar::state::%attacker's uuid%} to false
+                remove attacker from {golf::ball::charging_bar::state::*}
             else:
-                set {golf::ball::charging_bar::state::%attacker's uuid%} to true
+                broadcast "4"
+                add attacker to {golf::ball::charging_bar::state::*}
 
 every 0.5 seconds:
-    loop all players:
-        if {golf::ball::charging_bar::state::%loop-player's uuid%} is true:
-            ball_charging_animation()
-            send action bar "%{golf::ball::charging_bar::design}%" to loop-player
+    if size of {golf::ball::charging_bar::state::*} is greater than 0:
+        ball_charging_animation()
+        send action bar "%{golf::ball::charging_bar::design}%" to {golf::ball::charging_bar::state::*}
 
 function ball_charging_animation():
     add 1 to {golf::ball::charging_bar::frame}
