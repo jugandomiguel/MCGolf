@@ -1,0 +1,109 @@
+{
+    "textures": {
+        "0": "golf:entity/golf_flag/golf_flag_texture"
+    },
+    "elements": [
+        {
+            "faces": {
+                "north": {
+                    "uv": [
+                        16,
+                        0,
+                        2.52632,
+                        4.5
+                    ],
+                    "texture": "#0",
+                    "tintindex": 0
+                },
+                "east": {
+                    "uv": [
+                        2.52632,
+                        0,
+                        3.52632,
+                        4.5
+                    ],
+                    "texture": "#0",
+                    "tintindex": 0
+                },
+                "south": {
+                    "uv": [
+                        2.52632,
+                        0,
+                        15.84211,
+                        4.5
+                    ],
+                    "texture": "#0",
+                    "tintindex": 0
+                },
+                "west": {
+                    "uv": [
+                        2.52632,
+                        0,
+                        16,
+                        0.5
+                    ],
+                    "texture": "#0",
+                    "tintindex": 0
+                },
+                "up": {
+                    "uv": [
+                        2.52632,
+                        0,
+                        16,
+                        0.5
+                    ],
+                    "texture": "#0",
+                    "tintindex": 0
+                },
+                "down": {
+                    "uv": [
+                        2.52632,
+                        0,
+                        16,
+                        0.5
+                    ],
+                    "texture": "#0",
+                    "tintindex": 0
+                }
+            },
+            "to": [
+                8.4,
+                13.8,
+                8.2
+            ],
+            "from": [
+                2.4,
+                10.2,
+                7.8
+            ],
+            "rotation": {
+                "angle": 0,
+                "axis": "y",
+                "origin": [
+                    2.4,
+                    10.2,
+                    7.2
+                ]
+            }
+        }
+    ],
+    "display": {
+        "head": {
+            "translation": [
+                0,
+                5.6,
+                0
+            ],
+            "scale": [
+                4,
+                4,
+                4
+            ],
+            "rotation": [
+                0,
+                0,
+                0
+            ]
+        }
+    }
+}

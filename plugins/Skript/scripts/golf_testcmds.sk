@@ -1,0 +1,9 @@
+command /rr:
+    trigger:
+        execute console command "/betterhud reload"
+        broadcast "&3Reloading: &6BetterHud"
+        wait 1 second
+        #execute console command "/iareload"
+        broadcast "&3Reloading: &5Itemsadder"
+        #wait 1 second
+        execute console command "/iaz"

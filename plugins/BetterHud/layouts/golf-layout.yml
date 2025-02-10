@@ -1,0 +1,20 @@
+golf_layout:
+  texts:
+    1:
+      name: 5_bit_font
+      pattern: "<black>Hole: [skript_variable:%{golf::hole::current}%]"
+      align: left
+      background: golf_hole
+      background-scale: 1.1
+      scale: 1
+      x: 0
+      y: 5
+    2:
+      name: 5_bit_font
+      pattern: "<black>Strokes: [skript_variable:%{golf::ball::strokes::%uuid of hud player%}%]"
+      align: left
+      background: golf_strokes
+      background-scale: 1.1
+      scale: 1
+      x: 0
+      y: 26

@@ -1,0 +1,13 @@
+info:
+  namespace: golf
+entities:
+  golf_flag:
+    display_name: "golf_flag"
+    type: ZOMBIE
+    model_folder: entity/golf_flag
+    silent: true
+    can_sun_burn: false
+    speed:
+      movement: 0
+      flying: 0
+    max_health: 90

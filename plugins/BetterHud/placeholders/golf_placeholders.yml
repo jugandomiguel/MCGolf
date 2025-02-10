@@ -1,0 +1,5 @@
+golf_strokes:
+  variable: golf_strokes
+  placeholder: "%skript_golf::ball::strokes::%{uuid of hud player}%"
+  update: 20
+  #async: true

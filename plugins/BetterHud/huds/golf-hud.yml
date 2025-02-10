@@ -1,0 +1,6 @@
+golf_hud:
+  layouts:
+    1:
+      name: golf_layout
+      x: 0
+      y: 0

@@ -1,0 +1,9 @@
+version: 1.0.8.6
+bStats: true
+debug: false
+default_menu: default
+detect-delay: 140
+air_fix: true
+bind-enable: true
+bind-command: false
+bind: F
