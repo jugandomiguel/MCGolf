@@ -1,6 +1,6 @@
 #-##########################################################
 #-VARIABLES
-#-##################
+#-##########################################################
 #
 #{golf::ball::charging_bar::state::*} Show the power bar when hitting the ball
 #{golf::ball::strokes::%attacker's uuid%} The amount of strokes (hits) that the player had made
@@ -11,93 +11,128 @@
 #{golf::ball::charging_bar::frame} The actual action-bar(anim of hit power) frame to display 
 #{golf::ball::charging_bar::power} The actual action-bar(the numeric power that will push the ball with) power number
 #-##########################################################
+#Hacer que las pelotas se activen con el evento de golpe o click al aire, 
+#detectar un radio de 5 de la pelota y poner que si la pelota al momento de 
+#tratar de pegarle cambia su ubicación desde q se golpeo y se activo no haga nada a su vez, 
+#poner efectos de sonido al ganar y partículas al matar pelotas, arreglar sistema de cambiar de 
+#fase y actualización de datos
 
+#TODO: TERMINAR SISTEMA DE "GANAR" AL METER LA BOLA AL HOYO; 
+#AGREGAR PARTICULAS Y FIXES CON LISTAS PARA LOS USUARIOS; TERMINAR EL 
+#SISTEMA DE YAML QUE CONECTE INFO DEL HOYO ACTUAL A VARIABLES CARGADAS
 on load:
     load yaml "plugins/Golf/holes.yml" as "config"
     delete {golf::ball::charging_bar::state::*}
 
 on tab complete of "/golf":
-	set tab completions for position 1 to "setup", "hole", "tp", "killballs" and "spawn"
+	set tab completions for position 1 to "setup", "hole", "tp","start" , "killballs" and "spawn"
 	if tab arg-1 is "setup":
 		set tab completions for position 3 to "spawn", "hole" and "floor_level"
+#-#############################################
 #Comandos
+#-#############################################
 command /golf [<string>] [<string>] [<string>]:
     trigger:
+        if arg-1 is "join":
+            add event-player to {golf::players::*}
+            send "&3Golf:&f You joined the game." to event-player
+        if arg-1 is "start":
+            set {golf::started} to true
+            send "&3Golf:&f Game started." to event-player
+        if arg-1 is "stop":
+            delete {golf::started}
+            send "&3Golf:&f Game stopped." to event-player
         if arg-1 is "hole":
-            broadcast arg-2
             set {golf::hole::current} to arg-2 parsed as number
+            send "&3Golf:&f Current hole settled to %arg-2%." to event-player
         if arg-1 is "setup":
             if arg-3 is "spawn":
                 set {_loc} to position of targeted block
                 set yaml value "arenas.%arg-2%.ball_spawn" from "config" to {_loc}
-                send "&bGolf: &Spawn settled to: &7x: %{_loc}'s x-coord% &7y: %{_loc}'s y-coord% &7z: %{_loc}'s z-coord%" to event-player
                 save yaml "config"   
                 update_hole_info()
+                send "&3Golf&7Setup:&f Spawn settled to: &7x: %{_loc}'s x-coord% &7y: %{_loc}'s y-coord% &7z: %{_loc}'s z-coord%" to event-player
             if arg-3 is "hole":
                 set {_loc} to position of targeted block
                 set yaml value "arenas.%arg-2%.hole_coordinates" from "config" to {_loc}
-                send "&bGolf: &fHole settled to: &7x: %{_loc}'s x-coord% &7y: %{_loc}'s y-coord% &7z: %{_loc}'s z-coord%" to event-player
                 save yaml "config"
                 update_hole_info()
+                send "&3Golf&7Setup:&f Hole settled to: &7x: %{_loc}'s x-coord% &7y: %{_loc}'s y-coord% &7z: %{_loc}'s z-coord%" to event-player
             if arg-3 is "floor_level":
                 set {_loc} to y-coord of targeted block
                 set yaml value "arenas.%arg-2%.floor_level" from "config" to {_loc}
-                send "&bGolf: &fFloor level settled to: &7y: %{_loc}%" to event-player
                 save yaml "config"
                 update_hole_info()
-
+                send "&3Golf&7Setup:&f Floor level settled to: &7y: %{_loc}%" to event-player
         if arg-1 is "spawn":
             spawn_balls({arena::ball_spawn}, event-player)
-            # spawn armor stand at event-player
-            # set {_nbt} to nbt of last spawned entity
-            # set string tag "custom;ball" of nbt of {_nbt} to event-player's uuid
         if arg-1 is "tp":
             teleport armor stands where [string tag "custom;ball" of nbt of input is event-player's uuid] to event-player
         if arg-1 is "killballs":
             kill_balls()
+#-#############################################
 #Power Bar System
+#-#############################################
 on damage of armor stand by player:
-    if nbt compound of victim have tag "custom;ball":
-        set {_nbt} to nbt of victim
-        set {_ball_owner} to string tag "custom;ball" of {_nbt}
-        if attacker's uuid is {_ball_owner}:
-            cancel event
-            if {golf::ball::charging_bar::state::*} contains attacker:
-                add 1 to {golf::ball::strokes::%attacker's uuid%}
-                push victim (vector from yaw attacker's yaw and pitch victim's pitch) with velocity {golf::ball::charging_bar::power}
-                remove attacker from {golf::ball::charging_bar::state::*}
-            else:
-                set {golf::ball::old_position::%attacker's uuid%} to victim's location
-                add attacker to {golf::ball::charging_bar::state::*}
-        else:
-            cancel event
-
-every 5 ticks:
-    loop all armor stands:
-        #BallInHole(BIH) Ball enter the hole Detection System
-        if loop-value's location is within {arena::hole_locations::1} and {arena::hole_locations::2}:
-            if nbt compound of loop-value has tag "custom;ball":
-                set {_ball_owner} to string tag "custom;ball" of nbt of loop-value
-                make 10 of poof using dustOption(orange, 10) at {arena::hole_location} with offset vector(0.1, 0.2, 0.1) with extra 0.5
-                kill loop-value
-        #BallFell(BF) Ball fell from map Detection System
+    if {golf::started} is true:
         if all:
-            y-coord of loop-value is less than {arena::floor_level}
-            loop-value's location isn't within {arena::hole_locations::1} and {arena::hole_locations::2}
+            nbt compound of victim have tag "custom;ball"
+            {golf::players::*} has attacker
         then:
-            if nbt compound of loop-value has tag "custom;ball":
-                if string tag "custom;ball.respawn" of nbt of loop-value isn't set:
-                    set string tag "custom;ball.respawn" of nbt of loop-value to "respawning"
+            set {_nbt} to nbt of victim
+            set {_ball_owner} to string tag "custom;ball" of {_nbt}
+            if attacker's uuid is {_ball_owner}:
+                cancel event
+                if {golf::ball::charging_bar::state::*} contains attacker:
+                    add 1 to {golf::ball::strokes::%attacker's uuid%}
+                    push victim (vector from yaw attacker's yaw and pitch victim's pitch) with velocity {golf::ball::charging_bar::power}
+                    remove attacker from {golf::ball::charging_bar::state::*}
+                else:
+                    set {golf::ball::old_position::%attacker's uuid%} to victim's location
+                    add attacker to {golf::ball::charging_bar::state::*}
+            else:
+                cancel event
+#-#############################################
+#Ball loc detection (Win detection, Fall detection)
+#-#############################################
+every 5 ticks:
+    if {golf::started} is true:
+        loop all armor stands:
+            #-#############################################
+            #BallInHole(HOLE) Ball enter the hole Detection System
+            #-#############################################
+            if loop-value's location is within {arena::hole_locations::1} and {arena::hole_locations::2}:
+                if nbt compound of loop-value has tag "custom;ball":
                     set {_ball_owner} to string tag "custom;ball" of nbt of loop-value
-                    play sound "entity.villager.no" to ({_ball_owner} parsed as player)
-                    wait 1 second
-                    teleport the loop-value to {golf::ball::old_position::%{_ball_owner}%}
-                    delete string tag "custom;ball.respawn" of nbt of loop-value
-#TODO: TERMINAR SISTEMA DE "GANAR" AL METER LA BOLA AL HOYO; AGREGAR PARTICULAS Y FIXES CON LISTAS PARA LOS USUARIOS; TERMINAR EL SISTEMA DE YAML QUE CONECTE INFO DEL HOYO ACTUAL A VARIABLES CARGADAS
+                    make 10 of poof using dustOption(orange, 10) at {arena::hole_location} with offset vector(0.1, 0.2, 0.1) with extra 0.5
+                    kill loop-value
+                    
+                    set {_ball_owner} to string tag "custom;ball" of nbt of loop-value
+                    set yaml value "scoreboard.%{golf::hole::current}%.%{_ball_owner}%" from "config" to {golf::ball::strokes::%{_ball_owner}'s uuid%}
+                    save yaml "config"   
+            #-#############################################
+            #BallFell(FALL) Ball fell from map Detection System
+            #-#############################################
+            if all:
+                y-coord of loop-value is less than {arena::floor_level}
+                loop-value's location isn't within {arena::hole_locations::1} and {arena::hole_locations::2}
+            then:
+                if nbt compound of loop-value has tag "custom;ball":
+                    if string tag "custom;ball.respawn" of nbt of loop-value isn't set:
+                        set string tag "custom;ball.respawn" of nbt of loop-value to "respawning"
+                        set {_ball_owner} to string tag "custom;ball" of nbt of loop-value
+                        play sound "entity.villager.no" to ({_ball_owner} parsed as player)
+                        wait 1 second
+                        teleport the loop-value to {golf::ball::old_position::%{_ball_owner}%}
+                        delete string tag "custom;ball.respawn" of nbt of loop-value
+#-#############################################
+#Charging bar animation
+#-#############################################
 every 0.5 seconds:
-    if size of {golf::ball::charging_bar::state::*} is greater than 0:
-        ball_charging_animation()
-        send action bar "%{golf::ball::charging_bar::design}%" to {golf::ball::charging_bar::state::*}
+    if {golf::started} is true:
+        if size of {golf::ball::charging_bar::state::*} is greater than 0:
+            ball_charging_animation()
+            send action bar "%{golf::ball::charging_bar::design}%" to {golf::ball::charging_bar::state::*}
 command /test:
     trigger:
         spawn_balls(event-player's location, event-player)

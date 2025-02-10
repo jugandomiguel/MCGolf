@@ -1,157 +1,157 @@
-[20:15:28] [ServerMain/INFO]: [bootstrap] Running Java 21 (OpenJDK 64-Bit Server VM 21.0.6+7-LTS; Eclipse Adoptium Temurin-21.0.6+7) on Windows 11 10.0 (amd64)
-[20:15:28] [ServerMain/INFO]: [bootstrap] Loading Paper 1.21.4-138-main@5395ae3 (2025-02-02T21:42:11Z) for Minecraft 1.21.4
-[20:15:29] [ServerMain/INFO]: [PluginInitializerManager] Initializing plugins...
-[20:15:31] [ServerMain/INFO]: [PluginInitializerManager] Initialized 14 plugins
-[20:15:31] [ServerMain/INFO]: [PluginInitializerManager] Bukkit plugins (14):
+[07:37:05] [ServerMain/INFO]: [bootstrap] Running Java 21 (OpenJDK 64-Bit Server VM 21.0.6+7-LTS; Eclipse Adoptium Temurin-21.0.6+7) on Windows 11 10.0 (amd64)
+[07:37:05] [ServerMain/INFO]: [bootstrap] Loading Paper 1.21.4-138-main@5395ae3 (2025-02-02T21:42:11Z) for Minecraft 1.21.4
+[07:37:06] [ServerMain/INFO]: [PluginInitializerManager] Initializing plugins...
+[07:37:07] [ServerMain/INFO]: [PluginInitializerManager] Initialized 14 plugins
+[07:37:07] [ServerMain/INFO]: [PluginInitializerManager] Bukkit plugins (14):
  - BetterHud (1.11.4), Citizens (2.0.37-SNAPSHOT (build 3706)), FastAsyncWorldEdit (2.12.4-SNAPSHOT-1035;09473c5), ItemsAdder (4.0.8), LoneLibs (1.0.64), MovementUI (1.0.8.6), Multiverse-Core (4.3.14), PlaceholderAPI (2.11.6), ProtocolLib (5.4.0-SNAPSHOT-741), ScreenEffects (1.0.17), SkBee (3.8.2), Skript (2.10.1), VoidGen (2.2.1), skript-yaml (1.6.1)
-[20:15:37] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
-[20:15:39] [ServerMain/INFO]: Loaded 1370 recipes
-[20:15:39] [ServerMain/INFO]: Loaded 1481 advancements
-[20:15:39] [ServerMain/INFO]: [MCTypeRegistry] Initialising converters for DataConverter...
-[20:15:39] [ServerMain/INFO]: [MCTypeRegistry] Finished initialising converters for DataConverter in 171.7ms
-[20:15:39] [Server thread/INFO]: Starting minecraft server version 1.21.4
-[20:15:39] [Server thread/INFO]: Loading properties
-[20:15:39] [Server thread/INFO]: This server is running Paper version 1.21.4-138-main@5395ae3 (2025-02-02T21:42:11Z) (Implementing API version 1.21.4-R0.1-SNAPSHOT)
-[20:15:39] [Server thread/INFO]: [spark] This server bundles the spark profiler. For more information please visit https://docs.papermc.io/paper/profiling
-[20:15:39] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[20:15:39] [Server thread/INFO]: Using 4 threads for Netty based IO
-[20:15:40] [Server thread/INFO]: [MoonriseCommon] Paper is using 4 worker threads, 1 I/O threads
-[20:15:40] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
-[20:15:41] [Server thread/INFO]: Default game type: SURVIVAL
-[20:15:41] [Server thread/INFO]: Generating keypair
-[20:15:41] [Server thread/INFO]: Starting Minecraft server on *:25565
-[20:15:41] [Server thread/INFO]: Using default channel type
-[20:15:41] [Server thread/INFO]: Paper: Using Java compression from Velocity.
-[20:15:41] [Server thread/INFO]: Paper: Using Java cipher from Velocity.
-[20:15:41] [Server thread/INFO]: [SpigotLibraryLoader] [LoneLibs] Loading 1 libraries... please wait
-[20:15:41] [Server thread/INFO]: [SpigotLibraryLoader] [LoneLibs] Loaded library C:\Users\Miguel\Desktop\Server\libraries\org\fusesource\jansi\jansi\2.4.1\jansi-2.4.1.jar
-[20:15:41] [Server thread/INFO]: [SpigotLibraryLoader] [Citizens] Loading 5 libraries... please wait
-[20:15:43] [Server thread/INFO]: [SpigotLibraryLoader] [Citizens] Loaded library C:\Users\Miguel\Desktop\Server\libraries\ch\ethz\globis\phtree\phtree\2.8.1\phtree-2.8.1.jar
-[20:15:43] [Server thread/INFO]: [SpigotLibraryLoader] [Citizens] Loaded library C:\Users\Miguel\Desktop\Server\libraries\org\joml\joml\1.10.8\joml-1.10.8.jar
-[20:15:43] [Server thread/INFO]: [SpigotLibraryLoader] [Citizens] Loaded library C:\Users\Miguel\Desktop\Server\libraries\it\unimi\dsi\fastutil\8.5.15\fastutil-8.5.15.jar
-[20:15:43] [Server thread/INFO]: [SpigotLibraryLoader] [Citizens] Loaded library C:\Users\Miguel\Desktop\Server\libraries\net\kyori\adventure-platform-bukkit\4.3.3\adventure-platform-bukkit-4.3.3.jar
-[20:15:43] [Server thread/INFO]: [SpigotLibraryLoader] [Citizens] Loaded library C:\Users\Miguel\Desktop\Server\libraries\net\kyori\adventure-platform-api\4.3.3\adventure-platform-api-4.3.3.jar
-[20:15:43] [Server thread/INFO]: [SpigotLibraryLoader] [Citizens] Loaded library C:\Users\Miguel\Desktop\Server\libraries\net\kyori\adventure-text-serializer-bungeecord\4.3.3\adventure-text-serializer-bungeecord-4.3.3.jar
-[20:15:43] [Server thread/INFO]: [SpigotLibraryLoader] [Citizens] Loaded library C:\Users\Miguel\Desktop\Server\libraries\net\kyori\adventure-text-serializer-legacy\4.13.1\adventure-text-serializer-legacy-4.13.1.jar
-[20:15:43] [Server thread/INFO]: [SpigotLibraryLoader] [Citizens] Loaded library C:\Users\Miguel\Desktop\Server\libraries\net\kyori\adventure-nbt\4.13.1\adventure-nbt-4.13.1.jar
-[20:15:43] [Server thread/INFO]: [SpigotLibraryLoader] [Citizens] Loaded library C:\Users\Miguel\Desktop\Server\libraries\net\kyori\examination-api\1.3.0\examination-api-1.3.0.jar
-[20:15:43] [Server thread/INFO]: [SpigotLibraryLoader] [Citizens] Loaded library C:\Users\Miguel\Desktop\Server\libraries\net\kyori\examination-string\1.3.0\examination-string-1.3.0.jar
-[20:15:43] [Server thread/INFO]: [SpigotLibraryLoader] [Citizens] Loaded library C:\Users\Miguel\Desktop\Server\libraries\org\jetbrains\annotations\24.0.1\annotations-24.0.1.jar
-[20:15:43] [Server thread/INFO]: [SpigotLibraryLoader] [Citizens] Loaded library C:\Users\Miguel\Desktop\Server\libraries\net\kyori\adventure-text-serializer-gson\4.13.1\adventure-text-serializer-gson-4.13.1.jar
-[20:15:43] [Server thread/INFO]: [SpigotLibraryLoader] [Citizens] Loaded library C:\Users\Miguel\Desktop\Server\libraries\net\kyori\adventure-text-serializer-gson-legacy-impl\4.13.1\adventure-text-serializer-gson-legacy-impl-4.13.1.jar
-[20:15:43] [Server thread/INFO]: [SpigotLibraryLoader] [Citizens] Loaded library C:\Users\Miguel\Desktop\Server\libraries\net\kyori\adventure-platform-facet\4.3.3\adventure-platform-facet-4.3.3.jar
-[20:15:43] [Server thread/INFO]: [SpigotLibraryLoader] [Citizens] Loaded library C:\Users\Miguel\Desktop\Server\libraries\net\kyori\adventure-platform-viaversion\4.3.3\adventure-platform-viaversion-4.3.3.jar
-[20:15:43] [Server thread/INFO]: [SpigotLibraryLoader] [Citizens] Loaded library C:\Users\Miguel\Desktop\Server\libraries\net\kyori\adventure-text-minimessage\4.17.0\adventure-text-minimessage-4.17.0.jar
-[20:15:43] [Server thread/INFO]: [SpigotLibraryLoader] [Citizens] Loaded library C:\Users\Miguel\Desktop\Server\libraries\net\kyori\adventure-api\4.17.0\adventure-api-4.17.0.jar
-[20:15:43] [Server thread/INFO]: [SpigotLibraryLoader] [Citizens] Loaded library C:\Users\Miguel\Desktop\Server\libraries\net\kyori\adventure-key\4.17.0\adventure-key-4.17.0.jar
-[20:15:43] [Server thread/INFO]: [SpigotLibraryLoader] [ItemsAdder] Loading 4 libraries... please wait
-[20:15:44] [Server thread/INFO]: [SpigotLibraryLoader] [ItemsAdder] Loaded library C:\Users\Miguel\Desktop\Server\libraries\org\apache\httpcomponents\httpmime\4.5.14\httpmime-4.5.14.jar
-[20:15:44] [Server thread/INFO]: [SpigotLibraryLoader] [ItemsAdder] Loaded library C:\Users\Miguel\Desktop\Server\libraries\org\apache\httpcomponents\httpclient\4.5.14\httpclient-4.5.14.jar
-[20:15:44] [Server thread/INFO]: [SpigotLibraryLoader] [ItemsAdder] Loaded library C:\Users\Miguel\Desktop\Server\libraries\org\apache\httpcomponents\httpcore\4.4.16\httpcore-4.4.16.jar
-[20:15:44] [Server thread/INFO]: [SpigotLibraryLoader] [ItemsAdder] Loaded library C:\Users\Miguel\Desktop\Server\libraries\commons-logging\commons-logging\1.2\commons-logging-1.2.jar
-[20:15:44] [Server thread/INFO]: [SpigotLibraryLoader] [ItemsAdder] Loaded library C:\Users\Miguel\Desktop\Server\libraries\commons-codec\commons-codec\1.11\commons-codec-1.11.jar
-[20:15:44] [Server thread/INFO]: [SpigotLibraryLoader] [ItemsAdder] Loaded library C:\Users\Miguel\Desktop\Server\libraries\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar
-[20:15:44] [Server thread/INFO]: [SpigotLibraryLoader] [ItemsAdder] Loaded library C:\Users\Miguel\Desktop\Server\libraries\net\sourceforge\streamsupport\speedy-math\1.0.0\speedy-math-1.0.0.jar
-[20:15:44] [Server thread/INFO]: [SpigotLibraryLoader] [ItemsAdder] Loaded library C:\Users\Miguel\Desktop\Server\libraries\org\fusesource\jansi\jansi\2.4.1\jansi-2.4.1.jar
-[20:15:45] [Server thread/INFO]: [ProtocolLib] Loading server plugin ProtocolLib v5.4.0-SNAPSHOT-741
-[20:15:46] [Server thread/WARN]: [ProtocolLib] Version (MC: 1.21.4) has not yet been tested! Proceed with caution.
-[20:15:46] [Server thread/INFO]: [PlaceholderAPI] Loading server plugin PlaceholderAPI v2.11.6
-[20:15:46] [Server thread/INFO]: [Skript] Loading server plugin Skript v2.10.1
-[20:15:46] [Server thread/INFO]: [LoneLibs] Loading server plugin LoneLibs v1.0.64
-[20:15:46] [Server thread/INFO]: [Citizens] Loading server plugin Citizens v2.0.37-SNAPSHOT (build 3706)
-[20:15:46] [Server thread/INFO]: [SkBee] Loading server plugin SkBee v3.8.2
-[20:15:46] [Server thread/INFO]: [ItemsAdder] Loading server plugin ItemsAdder v4.0.8
-[20:15:47] [Server thread/WARN]: [ItemsAdder] Feature disabled, requires Paper: font_images on signs.
-[20:15:47] [Server thread/WARN]: [ItemsAdder] Feature disabled, requires Paper: font_images on books.
-[20:15:47] [Server thread/WARN]: [ItemsAdder] Feature disabled, requires Paper: font_images on anvils.
-[20:15:47] [Server thread/WARN]: [ItemsAdder] Feature disabled, requires Paper: text_effects on signs.
-[20:15:47] [Server thread/WARN]: [ItemsAdder] Feature disabled, requires Paper: text_effects on books.
-[20:15:47] [Server thread/WARN]: [ItemsAdder] Feature disabled, requires Paper: text_effects on anvils.
-[20:15:47] [Server thread/WARN]: [ItemsAdder] 'allow_other_plugins_resourcepacks' enabled. Do not report resourcepack loading issues.
-[20:15:47] [Server thread/INFO]: [VoidGen] Loading server plugin VoidGen v2.2.1
-[20:15:47] [Server thread/INFO]: [BetterHud] Loading server plugin BetterHud v1.11.4
-[20:15:47] [Server thread/INFO]: [skript-yaml] Loading server plugin skript-yaml v1.6.1
-[20:15:47] [Server thread/INFO]: [ScreenEffects] Loading server plugin ScreenEffects v1.0.17
-[20:15:47] [Server thread/INFO]: [Multiverse-Core] Loading server plugin Multiverse-Core v4.3.14
-[20:15:47] [Server thread/INFO]: [MovementUI] Loading server plugin MovementUI v1.0.8.6
-[20:15:47] [Server thread/INFO]: [FastAsyncWorldEdit] Loading server plugin FastAsyncWorldEdit v2.12.4-SNAPSHOT-1035;09473c5
-[20:15:48] [Server thread/INFO]: Got request to register class com.sk89q.worldedit.bukkit.BukkitServerInterface with WorldEdit [com.sk89q.worldedit.extension.platform.PlatformManager@1896d074]
-[20:15:48] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[20:15:48] [Server thread/INFO]: [ProtocolLib] Enabling ProtocolLib v5.4.0-SNAPSHOT-741
-[20:15:48] [Server thread/INFO]: [LoneLibs] Enabling LoneLibs v1.0.64
-[20:15:48] [Server thread/INFO]: [VoidGen] Enabling VoidGen v2.2.1
-[20:15:48] [Server thread/INFO]: [VoidGen] Using VoidChunkGen: VERSION_UNKNOWN
-[20:15:48] [Server thread/INFO]: [FastAsyncWorldEdit] Enabling FastAsyncWorldEdit v2.12.4-SNAPSHOT-1035;09473c5
-[20:15:48] [Server thread/INFO]: [com.fastasyncworldedit.core.Fawe] LZ4 Compression Binding loaded successfully
-[20:15:49] [Server thread/INFO]: [com.fastasyncworldedit.core.Fawe] ZSTD Compression Binding loaded successfully
-[20:15:49] [Server thread/INFO]: Registering commands with com.sk89q.worldedit.bukkit.BukkitServerInterface
-[20:15:49] [Server thread/INFO]: WEPIF: Using the Bukkit Permissions API.
-[20:15:49] [Server thread/INFO]: Using com.sk89q.worldedit.bukkit.adapter.impl.fawe.v1_21_4.PaperweightFaweAdapter as the Bukkit adapter
-[20:15:50] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
-[20:15:50] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
-[20:15:50] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
-[20:15:50] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
-[20:15:50] [Server thread/INFO]: Preparing level "world"
-[20:15:50] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
-[20:15:50] [Server thread/INFO]: Preparing spawn area: 0%
-[20:15:51] [Server thread/INFO]: Preparing spawn area: 2%
-[20:15:51] [Server thread/INFO]: Time elapsed: 567 ms
-[20:15:51] [Server thread/INFO]: [PlaceholderAPI] Enabling PlaceholderAPI v2.11.6
-[20:15:51] [Server thread/INFO]: [PlaceholderAPI] Fetching available expansion information...
-[20:15:51] [Server thread/INFO]: [Skript] Enabling Skript v2.10.1
-[20:15:51] [ForkJoinPool.commonPool-worker-1/WARN]: [com.fastasyncworldedit.core.util.UpdateNotification] An update for FastAsyncWorldEdit is available. You are 4 build(s) out of date.
+[07:37:11] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[07:37:13] [ServerMain/INFO]: Loaded 1370 recipes
+[07:37:13] [ServerMain/INFO]: Loaded 1481 advancements
+[07:37:13] [ServerMain/INFO]: [MCTypeRegistry] Initialising converters for DataConverter...
+[07:37:14] [ServerMain/INFO]: [MCTypeRegistry] Finished initialising converters for DataConverter in 206,5ms
+[07:37:14] [Server thread/INFO]: Starting minecraft server version 1.21.4
+[07:37:14] [Server thread/INFO]: Loading properties
+[07:37:14] [Server thread/INFO]: This server is running Paper version 1.21.4-138-main@5395ae3 (2025-02-02T21:42:11Z) (Implementing API version 1.21.4-R0.1-SNAPSHOT)
+[07:37:14] [Server thread/INFO]: [spark] This server bundles the spark profiler. For more information please visit https://docs.papermc.io/paper/profiling
+[07:37:14] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[07:37:14] [Server thread/INFO]: Using 4 threads for Netty based IO
+[07:37:15] [Server thread/INFO]: [MoonriseCommon] Paper is using 1 worker threads, 1 I/O threads
+[07:37:15] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
+[07:37:15] [Server thread/INFO]: Default game type: SURVIVAL
+[07:37:15] [Server thread/INFO]: Generating keypair
+[07:37:15] [Server thread/INFO]: Starting Minecraft server on *:25565
+[07:37:15] [Server thread/INFO]: Using default channel type
+[07:37:15] [Server thread/INFO]: Paper: Using Java compression from Velocity.
+[07:37:15] [Server thread/INFO]: Paper: Using Java cipher from Velocity.
+[07:37:16] [Server thread/INFO]: [SpigotLibraryLoader] [LoneLibs] Loading 1 libraries... please wait
+[07:37:16] [Server thread/INFO]: [SpigotLibraryLoader] [LoneLibs] Loaded library C:\Users\USUARIO\Desktop\Golf\libraries\org\fusesource\jansi\jansi\2.4.1\jansi-2.4.1.jar
+[07:37:16] [Server thread/INFO]: [SpigotLibraryLoader] [Citizens] Loading 5 libraries... please wait
+[07:37:16] [Server thread/INFO]: [SpigotLibraryLoader] [Citizens] Loaded library C:\Users\USUARIO\Desktop\Golf\libraries\ch\ethz\globis\phtree\phtree\2.8.1\phtree-2.8.1.jar
+[07:37:16] [Server thread/INFO]: [SpigotLibraryLoader] [Citizens] Loaded library C:\Users\USUARIO\Desktop\Golf\libraries\org\joml\joml\1.10.8\joml-1.10.8.jar
+[07:37:16] [Server thread/INFO]: [SpigotLibraryLoader] [Citizens] Loaded library C:\Users\USUARIO\Desktop\Golf\libraries\it\unimi\dsi\fastutil\8.5.15\fastutil-8.5.15.jar
+[07:37:16] [Server thread/INFO]: [SpigotLibraryLoader] [Citizens] Loaded library C:\Users\USUARIO\Desktop\Golf\libraries\net\kyori\adventure-platform-bukkit\4.3.3\adventure-platform-bukkit-4.3.3.jar
+[07:37:16] [Server thread/INFO]: [SpigotLibraryLoader] [Citizens] Loaded library C:\Users\USUARIO\Desktop\Golf\libraries\net\kyori\adventure-platform-api\4.3.3\adventure-platform-api-4.3.3.jar
+[07:37:16] [Server thread/INFO]: [SpigotLibraryLoader] [Citizens] Loaded library C:\Users\USUARIO\Desktop\Golf\libraries\net\kyori\adventure-text-serializer-bungeecord\4.3.3\adventure-text-serializer-bungeecord-4.3.3.jar
+[07:37:16] [Server thread/INFO]: [SpigotLibraryLoader] [Citizens] Loaded library C:\Users\USUARIO\Desktop\Golf\libraries\net\kyori\adventure-text-serializer-legacy\4.13.1\adventure-text-serializer-legacy-4.13.1.jar
+[07:37:16] [Server thread/INFO]: [SpigotLibraryLoader] [Citizens] Loaded library C:\Users\USUARIO\Desktop\Golf\libraries\net\kyori\adventure-nbt\4.13.1\adventure-nbt-4.13.1.jar
+[07:37:16] [Server thread/INFO]: [SpigotLibraryLoader] [Citizens] Loaded library C:\Users\USUARIO\Desktop\Golf\libraries\net\kyori\examination-api\1.3.0\examination-api-1.3.0.jar
+[07:37:16] [Server thread/INFO]: [SpigotLibraryLoader] [Citizens] Loaded library C:\Users\USUARIO\Desktop\Golf\libraries\net\kyori\examination-string\1.3.0\examination-string-1.3.0.jar
+[07:37:16] [Server thread/INFO]: [SpigotLibraryLoader] [Citizens] Loaded library C:\Users\USUARIO\Desktop\Golf\libraries\org\jetbrains\annotations\24.0.1\annotations-24.0.1.jar
+[07:37:16] [Server thread/INFO]: [SpigotLibraryLoader] [Citizens] Loaded library C:\Users\USUARIO\Desktop\Golf\libraries\net\kyori\adventure-text-serializer-gson\4.13.1\adventure-text-serializer-gson-4.13.1.jar
+[07:37:16] [Server thread/INFO]: [SpigotLibraryLoader] [Citizens] Loaded library C:\Users\USUARIO\Desktop\Golf\libraries\net\kyori\adventure-text-serializer-gson-legacy-impl\4.13.1\adventure-text-serializer-gson-legacy-impl-4.13.1.jar
+[07:37:16] [Server thread/INFO]: [SpigotLibraryLoader] [Citizens] Loaded library C:\Users\USUARIO\Desktop\Golf\libraries\net\kyori\adventure-platform-facet\4.3.3\adventure-platform-facet-4.3.3.jar
+[07:37:16] [Server thread/INFO]: [SpigotLibraryLoader] [Citizens] Loaded library C:\Users\USUARIO\Desktop\Golf\libraries\net\kyori\adventure-platform-viaversion\4.3.3\adventure-platform-viaversion-4.3.3.jar
+[07:37:16] [Server thread/INFO]: [SpigotLibraryLoader] [Citizens] Loaded library C:\Users\USUARIO\Desktop\Golf\libraries\net\kyori\adventure-text-minimessage\4.17.0\adventure-text-minimessage-4.17.0.jar
+[07:37:16] [Server thread/INFO]: [SpigotLibraryLoader] [Citizens] Loaded library C:\Users\USUARIO\Desktop\Golf\libraries\net\kyori\adventure-api\4.17.0\adventure-api-4.17.0.jar
+[07:37:16] [Server thread/INFO]: [SpigotLibraryLoader] [Citizens] Loaded library C:\Users\USUARIO\Desktop\Golf\libraries\net\kyori\adventure-key\4.17.0\adventure-key-4.17.0.jar
+[07:37:16] [Server thread/INFO]: [SpigotLibraryLoader] [ItemsAdder] Loading 4 libraries... please wait
+[07:37:16] [Server thread/INFO]: [SpigotLibraryLoader] [ItemsAdder] Loaded library C:\Users\USUARIO\Desktop\Golf\libraries\org\apache\httpcomponents\httpmime\4.5.14\httpmime-4.5.14.jar
+[07:37:16] [Server thread/INFO]: [SpigotLibraryLoader] [ItemsAdder] Loaded library C:\Users\USUARIO\Desktop\Golf\libraries\org\apache\httpcomponents\httpclient\4.5.14\httpclient-4.5.14.jar
+[07:37:16] [Server thread/INFO]: [SpigotLibraryLoader] [ItemsAdder] Loaded library C:\Users\USUARIO\Desktop\Golf\libraries\org\apache\httpcomponents\httpcore\4.4.16\httpcore-4.4.16.jar
+[07:37:16] [Server thread/INFO]: [SpigotLibraryLoader] [ItemsAdder] Loaded library C:\Users\USUARIO\Desktop\Golf\libraries\commons-logging\commons-logging\1.2\commons-logging-1.2.jar
+[07:37:16] [Server thread/INFO]: [SpigotLibraryLoader] [ItemsAdder] Loaded library C:\Users\USUARIO\Desktop\Golf\libraries\commons-codec\commons-codec\1.11\commons-codec-1.11.jar
+[07:37:16] [Server thread/INFO]: [SpigotLibraryLoader] [ItemsAdder] Loaded library C:\Users\USUARIO\Desktop\Golf\libraries\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar
+[07:37:16] [Server thread/INFO]: [SpigotLibraryLoader] [ItemsAdder] Loaded library C:\Users\USUARIO\Desktop\Golf\libraries\net\sourceforge\streamsupport\speedy-math\1.0.0\speedy-math-1.0.0.jar
+[07:37:16] [Server thread/INFO]: [SpigotLibraryLoader] [ItemsAdder] Loaded library C:\Users\USUARIO\Desktop\Golf\libraries\org\fusesource\jansi\jansi\2.4.1\jansi-2.4.1.jar
+[07:37:17] [Server thread/INFO]: [ProtocolLib] Loading server plugin ProtocolLib v5.4.0-SNAPSHOT-741
+[07:37:17] [Server thread/WARN]: [ProtocolLib] Version (MC: 1.21.4) has not yet been tested! Proceed with caution.
+[07:37:17] [Server thread/INFO]: [PlaceholderAPI] Loading server plugin PlaceholderAPI v2.11.6
+[07:37:17] [Server thread/INFO]: [Skript] Loading server plugin Skript v2.10.1
+[07:37:17] [Server thread/INFO]: [LoneLibs] Loading server plugin LoneLibs v1.0.64
+[07:37:17] [Server thread/INFO]: [Citizens] Loading server plugin Citizens v2.0.37-SNAPSHOT (build 3706)
+[07:37:17] [Server thread/INFO]: [SkBee] Loading server plugin SkBee v3.8.2
+[07:37:17] [Server thread/INFO]: [ItemsAdder] Loading server plugin ItemsAdder v4.0.8
+[07:37:17] [Server thread/WARN]: [ItemsAdder] Feature disabled, requires Paper: font_images on signs.
+[07:37:17] [Server thread/WARN]: [ItemsAdder] Feature disabled, requires Paper: font_images on books.
+[07:37:17] [Server thread/WARN]: [ItemsAdder] Feature disabled, requires Paper: font_images on anvils.
+[07:37:17] [Server thread/WARN]: [ItemsAdder] Feature disabled, requires Paper: text_effects on signs.
+[07:37:17] [Server thread/WARN]: [ItemsAdder] Feature disabled, requires Paper: text_effects on books.
+[07:37:17] [Server thread/WARN]: [ItemsAdder] Feature disabled, requires Paper: text_effects on anvils.
+[07:37:17] [Server thread/WARN]: [ItemsAdder] 'allow_other_plugins_resourcepacks' enabled. Do not report resourcepack loading issues.
+[07:37:17] [Server thread/INFO]: [VoidGen] Loading server plugin VoidGen v2.2.1
+[07:37:17] [Server thread/INFO]: [BetterHud] Loading server plugin BetterHud v1.11.4
+[07:37:17] [Server thread/INFO]: [skript-yaml] Loading server plugin skript-yaml v1.6.1
+[07:37:17] [Server thread/INFO]: [ScreenEffects] Loading server plugin ScreenEffects v1.0.17
+[07:37:17] [Server thread/INFO]: [Multiverse-Core] Loading server plugin Multiverse-Core v4.3.14
+[07:37:17] [Server thread/INFO]: [MovementUI] Loading server plugin MovementUI v1.0.8.6
+[07:37:17] [Server thread/INFO]: [FastAsyncWorldEdit] Loading server plugin FastAsyncWorldEdit v2.12.4-SNAPSHOT-1035;09473c5
+[07:37:19] [Server thread/INFO]: Got request to register class com.sk89q.worldedit.bukkit.BukkitServerInterface with WorldEdit [com.sk89q.worldedit.extension.platform.PlatformManager@70b09a5d]
+[07:37:19] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[07:37:19] [Server thread/INFO]: [ProtocolLib] Enabling ProtocolLib v5.4.0-SNAPSHOT-741
+[07:37:19] [Server thread/INFO]: [LoneLibs] Enabling LoneLibs v1.0.64
+[07:37:19] [Server thread/INFO]: [VoidGen] Enabling VoidGen v2.2.1
+[07:37:19] [Server thread/INFO]: [VoidGen] Using VoidChunkGen: VERSION_UNKNOWN
+[07:37:19] [Server thread/INFO]: [FastAsyncWorldEdit] Enabling FastAsyncWorldEdit v2.12.4-SNAPSHOT-1035;09473c5
+[07:37:19] [Server thread/INFO]: [com.fastasyncworldedit.core.Fawe] LZ4 Compression Binding loaded successfully
+[07:37:19] [Server thread/INFO]: [com.fastasyncworldedit.core.Fawe] ZSTD Compression Binding loaded successfully
+[07:37:19] [Server thread/INFO]: Registering commands with com.sk89q.worldedit.bukkit.BukkitServerInterface
+[07:37:20] [Server thread/INFO]: WEPIF: Using the Bukkit Permissions API.
+[07:37:20] [Server thread/INFO]: Using com.sk89q.worldedit.bukkit.adapter.impl.fawe.v1_21_4.PaperweightFaweAdapter as the Bukkit adapter
+[07:37:22] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[07:37:22] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[07:37:22] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[07:37:22] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[07:37:22] [Server thread/INFO]: Preparing level "world"
+[07:37:22] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[07:37:22] [Server thread/INFO]: Preparing spawn area: 0%
+[07:37:22] [Server thread/INFO]: Time elapsed: 377 ms
+[07:37:22] [Server thread/INFO]: [PlaceholderAPI] Enabling PlaceholderAPI v2.11.6
+[07:37:23] [Server thread/INFO]: [PlaceholderAPI] Fetching available expansion information...
+[07:37:23] [Server thread/INFO]: [Skript] Enabling Skript v2.10.1
+[07:37:23] [ForkJoinPool.commonPool-worker-1/WARN]: [com.fastasyncworldedit.core.util.UpdateNotification] An update for FastAsyncWorldEdit is available. You are 4 build(s) out of date.
 You are running build 1035, the latest version is build 1039.
 Update at https://www.spigotmc.org/resources/13932/
-[20:15:52] [Server thread/INFO]: [Skript]  ~ created by & © Peter Güttinger aka Njol ~
-[20:15:52] [Server thread/INFO]: [Citizens] Enabling Citizens v2.0.37-SNAPSHOT (build 3706)
-[20:15:52] [ForkJoinPool.commonPool-worker-1/INFO]: [Skript] You're currently running the latest stable version of Skript.
-[20:15:52] [Server thread/INFO]: [Citizens] Using mojmapped server, avoiding server package checks
-[20:15:53] [Server thread/INFO]: [Citizens] Loaded 0 templates.
-[20:15:53] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: citizensplaceholder [1.0.0]
-[20:15:53] [ForkJoinPool.commonPool-worker-2/INFO]: [Skript] Loaded 5440 aliases in 1038ms
-[20:15:53] [Server thread/INFO]: [SkBee] Enabling SkBee v3.8.2
-[20:15:53] [Server thread/INFO]: [SkBee] Registry Elements successfully loaded
-[20:15:53] [Server thread/INFO]: [SkBee] Loading NBTApi...
-[20:15:53] [Server thread/INFO]: [SkBee] [NBTAPI] Found Minecraft: 1.21.4! Trying to find NMS support
-[20:15:53] [Server thread/INFO]: [SkBee] [NBTAPI] NMS support 'MC1_21_R3' loaded!
-[20:15:53] [Server thread/INFO]: [SkBee] Successfully loaded NBTApi!
-[20:15:53] [Server thread/INFO]: [SkBee] NBT Elements successfully loaded
-[20:15:53] [Server thread/INFO]: [SkBee] Text Component Elements successfully loaded
-[20:15:53] [Server thread/INFO]: [SkBee] Advancement Elements successfully loaded
-[20:15:53] [Server thread/INFO]: [SkBee] BossBar Elements successfully loaded
-[20:15:53] [Server thread/INFO]: [SkBee] Bound Elements successfully loaded
-[20:15:53] [Server thread/INFO]: [SkBee] Damage Source Elements successfully loaded
-[20:15:54] [Server thread/INFO]: [SkBee] Display Entity Elements successfully loaded
-[20:15:54] [Server thread/INFO]: [SkBee] Fishing Elements successfully loaded
-[20:15:54] [Server thread/INFO]: [SkBee] Game Event Elements successfully loaded
-[20:15:54] [Server thread/INFO]: [SkBee] Item Component Elements successfully loaded
-[20:15:54] [Server thread/INFO]: [SkBee] Particle Elements successfully loaded
-[20:15:54] [Server thread/INFO]: [SkBee] RayTrace Elements successfully loaded
-[20:15:54] [Server thread/INFO]: [SkBee] Recipe Elements successfully loaded
-[20:15:54] [Server thread/INFO]: [SkBee] Scoreboard[Adventure] Elements successfully loaded
-[20:15:54] [Server thread/INFO]: [SkBee] Scoreboard Objective Elements successfully loaded
-[20:15:54] [Server thread/INFO]: [SkBee] Statistic Elements successfully loaded
-[20:15:54] [Server thread/INFO]: [SkBee] Structure Elements successfully loaded
-[20:15:54] [Server thread/INFO]: [SkBee] SwitchCase Elements successfully loaded
-[20:15:54] [Server thread/INFO]: [SkBee] Minecraft Tag Elements disabled (now in Skript)
-[20:15:54] [Server thread/INFO]: [SkBee] Team Elements successfully loaded
-[20:15:54] [Server thread/INFO]: [SkBee] Tick Manager Elements successfully loaded
-[20:15:54] [Server thread/INFO]: [SkBee] Villager Elements successfully loaded
-[20:15:54] [Server thread/INFO]: [SkBee] Virtual Furnace Elements disabled via config
-[20:15:54] [Server thread/INFO]: [SkBee] World Border Elements successfully loaded
-[20:15:54] [Server thread/INFO]: [SkBee] World Creator Elements successfully loaded
-[20:15:54] [Server thread/INFO]: [SkBee] Chunk Generator Elements successfully loaded
-[20:15:54] [Server thread/INFO]: [SkBee] Loaded (443) elements:
-[20:15:54] [Server thread/INFO]: [SkBee]  - 51 events
-[20:15:54] [Server thread/INFO]: [SkBee]  - 71 effects
-[20:15:54] [Server thread/INFO]: [SkBee]  - 267 expressions
-[20:15:54] [Server thread/INFO]: [SkBee]  - 25 conditions
-[20:15:54] [Server thread/INFO]: [SkBee]  - 29 sections
-[20:15:54] [Server thread/INFO]: [SkBee] Checking for update...
-[20:15:54] [Server thread/INFO]: [SkBee] Plugin is up to date!
-[20:15:54] [Server thread/INFO]: [SkBee] Successfully enabled v3.8.2 in 0.96 seconds
-[20:15:54] [Server thread/INFO]: [ItemsAdder] Enabling ItemsAdder v4.0.8
-[20:15:54] [Server thread/INFO]: [ItemsAdder] 
+[07:37:24] [ForkJoinPool.commonPool-worker-1/INFO]: [Skript] You're currently running the latest stable version of Skript.
+[07:37:26] [Server thread/INFO]: [Skript]  ~ created by & © Peter Güttinger aka Njol ~
+[07:37:26] [Server thread/INFO]: [Citizens] Enabling Citizens v2.0.37-SNAPSHOT (build 3706)
+[07:37:27] [Server thread/INFO]: [Citizens] Detected system language [[es]]. If youd like you can contribute to Citizens translations via our Discord! https://discord.gg/Q6pZGSR
+[07:37:27] [Server thread/INFO]: [Citizens] Using mojmapped server, avoiding server package checks
+[07:37:28] [Server thread/INFO]: [Citizens] Loaded 0 templates.
+[07:37:28] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: citizensplaceholder [1.0.0]
+[07:37:28] [ForkJoinPool.commonPool-worker-1/INFO]: [Skript] Loaded 5440 aliases in 2022ms
+[07:37:28] [Server thread/INFO]: [SkBee] Enabling SkBee v3.8.2
+[07:37:28] [Server thread/INFO]: [SkBee] Registry Elements successfully loaded
+[07:37:28] [Server thread/INFO]: [SkBee] Loading NBTApi...
+[07:37:28] [Server thread/INFO]: [SkBee] [NBTAPI] Found Minecraft: 1.21.4! Trying to find NMS support
+[07:37:28] [Server thread/INFO]: [SkBee] [NBTAPI] NMS support 'MC1_21_R3' loaded!
+[07:37:28] [Server thread/INFO]: [SkBee] Successfully loaded NBTApi!
+[07:37:29] [Server thread/INFO]: [SkBee] NBT Elements successfully loaded
+[07:37:29] [Server thread/INFO]: [SkBee] Text Component Elements successfully loaded
+[07:37:29] [Server thread/INFO]: [SkBee] Advancement Elements successfully loaded
+[07:37:29] [Server thread/INFO]: [SkBee] BossBar Elements successfully loaded
+[07:37:29] [Server thread/INFO]: [SkBee] Bound Elements successfully loaded
+[07:37:29] [Server thread/INFO]: [SkBee] Damage Source Elements successfully loaded
+[07:37:29] [Server thread/INFO]: [SkBee] Display Entity Elements successfully loaded
+[07:37:29] [Server thread/INFO]: [SkBee] Fishing Elements successfully loaded
+[07:37:29] [Server thread/INFO]: [SkBee] Game Event Elements successfully loaded
+[07:37:29] [Server thread/INFO]: [SkBee] Item Component Elements successfully loaded
+[07:37:29] [Server thread/INFO]: [SkBee] Particle Elements successfully loaded
+[07:37:29] [Server thread/INFO]: [SkBee] RayTrace Elements successfully loaded
+[07:37:29] [Server thread/INFO]: [SkBee] Recipe Elements successfully loaded
+[07:37:29] [Server thread/INFO]: [SkBee] Scoreboard[Adventure] Elements successfully loaded
+[07:37:29] [Server thread/INFO]: [SkBee] Scoreboard Objective Elements successfully loaded
+[07:37:29] [Server thread/INFO]: [SkBee] Statistic Elements successfully loaded
+[07:37:29] [Server thread/INFO]: [SkBee] Structure Elements successfully loaded
+[07:37:29] [Server thread/INFO]: [SkBee] SwitchCase Elements successfully loaded
+[07:37:29] [Server thread/INFO]: [SkBee] Minecraft Tag Elements disabled (now in Skript)
+[07:37:29] [Server thread/INFO]: [SkBee] Team Elements successfully loaded
+[07:37:29] [Server thread/INFO]: [SkBee] Tick Manager Elements successfully loaded
+[07:37:29] [Server thread/INFO]: [SkBee] Villager Elements successfully loaded
+[07:37:29] [Server thread/INFO]: [SkBee] Virtual Furnace Elements disabled via config
+[07:37:29] [Server thread/INFO]: [SkBee] World Border Elements successfully loaded
+[07:37:29] [Server thread/INFO]: [SkBee] World Creator Elements successfully loaded
+[07:37:29] [Server thread/INFO]: [SkBee] Chunk Generator Elements successfully loaded
+[07:37:29] [Server thread/INFO]: [SkBee] Loaded (443) elements:
+[07:37:29] [Server thread/INFO]: [SkBee]  - 51 events
+[07:37:29] [Server thread/INFO]: [SkBee]  - 71 effects
+[07:37:29] [Server thread/INFO]: [SkBee]  - 267 expressions
+[07:37:29] [Server thread/INFO]: [SkBee]  - 25 conditions
+[07:37:29] [Server thread/INFO]: [SkBee]  - 29 sections
+[07:37:29] [Server thread/INFO]: [SkBee] Checking for update...
+[07:37:29] [Server thread/INFO]: [SkBee] Plugin is up to date!
+[07:37:29] [Server thread/INFO]: [SkBee] Successfully enabled v3.8.2 in 1,52 seconds
+[07:37:29] [Server thread/INFO]: [ItemsAdder] Enabling ItemsAdder v4.0.8
+[07:37:30] [Server thread/INFO]: [ItemsAdder] 
                                                    ItemsAdder 4.0.8
   ___  ___        __        __   __   ___  __      LoneLibs 1.0.64
 |  |  |__   |\/| /__`  /\  |  \ |  \ |__  |__)     ProtocolLib 5.4.0-SNAPSHOT-741
@@ -159,31 +159,31 @@ Update at https://www.spigotmc.org/resources/13932/
                                                    Build Date: 2025-02-05_10.26.00
                                                    Java Version: 21.0.6
                                                    OS: Windows 11 10.0
-[20:15:54] [Server thread/INFO]: [ItemsAdder] Registered Skript API
-[20:15:54] [Server thread/INFO]: [ItemsAdder] Registered Citizens NPC Trait: customentity
-[20:15:54] [Server thread/WARN]: [ItemsAdder] 'allow_other_plugins_resourcepacks' enabled. Do not report resourcepack loading issues.
-[20:15:55] [Server thread/INFO]: [ItemsAdder] [Pack] Extracting internal contents from .jar
-[20:15:55] [Server thread/INFO]: [ItemsAdder] [Pack] Done extracting internal contents from .jar
-[20:15:56] [Server thread/INFO]: [BetterHud] Enabling BetterHud v1.11.4
-[20:15:56] [Server thread/INFO]: [skript-yaml] Enabling skript-yaml v1.6.1
-[20:15:56] [Server thread/INFO]: [ScreenEffects] Enabling ScreenEffects v1.0.17
-[20:15:56] [Server thread/INFO]: [NBTAPI] [NBTAPI] Found Minecraft: 1.21.4! Trying to find NMS support
-[20:15:56] [Server thread/INFO]: [NBTAPI] [NBTAPI] NMS support 'MC1_21_R3' loaded!
-[20:15:56] [Server thread/INFO]: [NBTAPI] [NBTAPI] Using the plugin 'LoneLibs' to create a bStats instance!
-[20:15:56] [Server thread/INFO]: [ScreenEffects]     Extracting default effects from .jar
-[20:15:56] [Server thread/INFO]: [ScreenEffects]       DONE extracting default effects from .jar
-[20:15:56] [Server thread/INFO]: [Multiverse-Core] Enabling Multiverse-Core v4.3.14
-[20:15:56] [Server thread/WARN]: [Multiverse-Core] "Multiverse-Core v4.3.14" has registered a listener for org.bukkit.event.entity.EntityCreatePortalEvent on method "public void com.onarandombox.MultiverseCore.listeners.MVPortalListener.entityPortalCreate(org.bukkit.event.entity.EntityCreatePortalEvent)", but the event is Deprecated. "Server performance will be affected"; please notify the authors [dumptruckman, Rigby, fernferret, lithium3141, main--].
-[20:15:56] [Server thread/INFO]: [Multiverse-Core] §aWe are aware of the warning about the deprecated event. There is no alternative that allows us to do what we need to do and performance impact is negligible. It is safe to ignore.
-[20:15:56] [Server thread/INFO]: [VoidGen] Generator settings have not been set. Using default values:
-[20:15:56] [Server thread/INFO]: [VoidGen] {"caves":false,"decoration":false,"mobs":false,"structures":false,"noise":false,"surface":false,"bedrock":false}
-[20:15:57] [Server thread/INFO]: [Multiverse-Core] 1 - World(s) loaded.
-[20:15:57] [Server thread/WARN]: [Multiverse-Core] Buscript failed to load! The script command will be disabled! If you would like not to see this message, use `/mv conf enablebuscript false` to disable Buscript from loading.
-[20:15:57] [Server thread/INFO]: [Multiverse-Core] Version 4.3.14 (API v24) Enabled - By dumptruckman, Rigby, fernferret, lithium3141 and main--
-[20:15:57] [Server thread/INFO]: [MovementUI] Enabling MovementUI v1.0.8.6
-[20:15:57] [ForkJoinPool.commonPool-worker-2/INFO]: [Skript-Yaml] Skript-Yaml is up to date!
-[20:15:57] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: movementui [1.0.8.6]
-[20:15:57] [Server thread/INFO]: [MovementUI]  
+[07:37:30] [Server thread/INFO]: [ItemsAdder] Registered Skript API
+[07:37:30] [Server thread/INFO]: [ItemsAdder] Registered Citizens NPC Trait: customentity
+[07:37:30] [Server thread/WARN]: [ItemsAdder] 'allow_other_plugins_resourcepacks' enabled. Do not report resourcepack loading issues.
+[07:37:32] [Server thread/INFO]: [ItemsAdder] [Pack] Extracting internal contents from .jar
+[07:37:32] [Server thread/INFO]: [ItemsAdder] [Pack] Done extracting internal contents from .jar
+[07:37:34] [Server thread/INFO]: [BetterHud] Enabling BetterHud v1.11.4
+[07:37:35] [Server thread/INFO]: [skript-yaml] Enabling skript-yaml v1.6.1
+[07:37:35] [Server thread/INFO]: [ScreenEffects] Enabling ScreenEffects v1.0.17
+[07:37:35] [Server thread/INFO]: [NBTAPI] [NBTAPI] Found Minecraft: 1.21.4! Trying to find NMS support
+[07:37:35] [Server thread/INFO]: [NBTAPI] [NBTAPI] NMS support 'MC1_21_R3' loaded!
+[07:37:35] [Server thread/INFO]: [NBTAPI] [NBTAPI] Using the plugin 'LoneLibs' to create a bStats instance!
+[07:37:35] [Server thread/INFO]: [ScreenEffects]     Extracting default effects from .jar
+[07:37:35] [Server thread/INFO]: [ScreenEffects]       DONE extracting default effects from .jar
+[07:37:36] [Server thread/INFO]: [Multiverse-Core] Enabling Multiverse-Core v4.3.14
+[07:37:36] [Server thread/WARN]: [Multiverse-Core] "Multiverse-Core v4.3.14" has registered a listener for org.bukkit.event.entity.EntityCreatePortalEvent on method "public void com.onarandombox.MultiverseCore.listeners.MVPortalListener.entityPortalCreate(org.bukkit.event.entity.EntityCreatePortalEvent)", but the event is Deprecated. "Server performance will be affected"; please notify the authors [dumptruckman, Rigby, fernferret, lithium3141, main--].
+[07:37:36] [Server thread/INFO]: [Multiverse-Core] §aWe are aware of the warning about the deprecated event. There is no alternative that allows us to do what we need to do and performance impact is negligible. It is safe to ignore.
+[07:37:36] [ForkJoinPool.commonPool-worker-1/INFO]: [Skript-Yaml] Skript-Yaml is up to date!
+[07:37:36] [Server thread/INFO]: [VoidGen] Generator settings have not been set. Using default values:
+[07:37:36] [Server thread/INFO]: [VoidGen] {"caves":false,"decoration":false,"mobs":false,"structures":false,"noise":false,"surface":false,"bedrock":false}
+[07:37:36] [Server thread/INFO]: [Multiverse-Core] 1 - World(s) loaded.
+[07:37:36] [Server thread/WARN]: [Multiverse-Core] Buscript failed to load! The script command will be disabled! If you would like not to see this message, use `/mv conf enablebuscript false` to disable Buscript from loading.
+[07:37:36] [Server thread/INFO]: [Multiverse-Core] Version 4.3.14 (API v24) Enabled - By dumptruckman, Rigby, fernferret, lithium3141 and main--
+[07:37:36] [Server thread/INFO]: [MovementUI] Enabling MovementUI v1.0.8.6
+[07:37:36] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: movementui [1.0.8.6]
+[07:37:36] [Server thread/INFO]: [MovementUI]  
   __  __                                     _   _    _ _____ 
  |  \/  |                                   | | | |  | |_   _|     MovementUI: 1.0.8.6
  | \  / | _____   _____ _ __ ___   ___ _ __ | |_| |  | | | |       Build Data: 2025/1/24-19:34
@@ -192,120 +192,78 @@ Update at https://www.spigotmc.org/resources/13932/
  |_|  |_|\___/ \_/ \___|_| |_| |_|\___|_| |_|\__|\____/|_____|
                                                               
                                                               
-[20:15:57] [Server thread/INFO]: [spark] Starting background profiler...
-[20:15:57] [Server thread/INFO]: [spark] The async-profiler engine is not supported for your os/arch (windows11/amd64), so the built-in Java engine will be used instead.
-[20:15:57] [Server thread/INFO]: [PlaceholderAPI] Placeholder expansion registration initializing...
-[20:15:57] [Server thread/INFO]: [BetterHud] Minecraft version: 1.21.4, NMS version: V1_21_R3
-[20:15:57] [Server thread/INFO]: [BetterHud] Plugin enabled.
-[20:15:57] [Server thread/INFO]: Done preparing level "world" (7.393s)
-[20:15:57] [Server thread/INFO]: Running delayed init tasks
-[20:15:57] [Server thread/INFO]: [Skript] Loading variables...
-[20:15:57] [Server thread/INFO]: [Skript] Loaded 21 variables in 0.0 seconds
-[20:15:57] [Server thread/INFO]: [Skript] Line 7: (golf_functions.sk)
-[20:15:57] [Server thread/INFO]:     Cannot recognise the type 'armor stand'
-[20:15:57] [Server thread/INFO]:     Line: function respawn_ball(ball: armor stand, teleport_to_old_loc: boolean):
-[20:15:57] [Craft Scheduler Thread - 3 - ItemsAdder/INFO]: [ItemsAdder] [License] Spigot product licensed to: JugandoMiguel (1464681)
-[20:15:57] [Server thread/INFO]:  
-[20:15:57] [Craft Scheduler Thread - 8 - ItemsAdder/INFO]: [ItemsAdder] Loaded 7 items
-[20:15:57] [Craft Scheduler Thread - 8 - ItemsAdder/INFO]: [ItemsAdder] Used 0/188 REAL block IDs
-[20:15:57] [Craft Scheduler Thread - 8 - ItemsAdder/INFO]: [ItemsAdder] Used 0/750 REAL_NOTE block IDs
-[20:15:57] [Craft Scheduler Thread - 8 - ItemsAdder/INFO]: [ItemsAdder] Used 0/63 REAL_TRANSPARENT block IDs
-[20:15:57] [Craft Scheduler Thread - 8 - ItemsAdder/INFO]: [ItemsAdder] Used 0/127 REAL_WIRE block IDs
-[20:15:57] [Craft Scheduler Thread - 8 - ItemsAdder/INFO]: [ItemsAdder] Used 0/14 FIRE block IDs
-[20:15:57] [Craft Scheduler Thread - 8 - ItemsAdder/INFO]: [ItemsAdder] Used 29/6608 font_images
-[20:15:58] [Craft Scheduler Thread - 8 - ItemsAdder/INFO]: [ItemsAdder] [Init] Loaded 1 categories
-[20:15:58] [Craft Scheduler Thread - 8 - ItemsAdder/INFO]: [ItemsAdder] [Init] Loaded successfully.
-[20:15:59] [Craft Scheduler Thread - 8 - ItemsAdder/INFO]: [ItemsAdder] [Pack] Resourcepack URL is valid (lobfile). URL: https://lobfile.com/file/kCDtSFGL.zip
-[20:16:00] [ForkJoinPool.commonPool-worker-1/INFO]: [BetterHud] File packed: 5.533MB
-[20:16:04] [Server thread/INFO]: [Skript] Line 73: (golf.sk)
-[20:16:04] [Server thread/INFO]:     an entity cannot be saved, i.e. the contents of the variable {golf::ball::charging_bar::state::*} will be lost when the server stops.
-[20:16:04] [Server thread/INFO]:     Line: add attacker to {golf::ball::charging_bar::state::*}
-[20:16:04] [Server thread/INFO]:  
-[20:16:04] [Server thread/INFO]: [Skript] Loaded 3 scripts with a total of 13 structures in 6.31 seconds
-[20:16:04] [Server thread/INFO]: [Skript] Finished loading.
-[20:16:04] [Server thread/INFO]: [Citizens] Loaded 1 NPCs.
-[20:16:04] [Server thread/INFO]: [PlaceholderAPI] Successfully registered external expansion: skript [1.0.0]
-[20:16:04] [Server thread/INFO]: 1 placeholder hook(s) registered!
-[20:16:04] [Server thread/INFO]: [ItemsAdder] Reloading ItemsAdder Custom Entities Citizens NPCs...
-[20:16:04] [Server thread/INFO]: [ItemsAdder] Reloaded 0 ItemsAdder Custom Entities Citizens NPCs.
-[20:16:04] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: img [1.0.1]
-[20:16:04] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: iaplayerstat [1.0.1]
-[20:16:04] [Server thread/INFO]: Done (36.759s)! For help, type "help"
-[20:16:04] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 6715ms or 134 ticks behind
-[20:16:09] [User Authenticator #0/INFO]: UUID of player JugandoMiguel is 5cff4c76-6daf-30b5-94fb-b12c54496740
-[20:16:12] [Server thread/INFO]: JugandoMiguel joined the game
-[20:16:12] [Server thread/INFO]: JugandoMiguel[/127.0.0.1:63665] logged in with entity id 8 at ([world]-17.132325609325566, 72.0625, -33.04187970028386)
-[20:16:18] [Server thread/INFO]: JugandoMiguel issued server command: /gamemode creative
-[20:16:18] [Server thread/INFO]: [JugandoMiguel: Set own game mode to Creative Mode]
-[20:20:01] [Server thread/INFO]: JugandoMiguel issued server command: /golf killballs
-[20:20:05] [Server thread/INFO]: JugandoMiguel issued server command: /test
-[20:20:37] [Server thread/INFO]: JugandoMiguel issued server command: /sk reload golf.sk
-[20:20:41] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 4363ms or 87 ticks behind
-[20:21:33] [Server thread/INFO]: JugandoMiguel issued server command: /golf spawn
-[20:24:32] [Server thread/INFO]: JugandoMiguel issued server command: /golf killballs
-[20:25:54] [Server thread/INFO]: JugandoMiguel issued server command: //set stone_b
-[20:26:03] [Server thread/INFO]: JugandoMiguel issued server command: //set polished_blackstone_bricks
-[20:26:03] [AsyncNotifyKeyedQueue - 0/INFO]: Using com.sk89q.worldedit.bukkit.adapter.impl.fawe.v1_21_4.PaperweightStarlightRelighterFactory as relighter factory.
-[20:29:00] [Server thread/INFO]: JugandoMiguel issued server command: /sk reload golf.sk
-[20:29:04] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 4130ms or 82 ticks behind
-[20:29:07] [Server thread/INFO]: JugandoMiguel issued server command: /golf setup 2 spawn
-[20:29:07] [Server thread/INFO]: true
-[20:29:21] [Server thread/INFO]: JugandoMiguel issued server command: /golf setup 2 hole
-[20:29:21] [Server thread/INFO]: true
-[20:29:26] [Server thread/INFO]: JugandoMiguel issued server command: /golf setup 2 floor_level
-[20:29:26] [Server thread/INFO]: true
-[20:29:35] [Server thread/INFO]: JugandoMiguel issued server command: /golf hole 2
-[20:29:54] [Server thread/INFO]: JugandoMiguel issued server command: /sk reload golf.sk
-[20:29:57] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 3545ms or 70 ticks behind
-[20:30:06] [Server thread/INFO]: JugandoMiguel issued server command: /golf hole 2
-[20:30:08] [Server thread/INFO]: JugandoMiguel issued server command: /golf hole 1
-[20:30:52] [Server thread/INFO]: JugandoMiguel issued server command: /sk reload golf.sk
-[20:30:55] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 3355ms or 67 ticks behind
-[20:30:55] [Server thread/INFO]: JugandoMiguel issued server command: /golf hole 1
-[20:30:55] [Server thread/INFO]: hole
-[20:31:10] [Server thread/INFO]: JugandoMiguel issued server command: /sk reload golf.sk
-[20:31:13] [Server thread/INFO]: JugandoMiguel issued server command: /golf hole 1
-[20:31:13] [Server thread/INFO]: 1
-[20:31:13] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 3230ms or 64 ticks behind
-[20:31:19] [Server thread/INFO]: JugandoMiguel issued server command: /golf hole 2
-[20:31:19] [Server thread/INFO]: 2
-[20:31:23] [Server thread/INFO]: JugandoMiguel issued server command: /golf spawn
-[20:31:29] [Server thread/INFO]: JugandoMiguel issued server command: /golf killballs
-[21:11:02] [Server thread/INFO]: Stopping the server
-[21:11:02] [Server thread/INFO]: Stopping server
-[21:11:02] [Server thread/INFO]: [FastAsyncWorldEdit] Disabling FastAsyncWorldEdit v2.12.4-SNAPSHOT-1035;09473c5
-[21:11:02] [Server thread/INFO]: Unregistering com.sk89q.worldedit.bukkit.BukkitServerInterface from WorldEdit
-[21:11:02] [Server thread/INFO]: [MovementUI] Disabling MovementUI v1.0.8.6
-[21:11:02] [Server thread/INFO]: [Multiverse-Core] Disabling Multiverse-Core v4.3.14
-[21:11:02] [Server thread/INFO]: [ScreenEffects] Disabling ScreenEffects v1.0.17
-[21:11:02] [Server thread/INFO]: [skript-yaml] Disabling skript-yaml v1.6.1
-[21:11:02] [Server thread/INFO]: [BetterHud] Disabling BetterHud v1.11.4
-[21:11:02] [Server thread/INFO]: [BetterHud] Plugin disabled.
-[21:11:02] [Server thread/INFO]: [VoidGen] Disabling VoidGen v2.2.1
-[21:11:02] [Server thread/INFO]: [ItemsAdder] Disabling ItemsAdder v4.0.8
-[21:11:02] [Server thread/INFO]: [ItemsAdder] Despawned Citizens NPC 0 on ItemsAdder unload.
-[21:11:02] [Server thread/INFO]: [SkBee] Disabling SkBee v3.8.2
-[21:11:02] [Server thread/INFO]: [Citizens] Disabling Citizens v2.0.37-SNAPSHOT (build 3706)
-[21:11:02] [Server thread/INFO]: [LoneLibs] Disabling LoneLibs v1.0.64
-[21:11:02] [Server thread/INFO]: [Skript] Disabling Skript v2.10.1
-[21:11:02] [Server thread/INFO]: [PlaceholderAPI] Unregistered placeholder expansion skript
-[21:11:02] [Server thread/INFO]: [PlaceholderAPI] Reason: required plugin Skript was disabled.
-[21:11:02] [Server thread/INFO]: [PlaceholderAPI] Disabling PlaceholderAPI v2.11.6
-[21:11:02] [Server thread/INFO]: [ProtocolLib] Disabling ProtocolLib v5.4.0-SNAPSHOT-741
-[21:11:02] [Server thread/INFO]: Saving players
-[21:11:02] [Server thread/INFO]: JugandoMiguel lost connection: Server closed
-[21:11:02] [Server thread/INFO]: JugandoMiguel left the game
-[21:11:03] [Server thread/INFO]: Saving worlds
-[21:11:03] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
-[21:11:03] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
-[21:11:03] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
-[21:11:03] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
-[21:11:03] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'world' in 0.02s
-[21:11:03] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'world'
-[21:11:03] [Server thread/INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'world'
-[21:11:03] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
-[21:11:03] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
-[21:11:03] [Server thread/INFO]: Waiting for I/O tasks to complete...
-[21:11:03] [Server thread/INFO]: All I/O tasks to complete
-[21:11:03] [Server thread/INFO]: [MoonriseCommon] Awaiting termination of worker pool for up to 60s...
-[21:11:03] [Server thread/INFO]: [MoonriseCommon] Awaiting termination of I/O pool for up to 60s...
+[07:37:37] [Server thread/INFO]: [spark] Starting background profiler...
+[07:37:37] [Server thread/INFO]: [spark] The async-profiler engine is not supported for your os/arch (windows11/amd64), so the built-in Java engine will be used instead.
+[07:37:37] [Server thread/INFO]: [PlaceholderAPI] Placeholder expansion registration initializing...
+[07:37:37] [Server thread/INFO]: [BetterHud] Minecraft version: 1.21.4, NMS version: V1_21_R3
+[07:37:37] [Server thread/INFO]: [BetterHud] Plugin enabled.
+[07:37:37] [Server thread/INFO]: Done preparing level "world" (15.599s)
+[07:37:37] [Server thread/INFO]: Running delayed init tasks
+[07:37:37] [Server thread/INFO]: [Skript] Loading variables...
+[07:37:38] [Server thread/INFO]: [Skript] Loaded 21 variables in 0.2 seconds
+[07:37:38] [Craft Scheduler Thread - 1 - ItemsAdder/INFO]: [ItemsAdder] [License] Spigot product licensed to: JugandoMiguel (1464681)
+[07:37:38] [Server thread/INFO]: [Skript] Line 16: (golf_functions.sk)
+[07:37:38] [Server thread/INFO]:     Cannot recognise the type 'armor stand'
+[07:37:38] [Server thread/INFO]:     Line: function respawn_ball(ball: armor stand, teleport_to_old_loc: boolean):
+[07:37:38] [Server thread/INFO]:  
+[07:37:39] [Craft Scheduler Thread - 8 - ItemsAdder/INFO]: [ItemsAdder] Loaded 7 items
+[07:37:39] [Craft Scheduler Thread - 8 - ItemsAdder/INFO]: [ItemsAdder] Used 0/188 REAL block IDs
+[07:37:39] [Craft Scheduler Thread - 8 - ItemsAdder/INFO]: [ItemsAdder] Used 0/750 REAL_NOTE block IDs
+[07:37:39] [Craft Scheduler Thread - 8 - ItemsAdder/INFO]: [ItemsAdder] Used 0/63 REAL_TRANSPARENT block IDs
+[07:37:39] [Craft Scheduler Thread - 8 - ItemsAdder/INFO]: [ItemsAdder] Used 0/127 REAL_WIRE block IDs
+[07:37:39] [Craft Scheduler Thread - 8 - ItemsAdder/INFO]: [ItemsAdder] Used 0/14 FIRE block IDs
+[07:37:39] [Craft Scheduler Thread - 8 - ItemsAdder/INFO]: [ItemsAdder] Used 29/6608 font_images
+[07:37:40] [Craft Scheduler Thread - 8 - ItemsAdder/INFO]: [ItemsAdder] [Init] Loaded 1 categories
+[07:37:41] [Craft Scheduler Thread - 8 - ItemsAdder/INFO]: [ItemsAdder] [Init] Loaded successfully.
+[07:37:43] [Craft Scheduler Thread - 8 - ItemsAdder/INFO]: [ItemsAdder] [Pack] Resourcepack URL is valid (lobfile). URL: https://lobfile.com/file/kCDtSFGL.zip
+[07:37:49] [ForkJoinPool.commonPool-worker-1/INFO]: [BetterHud] File packed: 5,533MB
+[07:37:52] [Server thread/INFO]: [Skript] Line 71: (golf.sk)
+[07:37:52] [Server thread/INFO]:     an entity cannot be saved, i.e. the contents of the variable {golf::ball::charging_bar::state::*} will be lost when the server stops.
+[07:37:52] [Server thread/INFO]:     Line: add attacker to {golf::ball::charging_bar::state::*}
+[07:37:52] [Server thread/INFO]:  
+[07:37:52] [Server thread/INFO]: [Skript] Loaded 3 scripts with a total of 15 structures in 14.09 seconds
+[07:37:52] [Server thread/INFO]: [Skript] Finished loading.
+[07:37:53] [Server thread/INFO]: [Citizens] Cargando a 1 NPCs.
+[07:37:53] [Server thread/INFO]: [PlaceholderAPI] Successfully registered external expansion: skript [1.0.0]
+[07:37:53] [Server thread/INFO]: 1 placeholder hook(s) registered!
+[07:37:53] [Server thread/INFO]: [ItemsAdder] Reloading ItemsAdder Custom Entities Citizens NPCs...
+[07:37:53] [Server thread/INFO]: [ItemsAdder] Reloaded 0 ItemsAdder Custom Entities Citizens NPCs.
+[07:37:53] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: img [1.0.1]
+[07:37:53] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: iaplayerstat [1.0.1]
+[07:37:53] [Server thread/INFO]: Done (48.705s)! For help, type "help"
+[07:37:53] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 15556ms or 311 ticks behind
+[07:39:36] [Server thread/INFO]: Stopping server
+[07:39:36] [Server thread/INFO]: [FastAsyncWorldEdit] Disabling FastAsyncWorldEdit v2.12.4-SNAPSHOT-1035;09473c5
+[07:39:36] [Server thread/INFO]: Unregistering com.sk89q.worldedit.bukkit.BukkitServerInterface from WorldEdit
+[07:39:36] [Server thread/INFO]: [MovementUI] Disabling MovementUI v1.0.8.6
+[07:39:36] [Server thread/INFO]: [Multiverse-Core] Disabling Multiverse-Core v4.3.14
+[07:39:36] [Server thread/INFO]: [ScreenEffects] Disabling ScreenEffects v1.0.17
+[07:39:36] [Server thread/INFO]: [skript-yaml] Disabling skript-yaml v1.6.1
+[07:39:36] [Server thread/INFO]: [BetterHud] Disabling BetterHud v1.11.4
+[07:39:36] [Server thread/INFO]: [BetterHud] Plugin disabled.
+[07:39:36] [Server thread/INFO]: [VoidGen] Disabling VoidGen v2.2.1
+[07:39:36] [Server thread/INFO]: [ItemsAdder] Disabling ItemsAdder v4.0.8
+[07:39:36] [Server thread/INFO]: [ItemsAdder] Despawned Citizens NPC 0 on ItemsAdder unload.
+[07:39:36] [Server thread/INFO]: [SkBee] Disabling SkBee v3.8.2
+[07:39:36] [Server thread/INFO]: [Citizens] Disabling Citizens v2.0.37-SNAPSHOT (build 3706)
+[07:39:36] [Server thread/INFO]: [LoneLibs] Disabling LoneLibs v1.0.64
+[07:39:36] [Server thread/INFO]: [Skript] Disabling Skript v2.10.1
+[07:39:36] [Server thread/INFO]: [PlaceholderAPI] Unregistered placeholder expansion skript
+[07:39:36] [Server thread/INFO]: [PlaceholderAPI] Reason: required plugin Skript was disabled.
+[07:39:36] [Server thread/INFO]: [PlaceholderAPI] Disabling PlaceholderAPI v2.11.6
+[07:39:36] [Server thread/INFO]: [ProtocolLib] Disabling ProtocolLib v5.4.0-SNAPSHOT-741
+[07:39:36] [Server thread/INFO]: Saving players
+[07:39:36] [Server thread/INFO]: Saving worlds
+[07:39:36] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[07:39:36] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
+[07:39:36] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
+[07:39:36] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
+[07:39:36] [Server thread/INFO]: [ChunkHolderManager] Saved 49 block chunks, 49 entity chunks, 0 poi chunks in world 'world' in 0,15s
+[07:39:36] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'world'
+[07:39:36] [Server thread/INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'world'
+[07:39:36] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[07:39:36] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[07:39:36] [Server thread/INFO]: Waiting for I/O tasks to complete...
+[07:39:36] [Server thread/INFO]: All I/O tasks to complete
+[07:39:36] [Server thread/INFO]: [MoonriseCommon] Awaiting termination of worker pool for up to 60s...
+[07:39:36] [Server thread/INFO]: [MoonriseCommon] Awaiting termination of I/O pool for up to 60s...

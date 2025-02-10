@@ -27,7 +27,7 @@ npc:
       gravity:
         enabled: true
       hologramtrait: {}
-    traitnames: owner,spawned,scoreboardtrait,customentity,hologramtrait,gravity,skintrait,location,type,inventory
+    traitnames: spawned,scoreboardtrait,owner,customentity,hologramtrait,gravity,skintrait,location,inventory,type
     navigator:
       speedmodifier: 1.0
       avoidwater: false
