@@ -1,0 +1,79 @@
+function next_hole():
+    
+    add 1 to {golf::hole::current}
+    update_hole_info()
+    kill_balls()
+
+function kill_balls():
+    kill all armor stands where [string tag "custom;ball" of nbt of input is set]
+
+function update_hole_info():
+    set {arena::hole_locations::*} to expand_area(yaml value "arenas.%{golf::hole::current}%.hole_coordinates" from "config", true)
+    set {arena::hole_location} to yaml value "arenas.%{golf::hole::current}%.hole_coordinates" from "config"
+    set {arena::floor_level} to yaml value "arenas.%{golf::hole::current}%.floor_level" from "config"
+    set {arena::ball_spawn} to yaml value "arenas.%{golf::hole::current}%.ball_spawn" from "config"
+#function move_flag():
+function respawn_ball(ball: entity, teleport_to_old_loc: boolean):
+    set string tag "custom;ball.respawn" of nbt of {_ball} to "respawning"
+    set {_ball_owner} to string tag "custom;ball" of nbt of {_ball}
+    play sound "entity.villager.no" to ({_ball_owner} parsed as player)
+    wait 1 second
+    if {_teleport_to_old_loc} is true:
+        teleport {_ball} to {golf::ball::old_position::%{_ball_owner}%}
+    delete string tag "custom;ball.respawn" of nbt of {_ball}
+function spawn_balls(spawn_location: location, ball_owner: player):
+    spawn armor stand at {_spawn_location}
+    set {_nbt} to nbt of last spawned entity
+    set string tag "custom;ball" of nbt of {_nbt} to {_ball_owner}'s uuid
+
+function expand_area(position_1: location, expand_y: boolean) :: locations:
+    set {_position_2} to {_position_1}
+    if {_position_1}'s x-coord > {_position_2}'s x-coord:
+        set {_position_1} to {_position_1} ~ vector(1,0,0)
+        set {_position_2} to {_position_2} ~ vector(-1,0,0)
+    else:
+        set {_position_1} to {_position_1} ~ vector(-1,0,0)
+        set {_position_2} to {_position_2} ~ vector(1,0,0)
+    if {_position_1}'s z-coord > {_position_2}'s z-coord:
+        set {_position_1} to {_position_1} ~ vector(0,0,1)
+        set {_position_2} to {_position_2} ~ vector(0,0,-1)
+    else:
+        set {_position_1} to {_position_1} ~ vector(0,0,-1)
+        set {_position_2} to {_position_2} ~ vector(0,0,1)
+    if {_expand_y} is true:
+        broadcast "true"
+        set y-coord of {_position_1} to (y-coord of {_position_1}) - 0.5
+        set y-coord of {_position_2} to (y-coord of {_position_2}) + 1
+    return {_position_1} and {_position_2}
+
+function ball_charging_animation():
+    add 1 to {golf::ball::charging_bar::frame}
+    if {golf::ball::charging_bar::frame} is 0:
+        set {golf::ball::charging_bar::design} to "&f⬛⬛⬛⬛⬛⬛"
+        # broadcast "&6BallCounter 1: %{golf::ball::charging_bar::design}%"
+        set {golf::ball::charging_bar::power} to 0.05 #COUNTER SET FORCE VARIABLE
+    if {golf::ball::charging_bar::frame} is 1:
+        set {golf::ball::charging_bar::design} to "&2⬛&f⬛⬛⬛⬛⬛"
+        # broadcast "&6BallCounter 2: %{golf::ball::charging_bar::design}%"
+        set {golf::ball::charging_bar::power} to 0.25#0.25 #COUNTER SET FORCE VARIABLE
+    if {golf::ball::charging_bar::frame} is 2:
+        set {golf::ball::charging_bar::design} to "&2⬛⬛&f⬛⬛⬛⬛"
+        # broadcast "&6BallCounter 3: %{golf::ball::charging_bar::design}%"
+        set {golf::ball::charging_bar::power} to 0.35#0.35 #COUNTER SET FORCE VARIABLE
+    if {golf::ball::charging_bar::frame} is 3:
+        set {golf::ball::charging_bar::design} to "&2⬛⬛&6⬛&f⬛⬛⬛"
+        # broadcast "&6BallCounter 4: %{golf::ball::charging_bar::design}%"
+        set {golf::ball::charging_bar::power} to 0.45#0.45 #COUNTER SET FORCE VARIABLE
+    if {golf::ball::charging_bar::frame} is 4:
+        set {golf::ball::charging_bar::design} to "&2⬛⬛&6⬛⬛&f⬛⬛"
+        # broadcast "&6BallCounter 5: %{golf::ball::charging_bar::design}%"
+        set {golf::ball::charging_bar::power} to 1#0.55 #COUNTER SET FORCE VARIABLE
+    if {golf::ball::charging_bar::frame} is 5:
+        set {golf::ball::charging_bar::design} to "&2⬛⬛&6⬛⬛&c⬛&f⬛"
+        # broadcast "&6BallCounter 6: %{golf::ball::charging_bar::design}%"
+        set {golf::ball::charging_bar::power} to 1.2#0.70 #COUNTER SET FORCE VARIABLE
+    if {golf::ball::charging_bar::frame} is 6:
+        set {golf::ball::charging_bar::design} to "&2⬛⬛&6⬛⬛&c⬛⬛"
+        # broadcast "&6BallCounter 7: %{golf::ball::charging_bar::design}%"
+        set {golf::ball::charging_bar::frame} to -1
+        set {golf::ball::charging_bar::power} to 1.85#0.75 #COUNTER SET FORCE VARIABLE

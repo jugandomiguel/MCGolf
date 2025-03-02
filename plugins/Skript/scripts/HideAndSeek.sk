@@ -1,0 +1,17 @@
+command /t:
+    trigger:
+        createDisplayBlock(player)
+        wait 2 seconds
+        removeDisplayBlock(player)
+function createDisplayBlock(player: player):
+    set {_block_loc} to block below {_player}
+    broadcast "&11:%{_block_loc}%"
+    set {_block_loc} to location( floor({_block_loc}'s x-coord),{_block_loc}'s y-coord + 0.5, floor({_block_loc}'s z-coord))
+    broadcast "&22:%{_block_loc}%"
+    summon a block display at {_block_loc}
+    set display block data of last spawned entity to oak_stairs[facing=south]
+    set string tag "custom;player" of nbt of last spawned entity to {_player}'s uuid
+function removeDisplayBlock(player: player):
+    kill all displays where [string tag "custom;player" of nbt of input is {_player}'s uuid]
+function changePlayerState(state: integer):
+    set string tag "custom;state" of nbt of {_player} to 
