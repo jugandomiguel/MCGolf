@@ -3,6 +3,13 @@ command /t:
         createDisplayBlock(player)
         wait 2 seconds
         removeDisplayBlock(player)
+on right click:
+    createDisplayBlock(player)
+on player move:
+    if string tag "custom;state" of nbt of event-player is "hiding":
+        cancel event
+every tick:
+    apply effect
 function createDisplayBlock(player: player):
     set {_block_loc} to block below {_player}
     broadcast "&11:%{_block_loc}%"
@@ -11,7 +18,9 @@ function createDisplayBlock(player: player):
     summon a block display at {_block_loc}
     set display block data of last spawned entity to oak_stairs[facing=south]
     set string tag "custom;player" of nbt of last spawned entity to {_player}'s uuid
+    changePlayerState("hiding")
 function removeDisplayBlock(player: player):
     kill all displays where [string tag "custom;player" of nbt of input is {_player}'s uuid]
-function changePlayerState(state: integer):
-    set string tag "custom;state" of nbt of {_player} to 
+    changePlayerState("idle")
+function changePlayerState(state: string, player: player):
+    set string tag "custom;state" of nbt of {_player} to {_state}
