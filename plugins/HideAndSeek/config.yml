@@ -1,0 +1,24 @@
+arenas:
+    Tt:
+        display_name: Tt
+        pos1: !location
+            world: world
+            x: -2.36715140763455
+            y: 83.0
+            z: 30.27633222784099
+            yaw: 0.0
+            pitch: 0.0
+        pos2: !location
+            world: world
+            x: -2.36715140763455
+            y: 83.0
+            z: 30.27633222784099
+            yaw: 0.0
+            pitch: 0.0
+        spawnpoint: !location
+            world: world
+            x: -2.36715140763455
+            y: 83.0
+            z: 30.27633222784099
+            yaw: 0.0
+            pitch: 0.0

@@ -149,3 +149,8 @@ command /test:
             broadcast "Ball Own: %{_ball_owner}%"
             broadcast "uuid: %({_ball_owner} parsed as player)'s uuid%"
             broadcast "strokes: %{golf::ball::strokes::%{_ball_owner}'s uuid%}%"
+
+
+#TODO: Probar esto para el rebote de la pelota en pared 
+# {_velocity} to {_velocity} * -1
+# rotate {_velocity} around vector(0,1,0) by 180

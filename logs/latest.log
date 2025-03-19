@@ -1,277 +1,213 @@
-[09:38:14] [ServerMain/INFO]: [bootstrap] Running Java 21 (OpenJDK 64-Bit Server VM 21.0.6+7-LTS; Eclipse Adoptium Temurin-21.0.6+7) on Windows 11 10.0 (amd64)
-[09:38:14] [ServerMain/INFO]: [bootstrap] Loading Paper 1.21.4-138-main@5395ae3 (2025-02-02T21:42:11Z) for Minecraft 1.21.4
-[09:38:14] [ServerMain/INFO]: [PluginInitializerManager] Initializing plugins...
-[09:38:15] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'plugins\SkinsRestorer.jar'...
-[09:38:16] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'plugins\SkinsRestorer.jar' in 1776ms.
-[09:38:17] [ServerMain/INFO]: [PluginInitializerManager] Initialized 7 plugins
-[09:38:17] [ServerMain/INFO]: [PluginInitializerManager] Bukkit plugins (7):
- - FastAsyncWorldEdit (2.12.4-SNAPSHOT-1035;09473c5), Multiverse-Core (4.3.14), SkBee (3.8.2), SkinsRestorer (15.5.3), Skript (2.10.1), VoidGen (2.2.1), skript-yaml (1.6.1)
-[09:38:21] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
-[09:38:22] [ServerMain/INFO]: Loaded 1370 recipes
-[09:38:22] [ServerMain/INFO]: Loaded 1481 advancements
-[09:38:22] [ServerMain/INFO]: [MCTypeRegistry] Initialising converters for DataConverter...
-[09:38:22] [ServerMain/INFO]: [MCTypeRegistry] Finished initialising converters for DataConverter in 158,0ms
-[09:38:23] [Server thread/INFO]: Starting minecraft server version 1.21.4
-[09:38:23] [Server thread/INFO]: Loading properties
-[09:38:23] [Server thread/INFO]: This server is running Paper version 1.21.4-138-main@5395ae3 (2025-02-02T21:42:11Z) (Implementing API version 1.21.4-R0.1-SNAPSHOT)
-[09:38:23] [Server thread/INFO]: [spark] This server bundles the spark profiler. For more information please visit https://docs.papermc.io/paper/profiling
-[09:38:23] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[09:38:23] [Server thread/INFO]: Using 4 threads for Netty based IO
-[09:38:23] [Server thread/INFO]: [MoonriseCommon] Paper is using 4 worker threads, 1 I/O threads
-[09:38:23] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
-[09:38:23] [Server thread/INFO]: Default game type: SURVIVAL
-[09:38:23] [Server thread/INFO]: Generating keypair
-[09:38:24] [Server thread/INFO]: Starting Minecraft server on *:25565
-[09:38:24] [Server thread/INFO]: Using default channel type
-[09:38:24] [Server thread/INFO]: Paper: Using Java compression from Velocity.
-[09:38:24] [Server thread/INFO]: Paper: Using Java cipher from Velocity.
-[09:38:24] [Server thread/INFO]: [Skript] Loading server plugin Skript v2.10.1
-[09:38:24] [Server thread/INFO]: [VoidGen] Loading server plugin VoidGen v2.2.1
-[09:38:24] [Server thread/INFO]: [skript-yaml] Loading server plugin skript-yaml v1.6.1
-[09:38:24] [Server thread/INFO]: [SkinsRestorer] Loading server plugin SkinsRestorer v15.5.3
-[09:38:24] [Server thread/INFO]: [SkBee] Loading server plugin SkBee v3.8.2
-[09:38:24] [Server thread/INFO]: [Multiverse-Core] Loading server plugin Multiverse-Core v4.3.14
-[09:38:24] [Server thread/INFO]: [FastAsyncWorldEdit] Loading server plugin FastAsyncWorldEdit v2.12.4-SNAPSHOT-1035;09473c5
-[09:38:26] [Server thread/INFO]: Got request to register class com.sk89q.worldedit.bukkit.BukkitServerInterface with WorldEdit [com.sk89q.worldedit.extension.platform.PlatformManager@6f52d46e]
-[09:38:26] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[09:38:26] [Server thread/INFO]: [VoidGen] Enabling VoidGen v2.2.1
-[09:38:26] [Server thread/INFO]: [VoidGen] Using VoidChunkGen: VERSION_UNKNOWN
-[09:38:26] [Server thread/INFO]: [SkinsRestorer] Enabling SkinsRestorer v15.5.3
-[09:38:26] [Server thread/WARN]: [SkinsRestorer] You must agree to the rules at 'commands.perSkinPermissionsConsent' in the config to use per skin permissions.
-[09:38:26] [Server thread/INFO]: [SkinsRestorer] Running on Minecraft 1.21.4.
-[09:38:27] [Server thread/INFO]: [SkinsRestorer] Using paper join listener!
-[09:38:27] [Server thread/INFO]: [FastAsyncWorldEdit] Enabling FastAsyncWorldEdit v2.12.4-SNAPSHOT-1035;09473c5
-[09:38:27] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] ----------------------------------------------
-[09:38:27] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     +==================+
-[09:38:27] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     |   SkinsRestorer  |
-[09:38:27] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     |------------------|
-[09:38:27] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     |  Standalone Mode |
-[09:38:27] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     +==================+
-[09:38:27] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] ----------------------------------------------
-[09:38:27] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     Version: 15.5.3
-[09:38:27] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     Commit: 86e796c
-[09:38:27] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     This is the latest version!
-[09:38:27] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] ----------------------------------------------
-[09:38:27] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] Do you have issues? Read our troubleshooting guide: https://skinsrestorer.net/docs/troubleshooting
-[09:38:27] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] Want to support SkinsRestorer? Consider donating: https://skinsrestorer.net/donate
-[09:38:28] [Server thread/INFO]: [com.fastasyncworldedit.core.Fawe] LZ4 Compression Binding loaded successfully
-[09:38:28] [Server thread/INFO]: [com.fastasyncworldedit.core.Fawe] ZSTD Compression Binding loaded successfully
-[09:38:28] [Server thread/INFO]: Registering commands with com.sk89q.worldedit.bukkit.BukkitServerInterface
-[09:38:28] [Server thread/INFO]: WEPIF: Using the Bukkit Permissions API.
-[09:38:28] [Server thread/INFO]: Using com.sk89q.worldedit.bukkit.adapter.impl.fawe.v1_21_4.PaperweightFaweAdapter as the Bukkit adapter
-[09:38:29] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
-[09:38:29] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
-[09:38:29] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
-[09:38:29] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
-[09:38:29] [Server thread/INFO]: Preparing level "world"
-[09:38:29] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
-[09:38:29] [Server thread/INFO]: Preparing spawn area: 0%
-[09:38:30] [Server thread/INFO]: Preparing spawn area: 0%
-[09:38:30] [Server thread/INFO]: Time elapsed: 542 ms
-[09:38:30] [Server thread/INFO]: [Skript] Enabling Skript v2.10.1
-[09:38:30] [ForkJoinPool.commonPool-worker-1/WARN]: [com.fastasyncworldedit.core.util.UpdateNotification] An update for FastAsyncWorldEdit is available. You are 24 build(s) out of date.
-You are running build 1035, the latest version is build 1059.
+[14:14:51] [ServerMain/INFO]: [bootstrap] Running Java 21 (OpenJDK 64-Bit Server VM 21.0.6+7-LTS; Eclipse Adoptium Temurin-21.0.6+7) on Windows 11 10.0 (amd64)
+[14:14:51] [ServerMain/INFO]: [bootstrap] Loading Paper 1.21.4-138-main@5395ae3 (2025-02-02T21:42:11Z) for Minecraft 1.21.4
+[14:14:52] [ServerMain/INFO]: [PluginInitializerManager] Initializing plugins...
+[14:14:53] [ServerMain/INFO]: [PluginInitializerManager] Initialized 7 plugins
+[14:14:53] [ServerMain/INFO]: [PluginInitializerManager] Bukkit plugins (7):
+ - FastAsyncWorldEdit (2.12.4-SNAPSHOT-1035;09473c5), Multiverse-Core (4.3.14), SkBee (3.8.2), SkinsRestorer (15.6.0), Skript (2.10.1), VoidGen (2.2.1), skript-yaml (1.6.1)
+[14:14:59] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[14:15:01] [ServerMain/INFO]: Loaded 1370 recipes
+[14:15:01] [ServerMain/INFO]: Loaded 1481 advancements
+[14:15:01] [ServerMain/INFO]: [MCTypeRegistry] Initialising converters for DataConverter...
+[14:15:01] [ServerMain/INFO]: [MCTypeRegistry] Finished initialising converters for DataConverter in 218,0ms
+[14:15:01] [Server thread/INFO]: Starting minecraft server version 1.21.4
+[14:15:01] [Server thread/INFO]: Loading properties
+[14:15:01] [Server thread/INFO]: This server is running Paper version 1.21.4-138-main@5395ae3 (2025-02-02T21:42:11Z) (Implementing API version 1.21.4-R0.1-SNAPSHOT)
+[14:15:01] [Server thread/INFO]: [spark] This server bundles the spark profiler. For more information please visit https://docs.papermc.io/paper/profiling
+[14:15:01] [Server thread/INFO]: Using 4 threads for Netty based IO
+[14:15:01] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[14:15:02] [Server thread/INFO]: [MoonriseCommon] Paper is using 4 worker threads, 1 I/O threads
+[14:15:02] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
+[14:15:02] [Server thread/INFO]: Default game type: SURVIVAL
+[14:15:02] [Server thread/INFO]: Generating keypair
+[14:15:02] [Server thread/INFO]: Starting Minecraft server on *:25565
+[14:15:02] [Server thread/INFO]: Using default channel type
+[14:15:02] [Server thread/INFO]: Paper: Using Java compression from Velocity.
+[14:15:02] [Server thread/INFO]: Paper: Using Java cipher from Velocity.
+[14:15:02] [Server thread/INFO]: [Skript] Loading server plugin Skript v2.10.1
+[14:15:02] [Server thread/INFO]: [VoidGen] Loading server plugin VoidGen v2.2.1
+[14:15:02] [Server thread/INFO]: [skript-yaml] Loading server plugin skript-yaml v1.6.1
+[14:15:02] [Server thread/INFO]: [SkinsRestorer] Loading server plugin SkinsRestorer v15.6.0
+[14:15:02] [Server thread/INFO]: [SkBee] Loading server plugin SkBee v3.8.2
+[14:15:02] [Server thread/INFO]: [Multiverse-Core] Loading server plugin Multiverse-Core v4.3.14
+[14:15:02] [Server thread/INFO]: [FastAsyncWorldEdit] Loading server plugin FastAsyncWorldEdit v2.12.4-SNAPSHOT-1035;09473c5
+[14:15:03] [Server thread/INFO]: Got request to register class com.sk89q.worldedit.bukkit.BukkitServerInterface with WorldEdit [com.sk89q.worldedit.extension.platform.PlatformManager@33aa4fba]
+[14:15:03] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[14:15:03] [Server thread/INFO]: [VoidGen] Enabling VoidGen v2.2.1
+[14:15:03] [Server thread/INFO]: [VoidGen] Using VoidChunkGen: VERSION_UNKNOWN
+[14:15:03] [Server thread/INFO]: [SkinsRestorer] Enabling SkinsRestorer v15.6.0
+[14:15:04] [Server thread/WARN]: [SkinsRestorer] You must agree to the rules at 'commands.perSkinPermissionsConsent' in the config to use per skin permissions.
+[14:15:04] [Server thread/INFO]: [SkinsRestorer] Running on Minecraft 1.21.4.
+[14:15:05] [Server thread/INFO]: [SkinsRestorer] Using paper join listener!
+[14:15:05] [Server thread/INFO]: [FastAsyncWorldEdit] Enabling FastAsyncWorldEdit v2.12.4-SNAPSHOT-1035;09473c5
+[14:15:05] [Server thread/INFO]: [com.fastasyncworldedit.core.Fawe] LZ4 Compression Binding loaded successfully
+[14:15:05] [Server thread/INFO]: [com.fastasyncworldedit.core.Fawe] ZSTD Compression Binding loaded successfully
+[14:15:05] [Server thread/INFO]: Registering commands with com.sk89q.worldedit.bukkit.BukkitServerInterface
+[14:15:05] [Server thread/INFO]: WEPIF: Using the Bukkit Permissions API.
+[14:15:05] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] ----------------------------------------------
+[14:15:05] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     +==================+
+[14:15:05] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     |   SkinsRestorer  |
+[14:15:05] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     |------------------|
+[14:15:05] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     |  Standalone Mode |
+[14:15:05] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     +==================+
+[14:15:05] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] ----------------------------------------------
+[14:15:05] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     Version: 15.6.0
+[14:15:05] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     Commit: dec2ffc
+[14:15:05] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     This is the latest version!
+[14:15:05] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] ----------------------------------------------
+[14:15:05] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] Do you have issues? Read our troubleshooting guide: https://skinsrestorer.net/docs/troubleshooting
+[14:15:05] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] Want to support SkinsRestorer? Consider donating: https://skinsrestorer.net/donate
+[14:15:05] [Server thread/INFO]: Using com.sk89q.worldedit.bukkit.adapter.impl.fawe.v1_21_4.PaperweightFaweAdapter as the Bukkit adapter
+[14:15:06] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[14:15:06] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[14:15:06] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[14:15:06] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[14:15:06] [Server thread/INFO]: Preparing level "world"
+[14:15:07] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[14:15:07] [Server thread/INFO]: Preparing spawn area: 0%
+[14:15:07] [Server thread/INFO]: Time elapsed: 346 ms
+[14:15:07] [Server thread/INFO]: [Skript] Enabling Skript v2.10.1
+[14:15:07] [ForkJoinPool.commonPool-worker-1/WARN]: [com.fastasyncworldedit.core.util.UpdateNotification] An update for FastAsyncWorldEdit is available. You are 30 build(s) out of date.
+You are running build 1035, the latest version is build 1065.
 Update at https://www.spigotmc.org/resources/13932/
-[09:38:31] [ForkJoinPool.commonPool-worker-1/INFO]: [Skript] A new version of Skript is available: 2.10.2 (you're currently running 2.10.1)
-[09:38:31] [ForkJoinPool.commonPool-worker-1/INFO]: Download it at: https://github.com/SkriptLang/Skript/releases/download/2.10.2/Skript-2.10.2.jar
-[09:38:31] [Server thread/INFO]: [Skript]  ~ created by & © Peter Güttinger aka Njol ~
-[09:38:31] [Server thread/INFO]: [skript-yaml] Enabling skript-yaml v1.6.1
-[09:38:31] [Server thread/INFO]: [SkBee] Enabling SkBee v3.8.2
-[09:38:31] [Server thread/INFO]: [SkBee] Registry Elements successfully loaded
-[09:38:32] [ForkJoinPool.commonPool-worker-2/INFO]: [Skript-Yaml] Skript-Yaml is up to date!
-[09:38:32] [Server thread/INFO]: [SkBee] Loading NBTApi...
-[09:38:32] [Server thread/INFO]: [SkBee] [NBTAPI] Found Minecraft: 1.21.4! Trying to find NMS support
-[09:38:32] [Server thread/INFO]: [SkBee] [NBTAPI] NMS support 'MC1_21_R3' loaded!
-[09:38:32] [Server thread/INFO]: [SkBee] Successfully loaded NBTApi!
-[09:38:32] [Server thread/INFO]: [SkBee] NBT Elements successfully loaded
-[09:38:32] [Server thread/INFO]: [SkBee] Text Component Elements successfully loaded
-[09:38:32] [Server thread/INFO]: [SkBee] Advancement Elements successfully loaded
-[09:38:32] [Server thread/INFO]: [SkBee] BossBar Elements successfully loaded
-[09:38:32] [Server thread/INFO]: [SkBee] Bound Elements successfully loaded
-[09:38:32] [Server thread/INFO]: [SkBee] Damage Source Elements successfully loaded
-[09:38:32] [Server thread/INFO]: [SkBee] Display Entity Elements successfully loaded
-[09:38:32] [Server thread/INFO]: [SkBee] Fishing Elements successfully loaded
-[09:38:32] [Server thread/INFO]: [SkBee] Game Event Elements successfully loaded
-[09:38:32] [Server thread/INFO]: [SkBee] Item Component Elements successfully loaded
-[09:38:32] [Server thread/INFO]: [SkBee] Particle Elements successfully loaded
-[09:38:32] [Server thread/INFO]: [SkBee] RayTrace Elements successfully loaded
-[09:38:32] [Server thread/INFO]: [SkBee] Recipe Elements successfully loaded
-[09:38:32] [Server thread/INFO]: [SkBee] Scoreboard[Adventure] Elements successfully loaded
-[09:38:32] [Server thread/INFO]: [SkBee] Scoreboard Objective Elements successfully loaded
-[09:38:32] [Server thread/INFO]: [SkBee] Statistic Elements successfully loaded
-[09:38:32] [ForkJoinPool.commonPool-worker-1/INFO]: [Skript] Loaded 5440 aliases in 1044ms
-[09:38:32] [Server thread/INFO]: [SkBee] Structure Elements successfully loaded
-[09:38:32] [Server thread/INFO]: [SkBee] SwitchCase Elements successfully loaded
-[09:38:32] [Server thread/INFO]: [SkBee] Minecraft Tag Elements disabled (now in Skript)
-[09:38:32] [Server thread/INFO]: [SkBee] Team Elements successfully loaded
-[09:38:32] [Server thread/INFO]: [SkBee] Tick Manager Elements successfully loaded
-[09:38:32] [Server thread/INFO]: [SkBee] Villager Elements successfully loaded
-[09:38:32] [Server thread/INFO]: [SkBee] Virtual Furnace Elements disabled via config
-[09:38:32] [Server thread/INFO]: [SkBee] World Border Elements successfully loaded
-[09:38:32] [Server thread/INFO]: [SkBee] World Creator Elements successfully loaded
-[09:38:32] [Server thread/INFO]: [SkBee] Chunk Generator Elements successfully loaded
-[09:38:32] [Server thread/INFO]: [SkBee] Loaded (443) elements:
-[09:38:32] [Server thread/INFO]: [SkBee]  - 51 events
-[09:38:32] [Server thread/INFO]: [SkBee]  - 71 effects
-[09:38:32] [Server thread/INFO]: [SkBee]  - 267 expressions
-[09:38:32] [Server thread/INFO]: [SkBee]  - 25 conditions
-[09:38:32] [Server thread/INFO]: [SkBee]  - 29 sections
-[09:38:32] [Server thread/INFO]: [SkBee] Checking for update...
-[09:38:33] [Server thread/INFO]: [SkBee] Plugin is not up to date!
-[09:38:33] [Server thread/INFO]: [SkBee]  - Current version: v3.8.2
-[09:38:33] [Server thread/INFO]: [SkBee]  - Available update: v3.9.1
-[09:38:33] [Server thread/INFO]: [SkBee]  - Download available at: https://github.com/ShaneBeee/SkBee/releases
-[09:38:33] [Server thread/INFO]: [SkBee] Successfully enabled v3.8.2 in 1,23 seconds
-[09:38:33] [Server thread/INFO]: [Multiverse-Core] Enabling Multiverse-Core v4.3.14
-[09:38:33] [Server thread/WARN]: [Multiverse-Core] "Multiverse-Core v4.3.14" has registered a listener for org.bukkit.event.entity.EntityCreatePortalEvent on method "public void com.onarandombox.MultiverseCore.listeners.MVPortalListener.entityPortalCreate(org.bukkit.event.entity.EntityCreatePortalEvent)", but the event is Deprecated. "Server performance will be affected"; please notify the authors [dumptruckman, Rigby, fernferret, lithium3141, main--].
-[09:38:33] [Server thread/INFO]: [Multiverse-Core] §aWe are aware of the warning about the deprecated event. There is no alternative that allows us to do what we need to do and performance impact is negligible. It is safe to ignore.
-[09:38:33] [Server thread/INFO]: [VoidGen] Generator settings have not been set. Using default values:
-[09:38:33] [Server thread/INFO]: [VoidGen] {"caves":false,"decoration":false,"mobs":false,"structures":false,"noise":false,"surface":false,"bedrock":false}
-[09:38:33] [Server thread/INFO]: [Multiverse-Core] 1 - World(s) loaded.
-[09:38:33] [Server thread/WARN]: [Multiverse-Core] Buscript failed to load! The script command will be disabled! If you would like not to see this message, use `/mv conf enablebuscript false` to disable Buscript from loading.
-[09:38:33] [Server thread/INFO]: [Multiverse-Core] Version 4.3.14 (API v24) Enabled - By dumptruckman, Rigby, fernferret, lithium3141 and main--
-[09:38:33] [Server thread/INFO]: [spark] Starting background profiler...
-[09:38:33] [Server thread/INFO]: [spark] The async-profiler engine is not supported for your os/arch (windows11/amd64), so the built-in Java engine will be used instead.
-[09:38:33] [Server thread/INFO]: Done preparing level "world" (4.143s)
-[09:38:33] [Server thread/INFO]: Running delayed init tasks
-[09:38:33] [Server thread/INFO]: [Skript] Loading variables...
-[09:38:33] [Server thread/INFO]: [Skript] Loaded 23 variables in 0.0 seconds
-[09:38:33] [Server thread/INFO]: [Skript] Line 2: (HideAndSeek.sk)
-[09:38:33] [Server thread/INFO]:     Variables cannot be used here.
-[09:38:33] [Server thread/INFO]:     Line: set {_block_loc} to (the block below the {_player})
-[09:38:33] [Server thread/INFO]:  
-[09:38:33] [Server thread/INFO]: [Skript] Loaded 1 script with a total of 1 structure in 0.23 seconds
-[09:38:33] [Server thread/INFO]: [Skript] Finished loading.
-[09:38:33] [Server thread/INFO]: Done (20.311s)! For help, type "help"
-[09:38:34] [User Authenticator #0/INFO]: UUID of player JugandoMiguel is 5cff4c76-6daf-30b5-94fb-b12c54496740
-[09:38:35] [Server thread/INFO]: JugandoMiguel joined the game
-[09:38:35] [Server thread/INFO]: JugandoMiguel[/127.0.0.1:51665] logged in with entity id 2 at ([world]0.8571128765000406, 83.0, 30.19648228904091)
-[09:38:43] [Server thread/INFO]: JugandoMiguel issued server command: /sk reload HideAndSeek.sk
-[09:38:50] [Server thread/INFO]: JugandoMiguel issued server command: /gamemode creative
-[09:38:50] [Server thread/INFO]: [JugandoMiguel: Set own game mode to Creative Mode]
-[09:38:59] [Server thread/INFO]: JugandoMiguel issued server command: /t
-[09:39:19] [Server thread/INFO]: JugandoMiguel issued server command: /t
-[09:39:20] [Server thread/INFO]: JugandoMiguel issued server command: /sk reload HideAndSeek.sk
-[09:39:21] [Server thread/INFO]: JugandoMiguel issued server command: /t
-[09:40:15] [Server thread/INFO]: JugandoMiguel issued server command: /sk reload HideAndSeek.sk
-[09:40:20] [Server thread/INFO]: JugandoMiguel issued server command: /kill @e[type=minecraft:block_display]
-[09:40:20] [Server thread/INFO]: [JugandoMiguel: Killed Block Display]
-[09:40:24] [Server thread/INFO]: JugandoMiguel issued server command: /t
-[09:40:24] [Server thread/INFO]: 1:'oak wood' at 0.5, 82.5, 29.5 in world 'world'
-[09:40:24] [Server thread/INFO]: 2:x: 0.5, y: 82.5, z: 29.5, yaw: 0, pitch: 0 in 'world'
-[09:44:22] [Server thread/INFO]: JugandoMiguel issued server command: /kill @e[type=minecraft:block_display]
-[09:44:22] [Server thread/INFO]: [JugandoMiguel: Killed Block Display]
-[09:44:23] [Server thread/INFO]: JugandoMiguel issued server command: /sk reload HideAndSeek.sk
-[09:44:25] [Server thread/INFO]: JugandoMiguel issued server command: /t
-[09:44:25] [Server thread/INFO]: 1:'oak wood' at 0.5, 82.5, 29.5 in world 'world'
-[09:44:25] [Server thread/INFO]: 2:x: 0, y: 82.5, z: 29, yaw: 0, pitch: 0 in 'world'
-[09:44:27] [Server thread/INFO]: JugandoMiguel issued server command: /t
-[09:44:27] [Server thread/INFO]: 1:'stone' at 0.5, 82.5, 32.5 in world 'world'
-[09:44:27] [Server thread/INFO]: 2:x: 0, y: 82.5, z: 32, yaw: 0, pitch: 0 in 'world'
-[09:44:28] [Server thread/INFO]: JugandoMiguel issued server command: /t
-[09:44:28] [Server thread/INFO]: 1:'stone' at -1.5, 82.5, 33.5 in world 'world'
-[09:44:28] [Server thread/INFO]: 2:x: -2, y: 82.5, z: 33, yaw: 0, pitch: 0 in 'world'
-[09:44:30] [Server thread/INFO]: JugandoMiguel issued server command: /t
-[09:44:30] [Server thread/INFO]: 1:'stone' at -2.5, 82.5, 31.5 in world 'world'
-[09:44:30] [Server thread/INFO]: 2:x: -3, y: 82.5, z: 31, yaw: 0, pitch: 0 in 'world'
-[09:44:31] [Server thread/INFO]: JugandoMiguel issued server command: /t
-[09:44:31] [Server thread/INFO]: 1:'stone' at -3.5, 82.5, 31.5 in world 'world'
-[09:44:31] [Server thread/INFO]: 2:x: -4, y: 82.5, z: 31, yaw: 0, pitch: 0 in 'world'
-[09:44:32] [Server thread/INFO]: JugandoMiguel issued server command: /t
-[09:44:32] [Server thread/INFO]: 1:'stone' at -4.5, 82.5, 31.5 in world 'world'
-[09:44:32] [Server thread/INFO]: 2:x: -5, y: 82.5, z: 31, yaw: 0, pitch: 0 in 'world'
-[09:44:33] [Server thread/INFO]: JugandoMiguel issued server command: /t
-[09:44:33] [Server thread/INFO]: 1:'stone' at -7.5, 82.5, 31.5 in world 'world'
-[09:44:33] [Server thread/INFO]: 2:x: -8, y: 82.5, z: 31, yaw: 0, pitch: 0 in 'world'
-[09:44:54] [Server thread/INFO]: JugandoMiguel issued server command: /sk reload HideAndSeek.sk
-[09:44:55] [Server thread/INFO]: JugandoMiguel issued server command: /t
-[09:44:55] [Server thread/INFO]: 1:'stone' at -6.5, 82.5, 29.5 in world 'world'
-[09:44:55] [Server thread/INFO]: 2:x: -7, y: 83.5, z: 29, yaw: 0, pitch: 0 in 'world'
-[09:45:00] [Server thread/INFO]: JugandoMiguel issued server command: /t
-[09:45:00] [Server thread/INFO]: 1:'stone' at -6.5, 82.5, 29.5 in world 'world'
-[09:45:00] [Server thread/INFO]: 2:x: -7, y: 83.5, z: 29, yaw: 0, pitch: 0 in 'world'
-[09:45:01] [Server thread/INFO]: JugandoMiguel issued server command: /sk reload HideAndSeek.sk
-[09:45:02] [Server thread/INFO]: JugandoMiguel issued server command: /sk reload HideAndSeek.sk
-[09:45:03] [Server thread/INFO]: JugandoMiguel issued server command: /t
-[09:45:03] [Server thread/INFO]: 1:'stone' at -5.5, 82.5, 26.5 in world 'world'
-[09:45:03] [Server thread/INFO]: 2:x: -6, y: 83, z: 26, yaw: 0, pitch: 0 in 'world'
-[09:45:05] [Server thread/INFO]: JugandoMiguel issued server command: /t
-[09:45:05] [Server thread/INFO]: 1:'stone' at -3.5, 82.5, 26.5 in world 'world'
-[09:45:05] [Server thread/INFO]: 2:x: -4, y: 83, z: 26, yaw: 0, pitch: 0 in 'world'
-[09:45:06] [Server thread/INFO]: JugandoMiguel issued server command: /t
-[09:45:06] [Server thread/INFO]: 1:'stone' at -2.5, 82.5, 27.5 in world 'world'
-[09:45:06] [Server thread/INFO]: 2:x: -3, y: 83, z: 27, yaw: 0, pitch: 0 in 'world'
-[09:45:10] [Server thread/INFO]: JugandoMiguel issued server command: /kill @e[type=minecraft:block_display]
-[09:45:10] [Server thread/INFO]: [JugandoMiguel: Killed 12 entities]
-[09:45:51] [Server thread/INFO]: JugandoMiguel issued server command: /kill @e[type=minecraft:block_display]
-[09:45:54] [Server thread/INFO]: JugandoMiguel issued server command: /t
-[09:45:54] [Server thread/INFO]: 1:'oak wood' at 0.5, 83.5, 26.5 in world 'world'
-[09:45:54] [Server thread/INFO]: 2:x: 0, y: 84, z: 26, yaw: 0, pitch: 0 in 'world'
-[09:46:48] [Server thread/INFO]: JugandoMiguel issued server command: /kill @e[type=minecraft:block_display]
-[09:46:48] [Server thread/INFO]: [JugandoMiguel: Killed Block Display]
-[10:00:49] [Server thread/INFO]: JugandoMiguel issued server command: /sk reload HideAndSeek.sk
-[10:01:02] [Server thread/INFO]: JugandoMiguel issued server command: /sk reload HideAndSeek.sk
-[10:03:32] [Server thread/INFO]: JugandoMiguel issued server command: /sk reload HideAndSeek.sk
-[10:03:47] [Server thread/INFO]: JugandoMiguel issued server command: /sk reload HideAndSeek.sk
-[10:18:49] [Server thread/INFO]: JugandoMiguel issued server command: /sk reload HideAndSeek.sk
-[10:18:54] [Server thread/INFO]: JugandoMiguel issued server command: /sk reload HideAndSeek.sk
-[10:20:24] [Server thread/INFO]: JugandoMiguel issued server command: /sk reload HideAndSeek.sk
-[10:22:04] [Server thread/INFO]: JugandoMiguel issued server command: /sk reload HideAndSeek.sk
-[10:22:05] [Server thread/INFO]: JugandoMiguel lost connection: Disconnected
-[10:22:05] [Server thread/INFO]: JugandoMiguel left the game
-[10:22:09] [User Authenticator #1/INFO]: UUID of player JugandoMiguel is 5cff4c76-6daf-30b5-94fb-b12c54496740
-[10:22:09] [Server thread/INFO]: JugandoMiguel joined the game
-[10:22:09] [Server thread/INFO]: JugandoMiguel[/127.0.0.1:52706] logged in with entity id 23 at ([world]-7.223686272371631, 85.90820830552997, 42.87784803454184)
-[10:22:10] [Server thread/INFO]: JugandoMiguel issued server command: /sk reload HideAndSeek.sk
-[10:22:47] [Server thread/INFO]: JugandoMiguel issued server command: /sk reload HideAndSeek.sk
-[10:22:48] [Server thread/INFO]: JugandoMiguel issued server command: /t
-[10:22:48] [Server thread/INFO]: 1:'stone' at -4.5, 82.5, 39.5 in world 'world'
-[10:22:48] [Server thread/INFO]: 2:x: -5, y: 83, z: 39, yaw: 0, pitch: 0 in 'world'
-[10:27:12] [Server thread/INFO]: JugandoMiguel issued server command: /sk reload HideAndSeek.sk
-[10:27:42] [Server thread/INFO]: JugandoMiguel issued server command: /sk reload HideAndSeek.sk
-[10:27:42] [Server thread/INFO]: JugandoMiguel issued server command: /t
-[10:27:42] [Server thread/INFO]: 1:'stone' at -7.5, 82.5, 41.5 in world 'world'
-[10:27:42] [Server thread/INFO]: 2:x: -8, y: 83, z: 41, yaw: 0, pitch: 0 in 'world'
-[10:28:09] [Server thread/INFO]: JugandoMiguel issued server command: /sk reload HideAndSeek.sk
-[10:28:41] [Server thread/INFO]: JugandoMiguel issued server command: /sk reload HideAndSeek.sk
-[10:28:42] [Server thread/INFO]: JugandoMiguel issued server command: /t
-[10:28:42] [Server thread/INFO]: 1:'stone' at -9.5, 82.5, 43.5 in world 'world'
-[10:28:42] [Server thread/INFO]: 2:x: -10, y: 83, z: 43, yaw: 0, pitch: 0 in 'world'
-[10:32:00] [Server thread/INFO]: JugandoMiguel issued server command: /sk reload HideAndSeek.sk
-[10:32:00] [Server thread/INFO]: JugandoMiguel issued server command: /t
-[10:32:00] [Server thread/INFO]: 1:'stone' at -11.5, 82.5, 44.5 in world 'world'
-[10:32:00] [Server thread/INFO]: 2:x: -12, y: 83, z: 44, yaw: 0, pitch: 0 in 'world'
-[10:32:03] [Server thread/INFO]: JugandoMiguel issued server command: /gamemode creative
-[10:32:03] [Server thread/INFO]: [JugandoMiguel: Set own game mode to Creative Mode]
-[10:32:19] [Server thread/INFO]: JugandoMiguel issued server command: /sk reload HideAndSeek.sk
-[10:32:21] [Server thread/INFO]: JugandoMiguel issued server command: /t
-[10:32:21] [Server thread/INFO]: 1:'stone' at -10.5, 82.5, 37.5 in world 'world'
-[10:32:21] [Server thread/INFO]: 2:x: -11, y: 83, z: 37, yaw: 0, pitch: 0 in 'world'
-[10:32:33] [Server thread/INFO]: JugandoMiguel issued server command: /kill @e[type=minecraft:block_display]
-[10:32:33] [Server thread/INFO]: [JugandoMiguel: Killed 3 entities]
-[10:57:55] [Server thread/INFO]: Stopping server
-[10:57:55] [Server thread/INFO]: [FastAsyncWorldEdit] Disabling FastAsyncWorldEdit v2.12.4-SNAPSHOT-1035;09473c5
-[10:57:55] [Server thread/INFO]: Unregistering com.sk89q.worldedit.bukkit.BukkitServerInterface from WorldEdit
-[10:57:55] [Server thread/INFO]: [Multiverse-Core] Disabling Multiverse-Core v4.3.14
-[10:57:55] [Server thread/INFO]: [SkBee] Disabling SkBee v3.8.2
-[10:57:55] [Server thread/INFO]: [SkinsRestorer] Disabling SkinsRestorer v15.5.3
-[10:57:55] [Server thread/INFO]: [skript-yaml] Disabling skript-yaml v1.6.1
-[10:57:55] [Server thread/INFO]: [VoidGen] Disabling VoidGen v2.2.1
-[10:57:55] [Server thread/INFO]: [Skript] Disabling Skript v2.10.1
-[10:57:55] [Server thread/INFO]: Saving players
-[10:57:55] [Server thread/INFO]: JugandoMiguel lost connection: Server closed
-[10:57:55] [Server thread/INFO]: JugandoMiguel left the game
-[10:57:55] [Server thread/INFO]: Saving worlds
-[10:57:55] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
-[10:57:55] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
-[10:57:55] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
-[10:57:55] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
-[10:57:55] [Server thread/INFO]: [ChunkHolderManager] Saved 188 block chunks, 1 entity chunks, 0 poi chunks in world 'world' in 0,09s
-[10:57:55] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'world'
-[10:57:55] [Server thread/INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'world'
-[10:57:55] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
-[10:57:55] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
-[10:57:55] [Server thread/INFO]: Waiting for I/O tasks to complete...
-[10:57:55] [Server thread/INFO]: All I/O tasks to complete
-[10:57:55] [Server thread/INFO]: [MoonriseCommon] Awaiting termination of worker pool for up to 60s...
-[10:57:55] [Server thread/INFO]: [MoonriseCommon] Awaiting termination of I/O pool for up to 60s...
+[14:15:08] [ForkJoinPool.commonPool-worker-1/INFO]: [Skript] A new version of Skript is available: 2.10.2 (you're currently running 2.10.1)
+[14:15:08] [ForkJoinPool.commonPool-worker-1/INFO]: Download it at: https://github.com/SkriptLang/Skript/releases/download/2.10.2/Skript-2.10.2.jar
+[14:15:09] [Server thread/INFO]: [Skript]  ~ created by & © Peter Güttinger aka Njol ~
+[14:15:09] [Server thread/INFO]: [skript-yaml] Enabling skript-yaml v1.6.1
+[14:15:09] [Server thread/INFO]: [SkBee] Enabling SkBee v3.8.2
+[14:15:09] [Server thread/INFO]: [SkBee] Registry Elements successfully loaded
+[14:15:09] [ForkJoinPool.commonPool-worker-2/INFO]: [Skript-Yaml] Skript-Yaml is up to date!
+[14:15:09] [Server thread/INFO]: [SkBee] Loading NBTApi...
+[14:15:09] [Server thread/INFO]: [SkBee] [NBTAPI] Found Minecraft: 1.21.4! Trying to find NMS support
+[14:15:09] [Server thread/INFO]: [SkBee] [NBTAPI] NMS support 'MC1_21_R3' loaded!
+[14:15:09] [Server thread/INFO]: [SkBee] Successfully loaded NBTApi!
+[14:15:09] [Server thread/INFO]: [SkBee] NBT Elements successfully loaded
+[14:15:09] [Server thread/INFO]: [SkBee] Text Component Elements successfully loaded
+[14:15:09] [Server thread/INFO]: [SkBee] Advancement Elements successfully loaded
+[14:15:09] [Server thread/INFO]: [SkBee] BossBar Elements successfully loaded
+[14:15:09] [Server thread/INFO]: [SkBee] Bound Elements successfully loaded
+[14:15:09] [Server thread/INFO]: [SkBee] Damage Source Elements successfully loaded
+[14:15:10] [Server thread/INFO]: [SkBee] Display Entity Elements successfully loaded
+[14:15:10] [Server thread/INFO]: [SkBee] Fishing Elements successfully loaded
+[14:15:10] [Server thread/INFO]: [SkBee] Game Event Elements successfully loaded
+[14:15:10] [Server thread/INFO]: [SkBee] Item Component Elements successfully loaded
+[14:15:10] [Server thread/INFO]: [SkBee] Particle Elements successfully loaded
+[14:15:10] [Server thread/INFO]: [SkBee] RayTrace Elements successfully loaded
+[14:15:10] [Server thread/INFO]: [SkBee] Recipe Elements successfully loaded
+[14:15:10] [Server thread/INFO]: [SkBee] Scoreboard[Adventure] Elements successfully loaded
+[14:15:10] [Server thread/INFO]: [SkBee] Scoreboard Objective Elements successfully loaded
+[14:15:10] [Server thread/INFO]: [SkBee] Statistic Elements successfully loaded
+[14:15:10] [Server thread/INFO]: [SkBee] Structure Elements successfully loaded
+[14:15:10] [Server thread/INFO]: [SkBee] SwitchCase Elements successfully loaded
+[14:15:10] [Server thread/INFO]: [SkBee] Minecraft Tag Elements disabled (now in Skript)
+[14:15:10] [Server thread/INFO]: [SkBee] Team Elements successfully loaded
+[14:15:10] [Server thread/INFO]: [SkBee] Tick Manager Elements successfully loaded
+[14:15:10] [Server thread/INFO]: [SkBee] Villager Elements successfully loaded
+[14:15:10] [Server thread/INFO]: [SkBee] Virtual Furnace Elements disabled via config
+[14:15:10] [Server thread/INFO]: [SkBee] World Border Elements successfully loaded
+[14:15:10] [Server thread/INFO]: [SkBee] World Creator Elements successfully loaded
+[14:15:10] [Server thread/INFO]: [SkBee] Chunk Generator Elements successfully loaded
+[14:15:10] [Server thread/INFO]: [SkBee] Loaded (443) elements:
+[14:15:10] [Server thread/INFO]: [SkBee]  - 51 events
+[14:15:10] [Server thread/INFO]: [SkBee]  - 71 effects
+[14:15:10] [Server thread/INFO]: [SkBee]  - 267 expressions
+[14:15:10] [Server thread/INFO]: [SkBee]  - 25 conditions
+[14:15:10] [Server thread/INFO]: [SkBee]  - 29 sections
+[14:15:10] [Server thread/INFO]: [SkBee] Checking for update...
+[14:15:10] [ForkJoinPool.commonPool-worker-1/INFO]: [Skript] Loaded 5440 aliases in 1213ms
+[14:15:10] [Server thread/INFO]: [SkBee] Plugin is not up to date!
+[14:15:10] [Server thread/INFO]: [SkBee]  - Current version: v3.8.2
+[14:15:10] [Server thread/INFO]: [SkBee]  - Available update: v3.10.0
+[14:15:10] [Server thread/INFO]: [SkBee]  - Download available at: https://github.com/ShaneBeee/SkBee/releases
+[14:15:10] [Server thread/INFO]: [SkBee] Successfully enabled v3.8.2 in 1,28 seconds
+[14:15:10] [Server thread/INFO]: [Multiverse-Core] Enabling Multiverse-Core v4.3.14
+[14:15:10] [Server thread/WARN]: [Multiverse-Core] "Multiverse-Core v4.3.14" has registered a listener for org.bukkit.event.entity.EntityCreatePortalEvent on method "public void com.onarandombox.MultiverseCore.listeners.MVPortalListener.entityPortalCreate(org.bukkit.event.entity.EntityCreatePortalEvent)", but the event is Deprecated. "Server performance will be affected"; please notify the authors [dumptruckman, Rigby, fernferret, lithium3141, main--].
+[14:15:10] [Server thread/INFO]: [Multiverse-Core] §aWe are aware of the warning about the deprecated event. There is no alternative that allows us to do what we need to do and performance impact is negligible. It is safe to ignore.
+[14:15:10] [Server thread/INFO]: [VoidGen] Generator settings have not been set. Using default values:
+[14:15:10] [Server thread/INFO]: [VoidGen] {"caves":false,"decoration":false,"mobs":false,"structures":false,"noise":false,"surface":false,"bedrock":false}
+[14:15:10] [Server thread/INFO]: [Multiverse-Core] 1 - World(s) loaded.
+[14:15:10] [Server thread/WARN]: [Multiverse-Core] Buscript failed to load! The script command will be disabled! If you would like not to see this message, use `/mv conf enablebuscript false` to disable Buscript from loading.
+[14:15:10] [Server thread/INFO]: [Multiverse-Core] Version 4.3.14 (API v24) Enabled - By dumptruckman, Rigby, fernferret, lithium3141 and main--
+[14:15:10] [Server thread/INFO]: [spark] Starting background profiler...
+[14:15:10] [Server thread/INFO]: [spark] The async-profiler engine is not supported for your os/arch (windows11/amd64), so the built-in Java engine will be used instead.
+[14:15:11] [Server thread/INFO]: Done preparing level "world" (4.496s)
+[14:15:11] [Server thread/INFO]: Running delayed init tasks
+[14:15:11] [Server thread/INFO]: [Skript] Loading variables...
+[14:15:11] [Server thread/INFO]: [Skript] Loaded 27 variables in 0.0 seconds
+[14:15:11] [Server thread/INFO]: [Skript] Line 52: (HideAndSeek.sk)
+[14:15:11] [Server thread/INFO]:     Text cannot be parsed as a location
+[14:15:11] [Server thread/INFO]:     Line: set {_map_spawnpoint} to yaml value "arenas.%{hideandseek::current_map::*}%.spawnpoint" from "config" parsed as location
+[14:15:11] [Server thread/INFO]:  
+[14:15:12] [Server thread/INFO]: [Skript] Loaded 1 script with a total of 7 structures in 1.1 seconds
+[14:15:12] [Server thread/INFO]: [Skript] Finished loading.
+[14:15:12] [Server thread/INFO]: Done (21.941s)! For help, type "help"
+[14:16:00] [User Authenticator #0/INFO]: UUID of player JugandoMiguel is 5cff4c76-6daf-30b5-94fb-b12c54496740
+[14:16:01] [Server thread/INFO]: JugandoMiguel joined the game
+[14:16:02] [Server thread/INFO]: JugandoMiguel[/127.0.0.1:65380] logged in with entity id 1 at ([world]0.7729233897965452, 88.86822902403286, 28.147471211272048)
+[14:16:06] [Server thread/INFO]: JugandoMiguel issued server command: /gamemode creative
+[14:16:06] [Server thread/INFO]: [JugandoMiguel: Set own game mode to Creative Mode]
+[15:18:56] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 2773083ms or 55461 ticks behind
+[15:18:56] [Server thread/INFO]: JugandoMiguel lost connection: Timed out
+[15:18:56] [Server thread/INFO]: JugandoMiguel left the game
+[15:21:21] [User Authenticator #1/INFO]: UUID of player JugandoMiguel is 5cff4c76-6daf-30b5-94fb-b12c54496740
+[15:21:21] [Server thread/INFO]: JugandoMiguel joined the game
+[15:21:21] [Server thread/INFO]: JugandoMiguel[/127.0.0.1:49482] logged in with entity id 2 at ([world]-0.1377926076508982, 83.0, 30.562474919067053)
+[15:21:37] [Server thread/INFO]: JugandoMiguel issued server command: /hs setplayers
+[15:21:43] [Server thread/INFO]: JugandoMiguel issued server command: /hs arena list
+[15:21:48] [Server thread/INFO]: JugandoMiguel issued server command: /hs game selectmap Tt
+[15:21:53] [Server thread/INFO]: JugandoMiguel issued server command: /hs game start
+[15:23:18] [Server thread/INFO]: [Skript] Reloading HideAndSeek.sk...
+[15:23:18] [Server thread/INFO]: Line 52: (HideAndSeek.sk)
+[15:23:18] [Server thread/INFO]:     Text cannot be parsed as a location
+[15:23:18] [Server thread/INFO]:     Line: set {_map_spawnpoint} to yaml value "arenas.%{hideandseek::current_map::*}%.spawnpoint" from "config" parsed as location
+[15:23:18] [Server thread/INFO]:  
+[15:23:18] [Server thread/INFO]:     Encountered 1 error while reloading HideAndSeek.sk! (145ms)
+[15:23:21] [Server thread/INFO]: JugandoMiguel issued server command: /t
+[15:23:22] [Server thread/INFO]: JugandoMiguel issued server command: /tt
+[15:24:10] [Server thread/INFO]: [Skript] Reloading HideAndSeek.sk...
+[15:24:10] [Server thread/INFO]: Successfully reloaded HideAndSeek.sk. (129ms)
+[15:24:13] [Server thread/INFO]: JugandoMiguel issued server command: /t
+[15:24:21] [Server thread/INFO]: JugandoMiguel issued server command: /hs arena list
+[15:24:23] [Server thread/INFO]: JugandoMiguel issued server command: /hs game selectmap
+[15:24:24] [Server thread/INFO]: JugandoMiguel issued server command: /hs game selectmap Tt
+[15:24:31] [Server thread/INFO]: JugandoMiguel issued server command: /hs game start
+[15:25:19] [Server thread/INFO]: [Skript] Reloading HideAndSeek.sk...
+[15:25:19] [Server thread/INFO]: Successfully reloaded HideAndSeek.sk. (121ms)
+[15:25:24] [Server thread/INFO]: JugandoMiguel issued server command: /hs game selectmap Tt
+[15:25:27] [Server thread/INFO]: JugandoMiguel issued server command: /hs game start
+[15:26:07] [Server thread/INFO]: [Skript] Reloading HideAndSeek.sk...
+[15:26:07] [Server thread/INFO]: Successfully reloaded HideAndSeek.sk. (149ms)
+[15:26:18] [Server thread/INFO]: JugandoMiguel issued server command: /hs arena setup_arena Tt arena_pos1
+[15:26:22] [Server thread/INFO]: JugandoMiguel issued server command: /hs arena setup_arena Tt arena_pos2
+[15:26:26] [Server thread/INFO]: JugandoMiguel issued server command: /hs arena setup_arena Tt spawnpoint
+[15:26:32] [Server thread/INFO]: JugandoMiguel issued server command: /gamemode creative
+[15:26:32] [Server thread/INFO]: [JugandoMiguel: Set own game mode to Creative Mode]
+[15:26:34] [Server thread/INFO]: JugandoMiguel issued server command: /hs game start
+[15:26:38] [Server thread/INFO]: JugandoMiguel issued server command: /hs game start
+[15:26:43] [Server thread/INFO]: JugandoMiguel issued server command: /hs game selectmap Tt
+[15:26:44] [Server thread/INFO]: JugandoMiguel issued server command: /hs game start
+[15:28:17] [Server thread/INFO]: Stopping server
+[15:28:17] [Server thread/INFO]: [FastAsyncWorldEdit] Disabling FastAsyncWorldEdit v2.12.4-SNAPSHOT-1035;09473c5
+[15:28:17] [Server thread/INFO]: Unregistering com.sk89q.worldedit.bukkit.BukkitServerInterface from WorldEdit
+[15:28:17] [Server thread/INFO]: [Multiverse-Core] Disabling Multiverse-Core v4.3.14
+[15:28:17] [Server thread/INFO]: [SkBee] Disabling SkBee v3.8.2
+[15:28:17] [Server thread/INFO]: [SkinsRestorer] Disabling SkinsRestorer v15.6.0
+[15:28:17] [Server thread/INFO]: [skript-yaml] Disabling skript-yaml v1.6.1
+[15:28:17] [Server thread/INFO]: [VoidGen] Disabling VoidGen v2.2.1
+[15:28:17] [Server thread/INFO]: [Skript] Disabling Skript v2.10.1
+[15:28:17] [Server thread/INFO]: Saving players
+[15:28:17] [Server thread/INFO]: JugandoMiguel lost connection: Server closed
+[15:28:17] [Server thread/INFO]: JugandoMiguel left the game
+[15:28:17] [Server thread/INFO]: Saving worlds
+[15:28:17] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[15:28:17] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
+[15:28:17] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
+[15:28:17] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
+[15:28:17] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'world' in 0,01s
+[15:28:17] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'world'
+[15:28:17] [Server thread/INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'world'
+[15:28:17] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[15:28:17] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[15:28:17] [Server thread/INFO]: Waiting for I/O tasks to complete...
+[15:28:17] [Server thread/INFO]: All I/O tasks to complete
+[15:28:17] [Server thread/INFO]: [MoonriseCommon] Awaiting termination of worker pool for up to 60s...
+[15:28:17] [Server thread/INFO]: [MoonriseCommon] Awaiting termination of I/O pool for up to 60s...

@@ -1,26 +1,200 @@
+options:
+	# prefix: &dHide &band &dSeek&r
+	# prefix: &5[&dHide &3and &dSeek&5]&r
+	prefix: &l&6Hide &eand &6Seek&r
+
+on load:
+	load yaml "plugins/HideAndSeek/config.yml" as "config"
+
+on tab complete of "/hideandseek" or "/hs":
+	set tab completions for position 1 to "setplayers", "game", "arena" and "reload"
+	if tab arg-1 is "game":
+		set tab completions for position 2 to "selectmap" and "start"
+		if tab arg-2 is "selectmap":
+			set tab completions for position 3 to yaml node keys "arenas" from "config"
+	if tab arg-1 is "arena":
+		set tab completions for position 2 to "create", "remove", "list" and "setup_arena"
+		if tab arg-2 is "create":
+			set tab completions for position 3 to "MyArenaName"
+		if tab arg-2 is "remove":
+			set tab completions for position 3 to yaml node keys "arenas" from "config"
+		if tab arg-2 is "setup_arena":
+			set tab completions for position 3 to yaml node keys "arenas" from "config"
+			set tab completions for position 4 to "arena_pos1", "arena_pos2" and "spawnpoint"
+
+command /hideandseek [<string>] [<string>] [<string>] [<string>]:
+	usage: {@prefix}: Use hideandseek /help to get the command list!
+	permission: hideandseek.admin
+	permission message: {@prefix}: You don't have permission to execute this command
+	aliases: /hs
+	executable by: players
+	trigger:
+		if arg-1 is "setplayers":
+			set {hideandseek::players::*} to all players
+			send "{@prefix}: %size of {hideandseek::players::*}% player/s added to the game." to player
+		if arg-1 is "game":
+			if arg-2 is "selectmap":
+				if all:
+					arg-3 is set
+					yaml node keys "arenas" from "config" contains arg-3
+				then:
+					set {hideandseek::current_map} to arg-3
+			if arg-2 is "start":
+				if size of {hideandseek::players::*} > 0:
+					if all:
+						{hideandseek::current_map} is set
+						yaml node keys "arenas" from "config" contains {hideandseek::current_map}
+					then:
+						if {hideandseek::status} isn't "started":
+							set {_map_spawnpoint} to yaml value "arenas.%{hideandseek::current_map}%.spawnpoint" from "config"
+							teleport {hideandseek::players::*} to {_map_spawnpoint}
+							set {hideandseek::status} to "started"
+							send "{@prefix}: Game started!" to player
+						else:
+							send "{@prefix}: &cGame already started!" to player
+					else:
+						send "{@prefix}: &cArena not found, use &n/hs game selectmap <arena>&r&c to select a new one!" to player
+				else:
+					send "{@prefix}: &cYou need to add at least 2 players, use &n/hs setplayers&r&c!" to player
+		if arg-1 is "arena": 
+			if arg-2 is "create":
+				if arg-3 is set:
+					set {_arena_name} to arg-3
+					replace all " " , "&" , "/" , "#" , "$" , "," , "(" , ")" , "=" , "?" , "¿" and "." with "_" in {_arena_name}
+					set yaml value "arenas.%{_arena_name}%.display_name" from "config" to {_arena_name}
+					save yaml "config"
+					send "{@prefix}: Arena &n%arg-3%&r has been added to the configuration!" to player
+				else:
+					send "{@prefix}: &cYou must input any text to create an arena!" to player
+			else if arg-2 is "remove":
+				if size of yaml node keys "arenas" from "config" > 0:
+					if all:
+						arg-3 is set
+						yaml node keys "arenas" from "config" contains arg-3
+					then:
+						delete yaml list "arenas.%arg-3%" from "config"
+						save yaml "config"
+						send "{@prefix}: Arena &n%arg-3%&r removed from the config!" to player 
+					else:
+						send "{@prefix}: &cYou must input an arena name!" to player
+				else:
+					send "{@prefix}: &cThere are no arenas to remove!" to player
+			else if arg-2 is "list":
+				loop yaml node keys "arenas" from "config":
+					add loop-value to {_arenas_list::*}
+				send "{@prefix}: Available arenas:" to player
+				send "&31.&r %the 1st element out of {_arenas_list::*}%" to player if (the 1st element out of {_arenas_list::*} is set)
+				send "&32.&r %the 2nd element out of {_arenas_list::*}%" to player if (the 2nd element out of {_arenas_list::*} is set)
+				send "&33.&r %the 3rd element out of {_arenas_list::*}%" to player if (the 3rd element out of {_arenas_list::*} is set)
+				send "&34.&r %the 4th element out of {_arenas_list::*}%" to player if (the 4th element out of {_arenas_list::*} is set)
+				send "&35.&r %the 5th element out of {_arenas_list::*}%" to player if (the 5th element out of {_arenas_list::*} is set)
+				send "&36.&r %the 6th element out of {_arenas_list::*}%" to player if (the 6th element out of {_arenas_list::*} is set)
+				send "&37.&r %the 7th element out of {_arenas_list::*}%" to player if (the 7th element out of {_arenas_list::*} is set)
+				send "&38.&r %the 8th element out of {_arenas_list::*}%" to player if (the 8th element out of {_arenas_list::*} is set)
+			else if arg-2 is "setup_arena":
+				set {_location} to player's location
+				if arg-4 is "arena_pos1":
+					set yaml value "arenas.%arg-3%.pos1" from "config" to {_location}
+					set yaw of yaml value "arenas.%arg-3%.pos1" from "config" to 0
+					set pitch of yaml value "arenas.%arg-3%.pos1" from "config" to 0
+					save yaml "config"
+					send "{@prefix}: Arena position 1 set to x:%{_location}'s x-coord%, y:%{_location}'s y-coord%, z:%{_location}'s z-coord%!" to player
+				else if arg-4 is "arena_pos2":
+					set yaml value "arenas.%arg-3%.pos2" from "config" to {_location}
+					set yaw of yaml value "arenas.%arg-3%.pos2" from "config" to 0
+					set pitch of yaml value "arenas.%arg-3%.pos2" from "config" to 0
+					save yaml "config"
+					send "{@prefix}: Arena position 2 set to x:%{_location}'s x-coord%, y:%{_location}'s y-coord%, z:%{_location}'s z-coord%!" to player
+				else if arg-4 is "spawnpoint":
+					set yaml value "arenas.%arg-3%.spawnpoint" from "config" to {_location}
+					set yaw of yaml value "arenas.%arg-3%.spawnpoint" from "config" to 0
+					set pitch of yaml value "arenas.%arg-3%.spawnpoint" from "config" to 0
+					save yaml "config"
+					send "{@prefix}: Arena spawn point set to x:%{_location}'s x-coord%, y:%{_location}'s y-coord%, z:%{_location}'s z-coord%!" to player
+		if arg-1 is "reload":
+			unload yaml "config"
+			load yaml "plugins/HideAndSeek/config.yml" as "config"
+			send "{@prefix}: All data reloaded!" to player
+
+function checkArenaExists(arena: string) :: boolean:
+	if yaml node keys "arenas" from "config" contains {_arena}:
+		return true
+	else:
+		return false
 command /t:
-    trigger:
-        createDisplayBlock(player)
-        wait 2 seconds
-        removeDisplayBlock(player)
-on right click:
-    createDisplayBlock(player)
-on player move:
-    if string tag "custom;state" of nbt of event-player is "hiding":
-        cancel event
-every tick:
-    apply effect
-function createDisplayBlock(player: player):
-    set {_block_loc} to block below {_player}
-    broadcast "&11:%{_block_loc}%"
-    set {_block_loc} to location( floor({_block_loc}'s x-coord),{_block_loc}'s y-coord + 0.5, floor({_block_loc}'s z-coord))
-    broadcast "&22:%{_block_loc}%"
-    summon a block display at {_block_loc}
-    set display block data of last spawned entity to oak_stairs[facing=south]
-    set string tag "custom;player" of nbt of last spawned entity to {_player}'s uuid
-    changePlayerState("hiding")
-function removeDisplayBlock(player: player):
-    kill all displays where [string tag "custom;player" of nbt of input is {_player}'s uuid]
-    changePlayerState("idle")
-function changePlayerState(state: string, player: player):
-    set string tag "custom;state" of nbt of {_player} to {_state}
+	trigger:
+		delete {hideandseek::status}
+		delete {hideandseek::current_map}
+		# teleport player to yaml value "arenas.Test.spawnpoint" from "config"
+		# set {_ss} to yaml value "arenas.Test.spawnpoint" from "config"
+		# broadcast "'type: %{_ss}'s type%"
+		# broadcast "type: %type of {_ss}%"
+		# broadcast "ss: %{_ss}%"
+	# 	broadcast "Exists: %checkArenaExists(arg-1)%"
+	# 	broadcast "Configured: %checkArenaConfigured(arg-1)%"
+		# broadcast "pos1: %yaml value "arenas.%arg-1%.pos1" from "config"%"
+		# broadcast "pos2: %yaml value "arenas.%arg-1%.pos2" from "config"%"
+		# broadcast "spawnpoint: %yaml value "arenas.%arg-1%.spawnpoint""" from "config"%"
+function checkArenaConfigured(arena: string) :: boolean: #TODO: FIX THE CHECK; BECAUSE IT DOESN'T DETECT ANYTHING AS SET
+	set {_allConfigured} to true
+	if checkArenaExists({_arena}) is true:
+		broadcast "asd"
+		if yaml value "arenas.%{_arena}%.pos1" from "config" exists:
+			broadcast "&2si1"
+			if type of (yaml value "arenas.%{_arena}%.pos1" from "config") is location:
+				broadcast "&2si2"
+			else:
+				set {_allConfigured} to false
+		else:
+			set {_allConfigured} to false
+		if yaml value "arenas.%{_arena}%.pos2" from "config" exists:
+			broadcast "&csi1"
+			if type of (yaml value "arenas.%{_arena}%.pos2" from "config") is location:
+				broadcast "&csi2"
+			else:
+				set {_allConfigured} to false
+		else:
+			set {_allConfigured} to false
+		if yaml value "arenas.%{_arena}%.spawnpoint" from "config" exists:
+			broadcast "&esi1"
+			if type of (yaml value "arenas.%{_arena}%.spawnpoint" from "config") is location:
+				broadcast "&esi2"
+			else:
+				set {_allConfigured} to false
+		else:
+			set {_allConfigured} to false
+	return {_allConfigured}
+
+
+
+#TODO: agregar funcion que compruebe si una arena ya existe o no
+# command /t:
+#     trigger:
+#         createDisplayBlock(player)
+#         wait 2 seconds
+#         removeDisplayBlock(player)
+# on right click:
+#     createDisplayBlock(player)
+# on player move:
+#     if string tag "custom;state" of nbt of event-player is "hiding":
+#         cancel event
+# every tick:
+#     moveDisplayBlock()
+
+# function moveDisplayBlock():
+#     teleport 
+
+# function createDisplayBlock(player: player):
+#     set {_block_loc} to block below {_player}
+#     set {_block_loc} to location( floor({_block_loc}'s x-coord),{_block_loc}'s y-coord + 0.5, floor({_block_loc}'s z-coord))
+#     summon a block display at {_block_loc}
+#     set display block data of last spawned entity to oak_stairs[facing=south]
+#     set string tag "custom;player" of nbt of last spawned entity to {_player}'s uuid
+#     changePlayerState("hiding")
+
+# function removeDisplayBlock(player: player):
+#     kill all displays where [string tag "custom;player" of nbt of input is {_player}'s uuid]
+#     changePlayerState("idle")
+
+# function changePlayerState(state: string, player: player):
+#     set string tag "custom;state" of nbt of {_player} to {_state}

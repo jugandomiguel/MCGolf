@@ -1,0 +1,82 @@
+function checkArenaExists(arena: string) :: boolean:
+	if yaml node keys "arenas" from "config" contains {_arena}:
+		return true
+	else:
+		return false
+command /t:
+	trigger:
+		delete {hideandseek::status}
+		delete {hideandseek::current_map}
+		# teleport player to yaml value "arenas.Test.spawnpoint" from "config"
+		# set {_ss} to yaml value "arenas.Test.spawnpoint" from "config"
+		# broadcast "'type: %{_ss}'s type%"
+		# broadcast "type: %type of {_ss}%"
+		# broadcast "ss: %{_ss}%"
+	# 	broadcast "Exists: %checkArenaExists(arg-1)%"
+	# 	broadcast "Configured: %checkArenaConfigured(arg-1)%"
+		# broadcast "pos1: %yaml value "arenas.%arg-1%.pos1" from "config"%"
+		# broadcast "pos2: %yaml value "arenas.%arg-1%.pos2" from "config"%"
+		# broadcast "spawnpoint: %yaml value "arenas.%arg-1%.spawnpoint""" from "config"%"
+function checkArenaConfigured(arena: string) :: boolean: #TODO: FIX THE CHECK; BECAUSE IT DOESN'T DETECT ANYTHING AS SET
+	set {_allConfigured} to true
+	if checkArenaExists({_arena}) is true:
+		broadcast "asd"
+		if yaml value "arenas.%{_arena}%.pos1" from "config" exists:
+			broadcast "&2si1"
+			if type of (yaml value "arenas.%{_arena}%.pos1" from "config") is location:
+				broadcast "&2si2"
+			else:
+				set {_allConfigured} to false
+		else:
+			set {_allConfigured} to false
+		if yaml value "arenas.%{_arena}%.pos2" from "config" exists:
+			broadcast "&csi1"
+			if type of (yaml value "arenas.%{_arena}%.pos2" from "config") is location:
+				broadcast "&csi2"
+			else:
+				set {_allConfigured} to false
+		else:
+			set {_allConfigured} to false
+		if yaml value "arenas.%{_arena}%.spawnpoint" from "config" exists:
+			broadcast "&esi1"
+			if type of (yaml value "arenas.%{_arena}%.spawnpoint" from "config") is location:
+				broadcast "&esi2"
+			else:
+				set {_allConfigured} to false
+		else:
+			set {_allConfigured} to false
+	return {_allConfigured}
+
+
+
+#TODO: agregar funcion que compruebe si una arena ya existe o no
+# command /t:
+#     trigger:
+#         createDisplayBlock(player)
+#         wait 2 seconds
+#         removeDisplayBlock(player)
+# on right click:
+#     createDisplayBlock(player)
+# on player move:
+#     if string tag "custom;state" of nbt of event-player is "hiding":
+#         cancel event
+# every tick:
+#     moveDisplayBlock()
+
+# function moveDisplayBlock():
+#     teleport 
+
+# function createDisplayBlock(player: player):
+#     set {_block_loc} to block below {_player}
+#     set {_block_loc} to location( floor({_block_loc}'s x-coord),{_block_loc}'s y-coord + 0.5, floor({_block_loc}'s z-coord))
+#     summon a block display at {_block_loc}
+#     set display block data of last spawned entity to oak_stairs[facing=south]
+#     set string tag "custom;player" of nbt of last spawned entity to {_player}'s uuid
+#     changePlayerState("hiding")
+
+# function removeDisplayBlock(player: player):
+#     kill all displays where [string tag "custom;player" of nbt of input is {_player}'s uuid]
+#     changePlayerState("idle")
+
+# function changePlayerState(state: string, player: player):
+#     set string tag "custom;state" of nbt of {_player} to {_state}
