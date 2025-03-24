@@ -180,6 +180,7 @@ function start_timer():
 
 
 function start_game():
+	set {hideandseek::status} to "started"
 	set {hideandseek::players::*} to "a", "b", "c", "d", "e", "f", "g" and "h" #all players
 	loop 2 times:
 		set {hideandseek::players::seekers::*} to a random element of {hideandseek::players::*}

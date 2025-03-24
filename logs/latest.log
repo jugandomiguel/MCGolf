@@ -151,3 +151,146 @@ Update at https://www.spigotmc.org/resources/13932/
 [08:29:11] [User Authenticator #0/INFO]: UUID of player JugandoMiguel is 5cff4c76-6daf-30b5-94fb-b12c54496740
 [08:29:12] [Server thread/INFO]: JugandoMiguel joined the game
 [08:29:12] [Server thread/INFO]: JugandoMiguel[/127.0.0.1:60935] logged in with entity id 1 at ([world]-4.888082961462109, 83.0, 37.44114010880798)
+[08:31:59] [Server thread/INFO]: [Skript] Reloading HideAndSeek.sk...
+[08:31:59] [Server thread/INFO]: Line 177: (HideAndSeek.sk)
+[08:31:59] [Server thread/INFO]:     Empty configuration section! You might want to indent one or more of the subsequent lines to make them belong to this section or remove the colon at the end of the line if you don't want this line to start a section.
+[08:31:59] [Server thread/INFO]:     Line: start_timer():
+[08:31:59] [Server thread/INFO]:  
+[08:31:59] [Server thread/INFO]: Line 181: (HideAndSeek.sk)
+[08:31:59] [Server thread/INFO]:     undefined option {@timer}
+[08:31:59] [Server thread/INFO]:     Line: if {@timer} isn't greater than {@hiding-time}:
+[08:31:59] [Server thread/INFO]:  
+[08:31:59] [Server thread/INFO]: Line 181: (HideAndSeek.sk)
+[08:31:59] [Server thread/INFO]:     undefined option {@hiding-time}
+[08:31:59] [Server thread/INFO]:     Line: if {@timer} isn't greater than {@hiding-time}:
+[08:31:59] [Server thread/INFO]:  
+[08:31:59] [Server thread/INFO]: Line 140: (HideAndSeek.sk)
+[08:31:59] [Server thread/INFO]:     Can't understand this condition: '{hideandseek::timer} =< 0'
+[08:31:59] [Server thread/INFO]:     Line: else if {hideandseek::timer} =< 0:
+[08:31:59] [Server thread/INFO]:  
+[08:31:59] [Server thread/INFO]: Line 145: (HideAndSeek.sk)
+[08:31:59] [Server thread/INFO]:     Can't understand this condition: '{hideandseek::timer} =< 1'
+[08:31:59] [Server thread/INFO]:     Line: else if {hideandseek::timer} =< 1:
+[08:31:59] [Server thread/INFO]:  
+[08:31:59] [Server thread/INFO]: Line 150: (HideAndSeek.sk)
+[08:31:59] [Server thread/INFO]:     Can't understand this condition: '{hideandseek::timer} =< 2'
+[08:31:59] [Server thread/INFO]:     Line: else if {hideandseek::timer} =< 2:
+[08:31:59] [Server thread/INFO]:  
+[08:31:59] [Server thread/INFO]:     Encountered 5 errors while reloading HideAndSeek.sk! (290ms)
+[08:32:10] [Server thread/INFO]: [Skript] Reloading HideAndSeek.sk...
+[08:32:10] [Server thread/INFO]: Line 177: (HideAndSeek.sk)
+[08:32:10] [Server thread/INFO]:     Empty configuration section! You might want to indent one or more of the subsequent lines to make them belong to this section or remove the colon at the end of the line if you don't want this line to start a section.
+[08:32:10] [Server thread/INFO]:     Line: start_timer():
+[08:32:10] [Server thread/INFO]:  
+[08:32:10] [Server thread/INFO]: Line 181: (HideAndSeek.sk)
+[08:32:10] [Server thread/INFO]:     undefined option {@timer}
+[08:32:10] [Server thread/INFO]:     Line: if {@timer} isn't greater than {@hiding-time}:
+[08:32:10] [Server thread/INFO]:  
+[08:32:10] [Server thread/INFO]: Line 181: (HideAndSeek.sk)
+[08:32:10] [Server thread/INFO]:     undefined option {@hiding-time}
+[08:32:10] [Server thread/INFO]:     Line: if {@timer} isn't greater than {@hiding-time}:
+[08:32:10] [Server thread/INFO]:  
+[08:32:11] [Server thread/INFO]:     Encountered 2 errors while reloading HideAndSeek.sk! (318ms)
+[08:32:38] [Server thread/INFO]: [Skript] Reloading HideAndSeek.sk...
+[08:32:38] [Server thread/INFO]: Line 177: (HideAndSeek.sk)
+[08:32:38] [Server thread/INFO]:     Empty configuration section! You might want to indent one or more of the subsequent lines to make them belong to this section or remove the colon at the end of the line if you don't want this line to start a section.
+[08:32:38] [Server thread/INFO]:     Line: start_timer():
+[08:32:38] [Server thread/INFO]:  
+[08:32:38] [Server thread/INFO]: Successfully reloaded HideAndSeek.sk. (217ms)
+[08:35:31] [Server thread/INFO]: [Skript] Reloading HideAndSeek.sk...
+[08:35:31] [Server thread/INFO]: Line 178: (HideAndSeek.sk)
+[08:35:31] [Server thread/INFO]:     Empty configuration section! You might want to indent one or more of the subsequent lines to make them belong to this section or remove the colon at the end of the line if you don't want this line to start a section.
+[08:35:31] [Server thread/INFO]:     Line: start_timer():
+[08:35:31] [Server thread/INFO]:  
+[08:35:31] [Server thread/INFO]: Successfully reloaded HideAndSeek.sk. (180ms)
+[08:47:52] [Server thread/INFO]: [Skript] Reloading HideAndSeek.sk...
+[08:47:52] [Server thread/INFO]: Line 181: (HideAndSeek.sk)
+[08:47:52] [Server thread/INFO]:     Empty configuration section! You might want to indent one or more of the subsequent lines to make them belong to this section or remove the colon at the end of the line if you don't want this line to start a section.
+[08:47:52] [Server thread/INFO]:     Line: start_timer():
+[08:47:52] [Server thread/INFO]:  
+[08:47:52] [Server thread/INFO]: Line 8: (HideAndSeek.sk)
+[08:47:52] [Server thread/INFO]:     'amount_of_seekers' is not an entry (like 'name : value')
+[08:47:52] [Server thread/INFO]:     Line: amount_of_seekers
+[08:47:52] [Server thread/INFO]:  
+[08:47:52] [Server thread/INFO]: Line 178: (HideAndSeek.sk)
+[08:47:52] [Server thread/INFO]:     Can't understand this condition/effect: set {hideandseek::players::*} all players
+[08:47:52] [Server thread/INFO]:     Line: set {hideandseek::players::*} all players
+[08:47:52] [Server thread/INFO]:  
+[08:47:52] [Server thread/INFO]: Line 179: (HideAndSeek.sk)
+[08:47:52] [Server thread/INFO]:     Can't understand this expression: '1 random player out of {hideandseek::players::*}'
+[08:47:52] [Server thread/INFO]:     Line: set {hideandseek::players::seekers::*} to 1 random player out of {hideandseek::players::*}
+[08:47:52] [Server thread/INFO]:  
+[08:47:52] [Server thread/INFO]:     Encountered 3 errors while reloading HideAndSeek.sk! (179ms)
+[08:48:11] [Server thread/INFO]: [Skript] Reloading HideAndSeek.sk...
+[08:48:11] [Server thread/INFO]: Line 181: (HideAndSeek.sk)
+[08:48:11] [Server thread/INFO]:     Empty configuration section! You might want to indent one or more of the subsequent lines to make them belong to this section or remove the colon at the end of the line if you don't want this line to start a section.
+[08:48:11] [Server thread/INFO]:     Line: start_timer():
+[08:48:11] [Server thread/INFO]:  
+[08:48:11] [Server thread/INFO]: Line 179: (HideAndSeek.sk)
+[08:48:11] [Server thread/INFO]:     Can't understand this expression: '1 random player out of {hideandseek::players::*}'
+[08:48:11] [Server thread/INFO]:     Line: set {hideandseek::players::seekers::*} to 1 random player out of {hideandseek::players::*}
+[08:48:11] [Server thread/INFO]:  
+[08:48:11] [Server thread/INFO]:     Encountered 1 error while reloading HideAndSeek.sk! (159ms)
+[08:48:17] [Server thread/INFO]: [Skript] Reloading HideAndSeek.sk...
+[08:48:17] [Server thread/INFO]: Line 181: (HideAndSeek.sk)
+[08:48:17] [Server thread/INFO]:     Empty configuration section! You might want to indent one or more of the subsequent lines to make them belong to this section or remove the colon at the end of the line if you don't want this line to start a section.
+[08:48:17] [Server thread/INFO]:     Line: start_timer():
+[08:48:17] [Server thread/INFO]:  
+[08:48:17] [Server thread/INFO]: Successfully reloaded HideAndSeek.sk. (193ms)
+[08:49:51] [Server thread/INFO]: [Skript] Reloading HideAndSeek.sk...
+[08:49:51] [Server thread/INFO]: Line 182: (HideAndSeek.sk)
+[08:49:51] [Server thread/INFO]:     Empty configuration section! You might want to indent one or more of the subsequent lines to make them belong to this section or remove the colon at the end of the line if you don't want this line to start a section.
+[08:49:51] [Server thread/INFO]:     Line: start_timer():
+[08:49:51] [Server thread/INFO]:  
+[08:49:51] [Server thread/INFO]: Line 178: (HideAndSeek.sk)
+[08:49:51] [Server thread/INFO]:     List is missing 'and' or 'or', defaulting to 'and': "a", "b", "c", "d", "e", "f", "g", "h"
+[08:49:51] [Server thread/INFO]:     Line: set {hideandseek::players::*} to "a", "b", "c", "d", "e", "f", "g", "h"#all players
+[08:49:51] [Server thread/INFO]:  
+[08:49:51] [Server thread/INFO]: Successfully reloaded HideAndSeek.sk. (162ms)
+[08:49:56] [Server thread/INFO]: [Skript] Reloading HideAndSeek.sk...
+[08:49:56] [Server thread/INFO]: Line 182: (HideAndSeek.sk)
+[08:49:56] [Server thread/INFO]:     Empty configuration section! You might want to indent one or more of the subsequent lines to make them belong to this section or remove the colon at the end of the line if you don't want this line to start a section.
+[08:49:56] [Server thread/INFO]:     Line: start_timer():
+[08:49:56] [Server thread/INFO]:  
+[08:49:56] [Server thread/INFO]: Successfully reloaded HideAndSeek.sk. (174ms)
+[08:50:14] [Server thread/INFO]: JugandoMiguel issued server command: /hs game start
+[08:50:15] [Server thread/INFO]: JugandoMiguel issued server command: /t
+[08:50:16] [Server thread/INFO]: JugandoMiguel issued server command: /hs game start
+[08:50:32] [Server thread/INFO]: JugandoMiguel issued server command: /hs game selectmap Tt
+[08:50:33] [Server thread/INFO]: JugandoMiguel issued server command: /hs game start
+[08:52:21] [Server thread/INFO]: [Skript] Reloading HideAndSeek.sk...
+[08:52:21] [Server thread/INFO]: Line 187: (HideAndSeek.sk)
+[08:52:21] [Server thread/INFO]:     Empty configuration section! You might want to indent one or more of the subsequent lines to make them belong to this section or remove the colon at the end of the line if you don't want this line to start a section.
+[08:52:21] [Server thread/INFO]:     Line: start_timer():
+[08:52:21] [Server thread/INFO]:  
+[08:52:21] [Server thread/INFO]: Successfully reloaded HideAndSeek.sk. (223ms)
+[08:52:25] [Server thread/INFO]: JugandoMiguel issued server command: /hs game start
+[08:52:27] [Server thread/INFO]: JugandoMiguel issued server command: /hs game start
+[08:52:28] [Server thread/INFO]: JugandoMiguel issued server command: /hs game start
+[08:52:59] [Server thread/INFO]: Stopping the server
+[08:52:59] [Server thread/INFO]: Stopping server
+[08:52:59] [Server thread/INFO]: [FastAsyncWorldEdit] Disabling FastAsyncWorldEdit v2.12.4-SNAPSHOT-1035;09473c5
+[08:52:59] [Server thread/INFO]: Unregistering com.sk89q.worldedit.bukkit.BukkitServerInterface from WorldEdit
+[08:52:59] [Server thread/INFO]: [Multiverse-Core] Disabling Multiverse-Core v4.3.14
+[08:52:59] [Server thread/INFO]: [SkBee] Disabling SkBee v3.8.2
+[08:52:59] [Server thread/INFO]: [SkinsRestorer] Disabling SkinsRestorer v15.6.0
+[08:52:59] [Server thread/INFO]: [skript-yaml] Disabling skript-yaml v1.6.1
+[08:52:59] [Server thread/INFO]: [VoidGen] Disabling VoidGen v2.2.1
+[08:52:59] [Server thread/INFO]: [Skript] Disabling Skript v2.10.1
+[08:52:59] [Server thread/INFO]: Saving players
+[08:52:59] [Server thread/INFO]: JugandoMiguel lost connection: Server closed
+[08:52:59] [Server thread/INFO]: JugandoMiguel left the game
+[08:52:59] [Server thread/INFO]: Saving worlds
+[08:52:59] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[08:52:59] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
+[08:52:59] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
+[08:52:59] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
+[08:52:59] [Server thread/INFO]: [ChunkHolderManager] Saved 52 block chunks, 50 entity chunks, 0 poi chunks in world 'world' in 0,04s
+[08:52:59] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'world'
+[08:52:59] [Server thread/INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'world'
+[08:52:59] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[08:52:59] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[08:52:59] [Server thread/INFO]: Waiting for I/O tasks to complete...
+[08:52:59] [Server thread/INFO]: All I/O tasks to complete
+[08:52:59] [Server thread/INFO]: [MoonriseCommon] Awaiting termination of worker pool for up to 60s...
+[08:52:59] [Server thread/INFO]: [MoonriseCommon] Awaiting termination of I/O pool for up to 60s...
