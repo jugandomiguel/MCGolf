@@ -2,9 +2,13 @@ options:
 	# prefix: &dHide &band &dSeek&r
 	# prefix: &5[&dHide &3and &dSeek&5]&r
 	prefix: &l&6Hide &eand &6Seek&r
-
+	block_selection_timer: 10
+	hiding_timer: 10
+	game_timer: 200
+	amount_of_seekers: 2
 on load:
 	load yaml "plugins/HideAndSeek/config.yml" as "config"
+
 
 on tab complete of "/hideandseek" or "/hs":
 	set tab completions for position 1 to "setplayers", "game", "arena" and "reload"
@@ -21,7 +25,6 @@ on tab complete of "/hideandseek" or "/hs":
 		if tab arg-2 is "setup_arena":
 			set tab completions for position 3 to yaml node keys "arenas" from "config"
 			set tab completions for position 4 to "arena_pos1", "arena_pos2" and "spawnpoint"
-
 command /hideandseek [<string>] [<string>] [<string>] [<string>]:
 	usage: {@prefix}: Use hideandseek /help to get the command list!
 	permission: hideandseek.admin
@@ -48,7 +51,7 @@ command /hideandseek [<string>] [<string>] [<string>] [<string>]:
 						if {hideandseek::status} isn't "started":
 							set {_map_spawnpoint} to yaml value "arenas.%{hideandseek::current_map}%.spawnpoint" from "config"
 							teleport {hideandseek::players::*} to {_map_spawnpoint}
-							set {hideandseek::status} to "started"
+							start_game()
 							send "{@prefix}: Game started!" to player
 						else:
 							send "{@prefix}: &cGame already started!" to player
@@ -115,6 +118,79 @@ command /hideandseek [<string>] [<string>] [<string>] [<string>]:
 			unload yaml "config"
 			load yaml "plugins/HideAndSeek/config.yml" as "config"
 			send "{@prefix}: All data reloaded!" to player
+
+
+every tick:
+	loop all players:
+		set title of loop-value's scoreboard to "{@prefix}"
+		set line 1 of loop-value's scoreboard to "{hideandseek::status}: %{hideandseek::status}%"
+		set line 1 of loop-value's scoreboard to "{hideandseek::timer::phase}: %{hideandseek::timer::phase}%"
+		set line 1 of loop-value's scoreboard to "{hideandseek::block_selection_timer}: %{hideandseek::block_selection_timer}%"
+		set line 1 of loop-value's scoreboard to "{hideandseek::hiding_timer}: %{hideandseek::hiding_timer}%"
+		set line 1 of loop-value's scoreboard to "{hideandseek::game_timer}: %{hideandseek::game_timer}%"
+		if {hideandseek::timer::phase} is 0:
+			set line 1 of loop-value's scoreboard to "Selection time:"
+			set line 2 of loop-value's scoreboard to "- %{hideandseek::block_selection_timer}%"
+		if {hideandseek::timer::phase} is 1:
+			set line 1 of loop-value's scoreboard to "Selection time:"
+			set line 2 of loop-value's scoreboard to "- %{hideandseek::block_selection_timer}%"
+		if {hideandseek::timer::phase} is 2:
+			set line 1 of loop-value's scoreboard to "Selection time:"
+			set line 2 of loop-value's scoreboard to "- %{hideandseek::block_selection_timer}%"
+
+every 1 second:
+	if {hideandseek::status} is "started":
+		if {hideandseek::timer::phase} is 0:
+			if {hideandseek::block_selection_timer} > 0:
+				remove 1 from {hideandseek::block_selection_timer}
+			else if {hideandseek::block_selection_timer} <= 0:
+				set {hideandseek::timer::phase} to 1
+
+		if {hideandseek::timer::phase} is 1:
+			if {hideandseek::hiding_timer} > 1:
+				remove 1 from {hideandseek::hiding_timer}
+			else if {hideandseek::hiding_timer} <= 1:
+				set {hideandseek::timer::phase} to 2
+				
+		if {hideandseek::timer::phase} is 2:
+			if {hideandseek::game_timer} > 2:
+				remove 1 from {hideandseek::game_timer}
+			else if {hideandseek::game_timer} <= 2:
+				set {hideandseek::timer::phase} to 3
+
+	# {hideandseek::block_selection_timer}
+	# {hideandseek::hiding_timer}
+	# {hideandseek::game_timer}
+
+	# block_selection_timer: 10
+	# hiding_timer: 10
+	# game_timer: 200
+#TODO: Finish  timer code
+#TODO: Hacer que el phase timer controle dos timers separados 1 para esconderse y otro que sea el timer del juego (aqui iria el timer del ciclo del juego en si y de la seleccion de bloques)
+#-################################################################################################################
+#-================================================================================================================
+#Functions
+#-================================================================================================================
+#-################################################################################################################
+function start_timer():
+	set {hideandseek::timer::phase} to 0
+	set {hideandseek::block_selection_timer} to {@block_selection_timer}
+	set {hideandseek::hiding_timer} to {@hiding_timer}
+	set {hideandseek::game_timer} to {@game_timer}
+
+
+function start_game():
+	set {hideandseek::players::*} to "a", "b", "c", "d", "e", "f", "g" and "h" #all players
+	loop 2 times:
+		set {hideandseek::players::seekers::*} to a random element of {hideandseek::players::*}
+		remove {hideandseek::players::seekers::*}  from {hideandseek::players::*}
+	start_timer():
+
+function check_game_config() :: boolean:
+	set {_return} to true
+	if {@game_timer} isn't greater than {@hiding_timer}:
+		set {_return} to false
+	return {_return}
 
 function checkArenaExists(arena: string) :: boolean:
 	if yaml node keys "arenas" from "config" contains {_arena}:

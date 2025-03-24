@@ -26,7 +26,19 @@ golf::hole::current, integer, 00000002
 golf::players::1, offlineplayer, 810475756964800455554944820C6C65617374536967426974730494FBB12C544967400B6D6F737453696742697473045CFF4C766DAF30B5
 golf::players::current_turn, string, 800131
 golf::started, boolean, 01
+hideandseek::block_selection-time, long, 000000000000000A
+hideandseek::block_selection_timer, long, 000000000000000A
 hideandseek::current_map, string, 80025474
-hideandseek::players::1, offlineplayer, 810475756964800455554944820C6C65617374536967426974730494FBB12C544967400B6D6F737453696742697473045CFF4C766DAF30B5
-hideandseek::status, string, 800773746172746564
+hideandseek::game_timer, long, 00000000000000C8
+hideandseek::hiding-time, long, 000000000000000A
+hideandseek::hiding_timer, long, 000000000000000A
+hideandseek::players::1, string, 800161
+hideandseek::players::2, string, 800162
+hideandseek::players::3, string, 800163
+hideandseek::players::4, string, 800164
+hideandseek::players::6, string, 800166
+hideandseek::players::7, string, 800167
+hideandseek::players::seekers::1, string, 800168
+hideandseek::timer, double, C087780000000000
+hideandseek::timer::phase, long, 0000000000000000
 
